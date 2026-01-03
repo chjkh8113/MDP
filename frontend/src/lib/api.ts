@@ -13,13 +13,21 @@ export interface Course {
   name_en: string;
 }
 
+export interface Topic {
+  id: number;
+  course_id: number;
+  name_fa: string;
+}
+
 export interface Question {
   id: number;
   content: string;
   options: string[];
   answer: number;
   year: number;
+  topic_id?: number;
   field_name?: string;
+  explanation?: string;
 }
 
 export interface QuizResponse {
@@ -54,9 +62,11 @@ export const api = {
   // Health
   health: () => fetchAPI<{ status: string }>('/health'),
 
-  // Fields & Courses
+  // Fields, Courses & Topics
   getFields: () => fetchAPI<Field[]>('/fields'),
   getCourses: (fieldId: number) => fetchAPI<Course[]>(`/fields/${fieldId}/courses`),
+  getTopics: (courseId: number) => fetchAPI<Topic[]>(`/courses/${courseId}/topics`),
+  getQuestionsByTopic: (topicId: number) => fetchAPI<Question[]>(`/topics/${topicId}/questions`),
 
   // Years
   getYears: () => fetchAPI<number[]>('/years'),

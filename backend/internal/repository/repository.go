@@ -2,10 +2,15 @@ package repository
 
 import (
 	"context"
+	"encoding/json"
 	"mdp-api/internal/models"
 
 	"github.com/jackc/pgx/v5/pgxpool"
 )
+
+func parseJSONOptions(jsonStr string, options *[]string) error {
+	return json.Unmarshal([]byte(jsonStr), options)
+}
 
 type Repository struct {
 	db *pgxpool.Pool
@@ -159,10 +164,67 @@ func (r *Repository) GetAvailableYears() ([]int, error) {
 }
 
 func (r *Repository) GetStats() (map[string]interface{}, error) {
+	var totalQuestions, totalFields, totalCourses int
+
+	r.db.QueryRow(context.Background(), "SELECT COUNT(*) FROM questions").Scan(&totalQuestions)
+	r.db.QueryRow(context.Background(), "SELECT COUNT(*) FROM fields").Scan(&totalFields)
+	r.db.QueryRow(context.Background(), "SELECT COUNT(*) FROM courses").Scan(&totalCourses)
+
 	return map[string]interface{}{
-		"total_questions": 150,
-		"total_fields":    4,
-		"total_courses":   20,
+		"total_questions": totalQuestions,
+		"total_fields":    totalFields,
+		"total_courses":   totalCourses,
 		"years_covered":   5,
 	}, nil
+}
+
+func (r *Repository) GetTopicsByCourse(courseID int) ([]models.Topic, error) {
+	rows, err := r.db.Query(context.Background(),
+		"SELECT id, course_id, name_fa FROM topics WHERE course_id = $1 ORDER BY id",
+		courseID)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+
+	var topics []models.Topic
+	for rows.Next() {
+		var t models.Topic
+		if err := rows.Scan(&t.ID, &t.CourseID, &t.NameFA); err != nil {
+			return nil, err
+		}
+		topics = append(topics, t)
+	}
+	return topics, nil
+}
+
+func (r *Repository) GetQuestionsByTopic(topicID int) ([]models.Question, error) {
+	rows, err := r.db.Query(context.Background(), `
+		SELECT q.id, q.exam_id, q.course_id, q.topic_id, q.content,
+		       q.options, q.answer, COALESCE(q.explanation, ''), e.year
+		FROM questions q
+		JOIN exams e ON q.exam_id = e.id
+		WHERE q.topic_id = $1
+		ORDER BY e.year DESC`, topicID)
+	if err != nil {
+		return nil, err
+	}
+	defer rows.Close()
+
+	var questions []models.Question
+	for rows.Next() {
+		var q models.Question
+		var optionsJSON string
+		var explanation string
+		if err := rows.Scan(&q.ID, &q.ExamID, &q.CourseID, &q.TopicID,
+			&q.Content, &optionsJSON, &q.Answer, &explanation, &q.Year); err != nil {
+			return nil, err
+		}
+		// Parse JSON options
+		if err := parseJSONOptions(optionsJSON, &q.Options); err != nil {
+			return nil, err
+		}
+		questions = append(questions, q)
+	}
+	return questions, nil
 }

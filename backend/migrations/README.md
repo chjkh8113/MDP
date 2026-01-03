@@ -16,7 +16,8 @@ migrations/
     ├── 001_fields.sql
     ├── 002_courses.sql
     ├── 003_exams.sql
-    └── 004_questions.sql
+    ├── 004_topics.sql
+    └── 005_questions.sql
 ```
 
 ## Running Migrations

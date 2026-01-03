@@ -65,9 +65,11 @@ func main() {
 	// Health check
 	api.Get("/health", h.HealthCheck)
 
-	// Fields & Courses
+	// Fields, Courses & Topics
 	api.Get("/fields", h.GetFields)
 	api.Get("/fields/:fieldId/courses", h.GetCourses)
+	api.Get("/courses/:courseId/topics", h.GetTopics)
+	api.Get("/topics/:topicId/questions", h.GetQuestionsByTopic)
 
 	// Exams & Questions
 	api.Get("/exams", h.GetExams)

@@ -156,3 +156,31 @@ func (h *Handler) GetStats(c *fiber.Ctx) error {
 	}
 	return c.JSON(stats)
 }
+
+// GetTopics returns topics for a course
+func (h *Handler) GetTopics(c *fiber.Ctx) error {
+	courseID, err := c.ParamsInt("courseId")
+	if err != nil {
+		return c.Status(400).JSON(fiber.Map{"error": "Invalid course ID"})
+	}
+
+	topics, err := h.repo.GetTopicsByCourse(courseID)
+	if err != nil {
+		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+	}
+	return c.JSON(topics)
+}
+
+// GetQuestionsByTopic returns questions for a specific topic
+func (h *Handler) GetQuestionsByTopic(c *fiber.Ctx) error {
+	topicID, err := c.ParamsInt("topicId")
+	if err != nil {
+		return c.Status(400).JSON(fiber.Map{"error": "Invalid topic ID"})
+	}
+
+	questions, err := h.repo.GetQuestionsByTopic(topicID)
+	if err != nil {
+		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+	}
+	return c.JSON(questions)
+}
