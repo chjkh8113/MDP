@@ -5,6 +5,7 @@ import { useParams } from "next/navigation";
 import Link from "next/link";
 import { api, Course, Field } from "@/lib/api";
 import { Header } from "@/components/common/Header";
+import { Breadcrumb } from "@/components/common/Breadcrumb";
 
 export default function FieldCoursesPage() {
   const params = useParams();
@@ -38,13 +39,12 @@ export default function FieldCoursesPage() {
     <div className="min-h-screen bg-gray-50" dir="rtl">
       <Header />
       <main className="container mx-auto px-4 py-8">
-        <div className="mb-6">
-          <Link href="/fields" className="text-sm text-gray-500 hover:text-gray-700">
-            رشته‌ها
-          </Link>
-          <span className="mx-2 text-gray-400">/</span>
-          <span className="text-gray-800">{field?.name_fa}</span>
-        </div>
+        <Breadcrumb
+          items={[
+            { label: "رشته‌ها", href: "/fields" },
+            { label: field?.name_fa || "" },
+          ]}
+        />
 
         <h1 className="text-2xl font-bold text-gray-800 mb-6">
           دروس {field?.name_fa}

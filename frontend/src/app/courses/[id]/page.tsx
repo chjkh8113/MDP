@@ -3,25 +3,28 @@
 import { useEffect, useState } from "react";
 import { useParams } from "next/navigation";
 import Link from "next/link";
-import { api, Topic, Course } from "@/lib/api";
+import { api, Topic, Course, Field } from "@/lib/api";
 import { Header } from "@/components/common/Header";
+import { Breadcrumb } from "@/components/common/Breadcrumb";
 
 export default function CourseTopicsPage() {
   const params = useParams();
   const courseId = params.id as string;
   const [topics, setTopics] = useState<Topic[]>([]);
   const [course, setCourse] = useState<Course | null>(null);
+  const [field, setField] = useState<Field | null>(null);
   const [loading, setLoading] = useState(true);
 
   useEffect(() => {
-    // Get course info by checking all fields
+    // Get course and field info by checking all fields
     api.getFields()
       .then(async (fields) => {
-        for (const field of fields) {
-          const courses = await api.getCourses(field.id);
+        for (const f of fields) {
+          const courses = await api.getCourses(f.id);
           const found = courses.find(c => c.id === courseId);
           if (found) {
             setCourse(found);
+            setField(f);
             break;
           }
         }
@@ -49,13 +52,13 @@ export default function CourseTopicsPage() {
     <div className="min-h-screen bg-gray-50" dir="rtl">
       <Header />
       <main className="container mx-auto px-4 py-8">
-        <div className="mb-6">
-          <Link href="/fields" className="text-sm text-gray-500 hover:text-gray-700">
-            رشته‌ها
-          </Link>
-          <span className="mx-2 text-gray-400">/</span>
-          <span className="text-gray-800">{course?.name_fa}</span>
-        </div>
+        <Breadcrumb
+          items={[
+            { label: "رشته‌ها", href: "/fields" },
+            { label: field?.name_fa || "", href: field ? `/fields/${field.id}` : undefined },
+            { label: course?.name_fa || "" },
+          ]}
+        />
 
         <h1 className="text-2xl font-bold text-gray-800 mb-6">
           موضوعات {course?.name_fa}
