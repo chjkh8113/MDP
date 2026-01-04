@@ -29,8 +29,11 @@ export default function CourseTopicsPage() {
       .catch(console.error);
 
     api.getTopics(courseId)
-      .then(setTopics)
-      .catch(console.error)
+      .then(data => setTopics(data || []))
+      .catch(err => {
+        console.error(err);
+        setTopics([]);
+      })
       .finally(() => setLoading(false));
   }, [courseId]);
 

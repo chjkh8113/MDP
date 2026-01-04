@@ -28,7 +28,7 @@ func (r *Repository) GetFields() ([]models.Field, error) {
 	}
 	defer rows.Close()
 
-	var fields []models.Field
+	fields := []models.Field{}
 	for rows.Next() {
 		var f models.Field
 		if err := rows.Scan(&f.ID, &f.UUID, &f.NameFA, &f.NameEN); err != nil {
@@ -59,7 +59,7 @@ func (r *Repository) GetCoursesByField(fieldID int) ([]models.Course, error) {
 	}
 	defer rows.Close()
 
-	var courses []models.Course
+	courses := []models.Course{}
 	for rows.Next() {
 		var c models.Course
 		if err := rows.Scan(&c.ID, &c.UUID, &c.FieldID, &c.NameFA, &c.NameEN); err != nil {
@@ -103,7 +103,7 @@ func (r *Repository) GetExams(year, fieldID int) ([]models.Exam, error) {
 	}
 	defer rows.Close()
 
-	var exams []models.Exam
+	exams := []models.Exam{}
 	for rows.Next() {
 		var e models.Exam
 		if err := rows.Scan(&e.ID, &e.UUID, &e.Year, &e.FieldID); err != nil {
@@ -209,7 +209,7 @@ func (r *Repository) GetTopicsByCourse(courseID int) ([]models.Topic, error) {
 	}
 	defer rows.Close()
 
-	var topics []models.Topic
+	topics := []models.Topic{}
 	for rows.Next() {
 		var t models.Topic
 		if err := rows.Scan(&t.ID, &t.UUID, &t.CourseID, &t.NameFA); err != nil {
@@ -244,7 +244,7 @@ func (r *Repository) GetQuestionsByTopic(topicID int) ([]models.Question, error)
 	}
 	defer rows.Close()
 
-	var questions []models.Question
+	questions := []models.Question{}
 	for rows.Next() {
 		var q models.Question
 		var optionsJSON string
