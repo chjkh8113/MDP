@@ -8,7 +8,7 @@ import { Header } from "@/components/common/Header";
 
 export default function FieldCoursesPage() {
   const params = useParams();
-  const fieldId = Number(params.id);
+  const fieldId = params.id as string;
   const [courses, setCourses] = useState<Course[]>([]);
   const [field, setField] = useState<Field | null>(null);
   const [loading, setLoading] = useState(true);

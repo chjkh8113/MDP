@@ -1,31 +1,28 @@
 const API_BASE = process.env.NEXT_PUBLIC_API_URL || 'http://localhost:8181/api/v1';
 
 export interface Field {
-  id: number;
+  id: string;  // UUID
   name_fa: string;
   name_en: string;
 }
 
 export interface Course {
-  id: number;
-  field_id: number;
+  id: string;  // UUID
   name_fa: string;
   name_en: string;
 }
 
 export interface Topic {
-  id: number;
-  course_id: number;
+  id: string;  // UUID
   name_fa: string;
 }
 
 export interface Question {
-  id: number;
+  id: string;  // UUID
   content: string;
   options: string[];
   answer: number;
   year: number;
-  topic_id?: number;
   field_name?: string;
   explanation?: string;
 }
@@ -62,11 +59,11 @@ export const api = {
   // Health
   health: () => fetchAPI<{ status: string }>('/health'),
 
-  // Fields, Courses & Topics
+  // Fields, Courses & Topics (using UUIDs)
   getFields: () => fetchAPI<Field[]>('/fields'),
-  getCourses: (fieldId: number) => fetchAPI<Course[]>(`/fields/${fieldId}/courses`),
-  getTopics: (courseId: number) => fetchAPI<Topic[]>(`/courses/${courseId}/topics`),
-  getQuestionsByTopic: (topicId: number) => fetchAPI<Question[]>(`/topics/${topicId}/questions`),
+  getCourses: (fieldId: string) => fetchAPI<Course[]>(`/fields/${fieldId}/courses`),
+  getTopics: (courseId: string) => fetchAPI<Topic[]>(`/courses/${courseId}/topics`),
+  getQuestionsByTopic: (topicId: string) => fetchAPI<Question[]>(`/topics/${topicId}/questions`),
 
   // Years
   getYears: () => fetchAPI<number[]>('/years'),
@@ -90,7 +87,7 @@ export const api = {
       body: JSON.stringify({ count }),
     }),
 
-  submitAnswer: (questionId: number, selected: number) =>
+  submitAnswer: (questionId: string, selected: number) =>
     fetchAPI<{ correct: boolean; correct_answer: number }>('/quiz/answer', {
       method: 'POST',
       body: JSON.stringify({ question_id: questionId, selected }),

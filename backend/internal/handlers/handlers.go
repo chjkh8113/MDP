@@ -33,14 +33,19 @@ func (h *Handler) GetFields(c *fiber.Ctx) error {
 	return c.JSON(fields)
 }
 
-// GetCourses returns courses for a field
+// GetCourses returns courses for a field by UUID
 func (h *Handler) GetCourses(c *fiber.Ctx) error {
-	fieldID, err := c.ParamsInt("fieldId")
-	if err != nil {
-		return c.Status(400).JSON(fiber.Map{"error": "Invalid field ID"})
+	uuid := c.Params("uuid")
+	if uuid == "" {
+		return c.Status(400).JSON(fiber.Map{"error": "Field UUID required"})
 	}
 
-	courses, err := h.repo.GetCoursesByField(fieldID)
+	field, err := h.repo.GetFieldByUUID(uuid)
+	if err != nil {
+		return c.Status(404).JSON(fiber.Map{"error": "Field not found"})
+	}
+
+	courses, err := h.repo.GetCoursesByField(field.ID)
 	if err != nil {
 		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
 	}
@@ -157,28 +162,38 @@ func (h *Handler) GetStats(c *fiber.Ctx) error {
 	return c.JSON(stats)
 }
 
-// GetTopics returns topics for a course
+// GetTopics returns topics for a course by UUID
 func (h *Handler) GetTopics(c *fiber.Ctx) error {
-	courseID, err := c.ParamsInt("courseId")
-	if err != nil {
-		return c.Status(400).JSON(fiber.Map{"error": "Invalid course ID"})
+	uuid := c.Params("uuid")
+	if uuid == "" {
+		return c.Status(400).JSON(fiber.Map{"error": "Course UUID required"})
 	}
 
-	topics, err := h.repo.GetTopicsByCourse(courseID)
+	course, err := h.repo.GetCourseByUUID(uuid)
+	if err != nil {
+		return c.Status(404).JSON(fiber.Map{"error": "Course not found"})
+	}
+
+	topics, err := h.repo.GetTopicsByCourse(course.ID)
 	if err != nil {
 		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
 	}
 	return c.JSON(topics)
 }
 
-// GetQuestionsByTopic returns questions for a specific topic
+// GetQuestionsByTopic returns questions for a specific topic by UUID
 func (h *Handler) GetQuestionsByTopic(c *fiber.Ctx) error {
-	topicID, err := c.ParamsInt("topicId")
-	if err != nil {
-		return c.Status(400).JSON(fiber.Map{"error": "Invalid topic ID"})
+	uuid := c.Params("uuid")
+	if uuid == "" {
+		return c.Status(400).JSON(fiber.Map{"error": "Topic UUID required"})
 	}
 
-	questions, err := h.repo.GetQuestionsByTopic(topicID)
+	topic, err := h.repo.GetTopicByUUID(uuid)
+	if err != nil {
+		return c.Status(404).JSON(fiber.Map{"error": "Topic not found"})
+	}
+
+	questions, err := h.repo.GetQuestionsByTopic(topic.ID)
 	if err != nil {
 		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
 	}

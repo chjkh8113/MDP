@@ -8,7 +8,7 @@ import { Header } from "@/components/common/Header";
 
 export default function CourseTopicsPage() {
   const params = useParams();
-  const courseId = Number(params.id);
+  const courseId = params.id as string;
   const [topics, setTopics] = useState<Topic[]>([]);
   const [course, setCourse] = useState<Course | null>(null);
   const [loading, setLoading] = useState(true);

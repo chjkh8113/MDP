@@ -22,7 +22,7 @@ func New(db *pgxpool.Pool) *Repository {
 
 func (r *Repository) GetFields() ([]models.Field, error) {
 	rows, err := r.db.Query(context.Background(),
-		"SELECT id, name_fa, name_en FROM fields ORDER BY name_fa")
+		"SELECT id, uuid, name_fa, name_en FROM fields ORDER BY name_fa")
 	if err != nil {
 		return nil, err
 	}
@@ -31,7 +31,7 @@ func (r *Repository) GetFields() ([]models.Field, error) {
 	var fields []models.Field
 	for rows.Next() {
 		var f models.Field
-		if err := rows.Scan(&f.ID, &f.NameFA, &f.NameEN); err != nil {
+		if err := rows.Scan(&f.ID, &f.UUID, &f.NameFA, &f.NameEN); err != nil {
 			return nil, err
 		}
 		fields = append(fields, f)
@@ -39,9 +39,20 @@ func (r *Repository) GetFields() ([]models.Field, error) {
 	return fields, nil
 }
 
+func (r *Repository) GetFieldByUUID(uuid string) (*models.Field, error) {
+	var f models.Field
+	err := r.db.QueryRow(context.Background(),
+		"SELECT id, uuid, name_fa, name_en FROM fields WHERE uuid = $1", uuid).
+		Scan(&f.ID, &f.UUID, &f.NameFA, &f.NameEN)
+	if err != nil {
+		return nil, err
+	}
+	return &f, nil
+}
+
 func (r *Repository) GetCoursesByField(fieldID int) ([]models.Course, error) {
 	rows, err := r.db.Query(context.Background(),
-		"SELECT id, field_id, name_fa, name_en FROM courses WHERE field_id = $1 ORDER BY name_fa",
+		"SELECT id, uuid, field_id, name_fa, name_en FROM courses WHERE field_id = $1 ORDER BY name_fa",
 		fieldID)
 	if err != nil {
 		return nil, err
@@ -51,7 +62,7 @@ func (r *Repository) GetCoursesByField(fieldID int) ([]models.Course, error) {
 	var courses []models.Course
 	for rows.Next() {
 		var c models.Course
-		if err := rows.Scan(&c.ID, &c.FieldID, &c.NameFA, &c.NameEN); err != nil {
+		if err := rows.Scan(&c.ID, &c.UUID, &c.FieldID, &c.NameFA, &c.NameEN); err != nil {
 			return nil, err
 		}
 		courses = append(courses, c)
@@ -59,8 +70,19 @@ func (r *Repository) GetCoursesByField(fieldID int) ([]models.Course, error) {
 	return courses, nil
 }
 
+func (r *Repository) GetCourseByUUID(uuid string) (*models.Course, error) {
+	var c models.Course
+	err := r.db.QueryRow(context.Background(),
+		"SELECT id, uuid, field_id, name_fa, name_en FROM courses WHERE uuid = $1", uuid).
+		Scan(&c.ID, &c.UUID, &c.FieldID, &c.NameFA, &c.NameEN)
+	if err != nil {
+		return nil, err
+	}
+	return &c, nil
+}
+
 func (r *Repository) GetExams(year, fieldID int) ([]models.Exam, error) {
-	query := "SELECT id, year, field_id FROM exams WHERE 1=1"
+	query := "SELECT id, uuid, year, field_id FROM exams WHERE 1=1"
 	args := []interface{}{}
 	argNum := 1
 
@@ -84,7 +106,7 @@ func (r *Repository) GetExams(year, fieldID int) ([]models.Exam, error) {
 	var exams []models.Exam
 	for rows.Next() {
 		var e models.Exam
-		if err := rows.Scan(&e.ID, &e.Year, &e.FieldID); err != nil {
+		if err := rows.Scan(&e.ID, &e.UUID, &e.Year, &e.FieldID); err != nil {
 			return nil, err
 		}
 		exams = append(exams, e)
@@ -180,7 +202,7 @@ func (r *Repository) GetStats() (map[string]interface{}, error) {
 
 func (r *Repository) GetTopicsByCourse(courseID int) ([]models.Topic, error) {
 	rows, err := r.db.Query(context.Background(),
-		"SELECT id, course_id, name_fa FROM topics WHERE course_id = $1 ORDER BY id",
+		"SELECT id, uuid, course_id, name_fa FROM topics WHERE course_id = $1 ORDER BY id",
 		courseID)
 	if err != nil {
 		return nil, err
@@ -190,7 +212,7 @@ func (r *Repository) GetTopicsByCourse(courseID int) ([]models.Topic, error) {
 	var topics []models.Topic
 	for rows.Next() {
 		var t models.Topic
-		if err := rows.Scan(&t.ID, &t.CourseID, &t.NameFA); err != nil {
+		if err := rows.Scan(&t.ID, &t.UUID, &t.CourseID, &t.NameFA); err != nil {
 			return nil, err
 		}
 		topics = append(topics, t)
@@ -198,9 +220,20 @@ func (r *Repository) GetTopicsByCourse(courseID int) ([]models.Topic, error) {
 	return topics, nil
 }
 
+func (r *Repository) GetTopicByUUID(uuid string) (*models.Topic, error) {
+	var t models.Topic
+	err := r.db.QueryRow(context.Background(),
+		"SELECT id, uuid, course_id, name_fa FROM topics WHERE uuid = $1", uuid).
+		Scan(&t.ID, &t.UUID, &t.CourseID, &t.NameFA)
+	if err != nil {
+		return nil, err
+	}
+	return &t, nil
+}
+
 func (r *Repository) GetQuestionsByTopic(topicID int) ([]models.Question, error) {
 	rows, err := r.db.Query(context.Background(), `
-		SELECT q.id, q.exam_id, q.course_id, q.topic_id, q.content,
+		SELECT q.id, q.uuid, q.exam_id, q.course_id, q.topic_id, q.content,
 		       q.options, q.answer, COALESCE(q.explanation, ''), e.year
 		FROM questions q
 		JOIN exams e ON q.exam_id = e.id
@@ -216,7 +249,7 @@ func (r *Repository) GetQuestionsByTopic(topicID int) ([]models.Question, error)
 		var q models.Question
 		var optionsJSON string
 		var explanation string
-		if err := rows.Scan(&q.ID, &q.ExamID, &q.CourseID, &q.TopicID,
+		if err := rows.Scan(&q.ID, &q.UUID, &q.ExamID, &q.CourseID, &q.TopicID,
 			&q.Content, &optionsJSON, &q.Answer, &explanation, &q.Year); err != nil {
 			return nil, err
 		}

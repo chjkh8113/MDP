@@ -9,7 +9,7 @@ import { QuestionCard } from "@/components/browse/QuestionCard";
 
 export default function TopicQuestionsPage() {
   const params = useParams();
-  const topicId = Number(params.id);
+  const topicId = params.id as string;
   const [questions, setQuestions] = useState<Question[]>([]);
   const [topic, setTopic] = useState<Topic | null>(null);
   const [loading, setLoading] = useState(true);

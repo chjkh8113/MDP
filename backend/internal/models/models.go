@@ -4,39 +4,44 @@ import "time"
 
 // Field represents a field of study (رشته)
 type Field struct {
-	ID     int    `json:"id"`
+	ID     int    `json:"-"`
+	UUID   string `json:"id"`
 	NameFA string `json:"name_fa"`
 	NameEN string `json:"name_en"`
 }
 
 // Course represents a course within a field (درس)
 type Course struct {
-	ID      int    `json:"id"`
-	FieldID int    `json:"field_id"`
+	ID      int    `json:"-"`
+	UUID    string `json:"id"`
+	FieldID int    `json:"-"`
 	NameFA  string `json:"name_fa"`
 	NameEN  string `json:"name_en"`
 }
 
 // Topic represents a topic within a course (موضوع)
 type Topic struct {
-	ID       int    `json:"id"`
-	CourseID int    `json:"course_id"`
+	ID       int    `json:"-"`
+	UUID     string `json:"id"`
+	CourseID int    `json:"-"`
 	NameFA   string `json:"name_fa"`
 }
 
 // Exam represents a past exam
 type Exam struct {
-	ID      int `json:"id"`
-	Year    int `json:"year"`
-	FieldID int `json:"field_id"`
+	ID      int    `json:"-"`
+	UUID    string `json:"id"`
+	Year    int    `json:"year"`
+	FieldID int    `json:"-"`
 }
 
 // Question represents an exam question
 type Question struct {
-	ID        int      `json:"id"`
-	ExamID    int      `json:"exam_id"`
-	CourseID  int      `json:"course_id"`
-	TopicID   *int     `json:"topic_id,omitempty"`
+	ID        int      `json:"-"`
+	UUID      string   `json:"id"`
+	ExamID    int      `json:"-"`
+	CourseID  int      `json:"-"`
+	TopicID   *int     `json:"-"`
 	Content   string   `json:"content"`
 	Options   []string `json:"options"`
 	Answer    int      `json:"answer"`
@@ -46,7 +51,8 @@ type Question struct {
 
 // User represents a registered user
 type User struct {
-	ID        int       `json:"id"`
+	ID        int       `json:"-"`
+	UUID      string    `json:"id"`
 	Email     string    `json:"email"`
 	Name      string    `json:"name"`
 	Password  string    `json:"-"`
@@ -55,9 +61,10 @@ type User struct {
 
 // Attempt represents a user's answer to a question
 type Attempt struct {
-	ID         int       `json:"id"`
-	UserID     int       `json:"user_id"`
-	QuestionID int       `json:"question_id"`
+	ID         int       `json:"-"`
+	UUID       string    `json:"id"`
+	UserID     int       `json:"-"`
+	QuestionID int       `json:"-"`
 	Selected   int       `json:"selected"`
 	Correct    bool      `json:"correct"`
 	CreatedAt  time.Time `json:"created_at"`
