@@ -18,3 +18,8 @@ build/
 # Logs
 *.log
 CLAUDE.md
+
+# Large binary files - questions/images stored locally only
+resources/konkur-questions/**/*.png
+resources/konkur-images/**/*.png
+resources/konkur-pdfs/

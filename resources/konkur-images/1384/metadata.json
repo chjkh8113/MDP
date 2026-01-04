@@ -1,0 +1,1015 @@
+{
+  "source_file": "konkur-arshad-computer-1384.pdf",
+  "year": 1384,
+  "total_pages": 39,
+  "extracted_at": "2026-01-04T10:00:29.380013",
+  "exam_type": "کنکور ارشد کامپیوتر",
+  "exam_type_en": "Computer Engineering Masters Entrance Exam",
+  "pages": [
+    {
+      "page_number": 1,
+      "filename": "page-01.png",
+      "path": "1384\\page-01.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "cover",
+      "section_en": "Cover Page",
+      "courses": [],
+      "question_range": null,
+      "tags": [
+        "year-1384",
+        "page-1",
+        "cover",
+        "info",
+        "exam-structure"
+      ]
+    },
+    {
+      "page_number": 2,
+      "filename": "page-02.png",
+      "path": "1384\\page-02.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "زبان عمومی و تخصصی",
+      "section_en": "English",
+      "courses": [
+        "زبان انگلیسی"
+      ],
+      "question_range": [
+        1,
+        25
+      ],
+      "tags": [
+        "year-1384",
+        "page-2",
+        "english",
+        "questions",
+        "زبان-انگلیسی"
+      ]
+    },
+    {
+      "page_number": 3,
+      "filename": "page-03.png",
+      "path": "1384\\page-03.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "زبان عمومی و تخصصی",
+      "section_en": "English",
+      "courses": [
+        "زبان انگلیسی"
+      ],
+      "question_range": [
+        1,
+        25
+      ],
+      "tags": [
+        "year-1384",
+        "page-3",
+        "english",
+        "questions",
+        "زبان-انگلیسی"
+      ]
+    },
+    {
+      "page_number": 4,
+      "filename": "page-04.png",
+      "path": "1384\\page-04.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "زبان عمومی و تخصصی",
+      "section_en": "English",
+      "courses": [
+        "زبان انگلیسی"
+      ],
+      "question_range": [
+        1,
+        25
+      ],
+      "tags": [
+        "year-1384",
+        "page-4",
+        "english",
+        "questions",
+        "زبان-انگلیسی"
+      ]
+    },
+    {
+      "page_number": 5,
+      "filename": "page-05.png",
+      "path": "1384\\page-05.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "زبان عمومی و تخصصی",
+      "section_en": "English",
+      "courses": [
+        "زبان انگلیسی"
+      ],
+      "question_range": [
+        1,
+        25
+      ],
+      "tags": [
+        "year-1384",
+        "page-5",
+        "english",
+        "questions",
+        "زبان-انگلیسی"
+      ]
+    },
+    {
+      "page_number": 6,
+      "filename": "page-06.png",
+      "path": "1384\\page-06.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "ریاضیات",
+      "section_en": "Mathematics",
+      "courses": [
+        "ریاضی عمومی",
+        "آمار و احتمال",
+        "ریاضیات گسسته"
+      ],
+      "question_range": [
+        26,
+        45
+      ],
+      "tags": [
+        "year-1384",
+        "page-6",
+        "mathematics",
+        "questions",
+        "ریاضی-عمومی",
+        "آمار-و-احتمال",
+        "ریاضیات-گسسته"
+      ]
+    },
+    {
+      "page_number": 7,
+      "filename": "page-07.png",
+      "path": "1384\\page-07.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "ریاضیات",
+      "section_en": "Mathematics",
+      "courses": [
+        "ریاضی عمومی",
+        "آمار و احتمال",
+        "ریاضیات گسسته"
+      ],
+      "question_range": [
+        26,
+        45
+      ],
+      "tags": [
+        "year-1384",
+        "page-7",
+        "mathematics",
+        "questions",
+        "ریاضی-عمومی",
+        "آمار-و-احتمال",
+        "ریاضیات-گسسته"
+      ]
+    },
+    {
+      "page_number": 8,
+      "filename": "page-08.png",
+      "path": "1384\\page-08.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "ریاضیات",
+      "section_en": "Mathematics",
+      "courses": [
+        "ریاضی عمومی",
+        "آمار و احتمال",
+        "ریاضیات گسسته"
+      ],
+      "question_range": [
+        26,
+        45
+      ],
+      "tags": [
+        "year-1384",
+        "page-8",
+        "mathematics",
+        "questions",
+        "ریاضی-عمومی",
+        "آمار-و-احتمال",
+        "ریاضیات-گسسته"
+      ]
+    },
+    {
+      "page_number": 9,
+      "filename": "page-09.png",
+      "path": "1384\\page-09.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "ریاضیات",
+      "section_en": "Mathematics",
+      "courses": [
+        "ریاضی عمومی",
+        "آمار و احتمال",
+        "ریاضیات گسسته"
+      ],
+      "question_range": [
+        26,
+        45
+      ],
+      "tags": [
+        "year-1384",
+        "page-9",
+        "mathematics",
+        "questions",
+        "ریاضی-عمومی",
+        "آمار-و-احتمال",
+        "ریاضیات-گسسته"
+      ]
+    },
+    {
+      "page_number": 10,
+      "filename": "page-10.png",
+      "path": "1384\\page-10.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "ریاضیات",
+      "section_en": "Mathematics",
+      "courses": [
+        "ریاضی عمومی",
+        "آمار و احتمال",
+        "ریاضیات گسسته"
+      ],
+      "question_range": [
+        26,
+        45
+      ],
+      "tags": [
+        "year-1384",
+        "page-10",
+        "mathematics",
+        "questions",
+        "ریاضی-عمومی",
+        "آمار-و-احتمال",
+        "ریاضیات-گسسته"
+      ]
+    },
+    {
+      "page_number": 11,
+      "filename": "page-11.png",
+      "path": "1384\\page-11.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "ریاضیات",
+      "section_en": "Mathematics",
+      "courses": [
+        "ریاضی عمومی",
+        "آمار و احتمال",
+        "ریاضیات گسسته"
+      ],
+      "question_range": [
+        26,
+        45
+      ],
+      "tags": [
+        "year-1384",
+        "page-11",
+        "mathematics",
+        "questions",
+        "ریاضی-عمومی",
+        "آمار-و-احتمال",
+        "ریاضیات-گسسته"
+      ]
+    },
+    {
+      "page_number": 12,
+      "filename": "page-12.png",
+      "path": "1384\\page-12.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۱",
+      "section_en": "Theory & Signals",
+      "courses": [
+        "نظریه زبان‌ها و ماشین‌ها",
+        "سیگنال‌ها و سیستم‌ها"
+      ],
+      "question_range": [
+        46,
+        55
+      ],
+      "tags": [
+        "year-1384",
+        "page-12",
+        "theory-&-signals",
+        "questions",
+        "نظریه-زبان‌ها-و-ماشین‌ها",
+        "سیگنال‌ها-و-سیستم‌ها"
+      ]
+    },
+    {
+      "page_number": 13,
+      "filename": "page-13.png",
+      "path": "1384\\page-13.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۱",
+      "section_en": "Theory & Signals",
+      "courses": [
+        "نظریه زبان‌ها و ماشین‌ها",
+        "سیگنال‌ها و سیستم‌ها"
+      ],
+      "question_range": [
+        46,
+        55
+      ],
+      "tags": [
+        "year-1384",
+        "page-13",
+        "theory-&-signals",
+        "questions",
+        "نظریه-زبان‌ها-و-ماشین‌ها",
+        "سیگنال‌ها-و-سیستم‌ها"
+      ]
+    },
+    {
+      "page_number": 14,
+      "filename": "page-14.png",
+      "path": "1384\\page-14.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۱",
+      "section_en": "Theory & Signals",
+      "courses": [
+        "نظریه زبان‌ها و ماشین‌ها",
+        "سیگنال‌ها و سیستم‌ها"
+      ],
+      "question_range": [
+        46,
+        55
+      ],
+      "tags": [
+        "year-1384",
+        "page-14",
+        "theory-&-signals",
+        "questions",
+        "نظریه-زبان‌ها-و-ماشین‌ها",
+        "سیگنال‌ها-و-سیستم‌ها"
+      ]
+    },
+    {
+      "page_number": 15,
+      "filename": "page-15.png",
+      "path": "1384\\page-15.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۱",
+      "section_en": "Theory & Signals",
+      "courses": [
+        "نظریه زبان‌ها و ماشین‌ها",
+        "سیگنال‌ها و سیستم‌ها"
+      ],
+      "question_range": [
+        46,
+        55
+      ],
+      "tags": [
+        "year-1384",
+        "page-15",
+        "theory-&-signals",
+        "questions",
+        "نظریه-زبان‌ها-و-ماشین‌ها",
+        "سیگنال‌ها-و-سیستم‌ها"
+      ]
+    },
+    {
+      "page_number": 16,
+      "filename": "page-16.png",
+      "path": "1384\\page-16.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۲",
+      "section_en": "DS & Algorithms",
+      "courses": [
+        "ساختمان داده",
+        "طراحی الگوریتم",
+        "هوش مصنوعی"
+      ],
+      "question_range": [
+        56,
+        75
+      ],
+      "tags": [
+        "year-1384",
+        "page-16",
+        "ds-&-algorithms",
+        "questions",
+        "ساختمان-داده",
+        "طراحی-الگوریتم",
+        "هوش-مصنوعی"
+      ]
+    },
+    {
+      "page_number": 17,
+      "filename": "page-17.png",
+      "path": "1384\\page-17.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۲",
+      "section_en": "DS & Algorithms",
+      "courses": [
+        "ساختمان داده",
+        "طراحی الگوریتم",
+        "هوش مصنوعی"
+      ],
+      "question_range": [
+        56,
+        75
+      ],
+      "tags": [
+        "year-1384",
+        "page-17",
+        "ds-&-algorithms",
+        "questions",
+        "ساختمان-داده",
+        "طراحی-الگوریتم",
+        "هوش-مصنوعی"
+      ]
+    },
+    {
+      "page_number": 18,
+      "filename": "page-18.png",
+      "path": "1384\\page-18.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۲",
+      "section_en": "DS & Algorithms",
+      "courses": [
+        "ساختمان داده",
+        "طراحی الگوریتم",
+        "هوش مصنوعی"
+      ],
+      "question_range": [
+        56,
+        75
+      ],
+      "tags": [
+        "year-1384",
+        "page-18",
+        "ds-&-algorithms",
+        "questions",
+        "ساختمان-داده",
+        "طراحی-الگوریتم",
+        "هوش-مصنوعی"
+      ]
+    },
+    {
+      "page_number": 19,
+      "filename": "page-19.png",
+      "path": "1384\\page-19.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۲",
+      "section_en": "DS & Algorithms",
+      "courses": [
+        "ساختمان داده",
+        "طراحی الگوریتم",
+        "هوش مصنوعی"
+      ],
+      "question_range": [
+        56,
+        75
+      ],
+      "tags": [
+        "year-1384",
+        "page-19",
+        "ds-&-algorithms",
+        "questions",
+        "ساختمان-داده",
+        "طراحی-الگوریتم",
+        "هوش-مصنوعی"
+      ]
+    },
+    {
+      "page_number": 20,
+      "filename": "page-20.png",
+      "path": "1384\\page-20.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۲",
+      "section_en": "DS & Algorithms",
+      "courses": [
+        "ساختمان داده",
+        "طراحی الگوریتم",
+        "هوش مصنوعی"
+      ],
+      "question_range": [
+        56,
+        75
+      ],
+      "tags": [
+        "year-1384",
+        "page-20",
+        "ds-&-algorithms",
+        "questions",
+        "ساختمان-داده",
+        "طراحی-الگوریتم",
+        "هوش-مصنوعی"
+      ]
+    },
+    {
+      "page_number": 21,
+      "filename": "page-21.png",
+      "path": "1384\\page-21.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۲",
+      "section_en": "DS & Algorithms",
+      "courses": [
+        "ساختمان داده",
+        "طراحی الگوریتم",
+        "هوش مصنوعی"
+      ],
+      "question_range": [
+        56,
+        75
+      ],
+      "tags": [
+        "year-1384",
+        "page-21",
+        "ds-&-algorithms",
+        "questions",
+        "ساختمان-داده",
+        "طراحی-الگوریتم",
+        "هوش-مصنوعی"
+      ]
+    },
+    {
+      "page_number": 22,
+      "filename": "page-22.png",
+      "path": "1384\\page-22.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۳",
+      "section_en": "Hardware",
+      "courses": [
+        "مدار منطقی",
+        "معماری کامپیوتر",
+        "الکترونیک دیجیتال"
+      ],
+      "question_range": [
+        76,
+        95
+      ],
+      "tags": [
+        "year-1384",
+        "page-22",
+        "hardware",
+        "questions",
+        "مدار-منطقی",
+        "معماری-کامپیوتر",
+        "الکترونیک-دیجیتال"
+      ]
+    },
+    {
+      "page_number": 23,
+      "filename": "page-23.png",
+      "path": "1384\\page-23.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۳",
+      "section_en": "Hardware",
+      "courses": [
+        "مدار منطقی",
+        "معماری کامپیوتر",
+        "الکترونیک دیجیتال"
+      ],
+      "question_range": [
+        76,
+        95
+      ],
+      "tags": [
+        "year-1384",
+        "page-23",
+        "hardware",
+        "questions",
+        "مدار-منطقی",
+        "معماری-کامپیوتر",
+        "الکترونیک-دیجیتال"
+      ]
+    },
+    {
+      "page_number": 24,
+      "filename": "page-24.png",
+      "path": "1384\\page-24.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۳",
+      "section_en": "Hardware",
+      "courses": [
+        "مدار منطقی",
+        "معماری کامپیوتر",
+        "الکترونیک دیجیتال"
+      ],
+      "question_range": [
+        76,
+        95
+      ],
+      "tags": [
+        "year-1384",
+        "page-24",
+        "hardware",
+        "questions",
+        "مدار-منطقی",
+        "معماری-کامپیوتر",
+        "الکترونیک-دیجیتال"
+      ]
+    },
+    {
+      "page_number": 25,
+      "filename": "page-25.png",
+      "path": "1384\\page-25.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۳",
+      "section_en": "Hardware",
+      "courses": [
+        "مدار منطقی",
+        "معماری کامپیوتر",
+        "الکترونیک دیجیتال"
+      ],
+      "question_range": [
+        76,
+        95
+      ],
+      "tags": [
+        "year-1384",
+        "page-25",
+        "hardware",
+        "questions",
+        "مدار-منطقی",
+        "معماری-کامپیوتر",
+        "الکترونیک-دیجیتال"
+      ]
+    },
+    {
+      "page_number": 26,
+      "filename": "page-26.png",
+      "path": "1384\\page-26.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۳",
+      "section_en": "Hardware",
+      "courses": [
+        "مدار منطقی",
+        "معماری کامپیوتر",
+        "الکترونیک دیجیتال"
+      ],
+      "question_range": [
+        76,
+        95
+      ],
+      "tags": [
+        "year-1384",
+        "page-26",
+        "hardware",
+        "questions",
+        "مدار-منطقی",
+        "معماری-کامپیوتر",
+        "الکترونیک-دیجیتال"
+      ]
+    },
+    {
+      "page_number": 27,
+      "filename": "page-27.png",
+      "path": "1384\\page-27.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۳",
+      "section_en": "Hardware",
+      "courses": [
+        "مدار منطقی",
+        "معماری کامپیوتر",
+        "الکترونیک دیجیتال"
+      ],
+      "question_range": [
+        76,
+        95
+      ],
+      "tags": [
+        "year-1384",
+        "page-27",
+        "hardware",
+        "questions",
+        "مدار-منطقی",
+        "معماری-کامپیوتر",
+        "الکترونیک-دیجیتال"
+      ]
+    },
+    {
+      "page_number": 28,
+      "filename": "page-28.png",
+      "path": "1384\\page-28.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۴",
+      "section_en": "Systems",
+      "courses": [
+        "سیستم عامل",
+        "شبکه‌های کامپیوتری",
+        "پایگاه داده"
+      ],
+      "question_range": [
+        96,
+        115
+      ],
+      "tags": [
+        "year-1384",
+        "page-28",
+        "systems",
+        "questions",
+        "سیستم-عامل",
+        "شبکه‌های-کامپیوتری",
+        "پایگاه-داده"
+      ]
+    },
+    {
+      "page_number": 29,
+      "filename": "page-29.png",
+      "path": "1384\\page-29.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۴",
+      "section_en": "Systems",
+      "courses": [
+        "سیستم عامل",
+        "شبکه‌های کامپیوتری",
+        "پایگاه داده"
+      ],
+      "question_range": [
+        96,
+        115
+      ],
+      "tags": [
+        "year-1384",
+        "page-29",
+        "systems",
+        "questions",
+        "سیستم-عامل",
+        "شبکه‌های-کامپیوتری",
+        "پایگاه-داده"
+      ]
+    },
+    {
+      "page_number": 30,
+      "filename": "page-30.png",
+      "path": "1384\\page-30.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۴",
+      "section_en": "Systems",
+      "courses": [
+        "سیستم عامل",
+        "شبکه‌های کامپیوتری",
+        "پایگاه داده"
+      ],
+      "question_range": [
+        96,
+        115
+      ],
+      "tags": [
+        "year-1384",
+        "page-30",
+        "systems",
+        "questions",
+        "سیستم-عامل",
+        "شبکه‌های-کامپیوتری",
+        "پایگاه-داده"
+      ]
+    },
+    {
+      "page_number": 31,
+      "filename": "page-31.png",
+      "path": "1384\\page-31.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۴",
+      "section_en": "Systems",
+      "courses": [
+        "سیستم عامل",
+        "شبکه‌های کامپیوتری",
+        "پایگاه داده"
+      ],
+      "question_range": [
+        96,
+        115
+      ],
+      "tags": [
+        "year-1384",
+        "page-31",
+        "systems",
+        "questions",
+        "سیستم-عامل",
+        "شبکه‌های-کامپیوتری",
+        "پایگاه-داده"
+      ]
+    },
+    {
+      "page_number": 32,
+      "filename": "page-32.png",
+      "path": "1384\\page-32.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۴",
+      "section_en": "Systems",
+      "courses": [
+        "سیستم عامل",
+        "شبکه‌های کامپیوتری",
+        "پایگاه داده"
+      ],
+      "question_range": [
+        96,
+        115
+      ],
+      "tags": [
+        "year-1384",
+        "page-32",
+        "systems",
+        "questions",
+        "سیستم-عامل",
+        "شبکه‌های-کامپیوتری",
+        "پایگاه-داده"
+      ]
+    },
+    {
+      "page_number": 33,
+      "filename": "page-33.png",
+      "path": "1384\\page-33.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "دروس تخصصی ۴",
+      "section_en": "Systems",
+      "courses": [
+        "سیستم عامل",
+        "شبکه‌های کامپیوتری",
+        "پایگاه داده"
+      ],
+      "question_range": [
+        96,
+        115
+      ],
+      "tags": [
+        "year-1384",
+        "page-33",
+        "systems",
+        "questions",
+        "سیستم-عامل",
+        "شبکه‌های-کامپیوتری",
+        "پایگاه-داده"
+      ]
+    },
+    {
+      "page_number": 34,
+      "filename": "page-34.png",
+      "path": "1384\\page-34.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "answer_key",
+      "section_en": "Answer Key",
+      "courses": [],
+      "question_range": null,
+      "tags": [
+        "year-1384",
+        "page-34",
+        "answers",
+        "answer-key",
+        "solutions"
+      ]
+    },
+    {
+      "page_number": 35,
+      "filename": "page-35.png",
+      "path": "1384\\page-35.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "answer_key",
+      "section_en": "Answer Key",
+      "courses": [],
+      "question_range": null,
+      "tags": [
+        "year-1384",
+        "page-35",
+        "answers",
+        "answer-key",
+        "solutions"
+      ]
+    },
+    {
+      "page_number": 36,
+      "filename": "page-36.png",
+      "path": "1384\\page-36.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "answer_key",
+      "section_en": "Answer Key",
+      "courses": [],
+      "question_range": null,
+      "tags": [
+        "year-1384",
+        "page-36",
+        "answers",
+        "answer-key",
+        "solutions"
+      ]
+    },
+    {
+      "page_number": 37,
+      "filename": "page-37.png",
+      "path": "1384\\page-37.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "answer_key",
+      "section_en": "Answer Key",
+      "courses": [],
+      "question_range": null,
+      "tags": [
+        "year-1384",
+        "page-37",
+        "answers",
+        "answer-key",
+        "solutions"
+      ]
+    },
+    {
+      "page_number": 38,
+      "filename": "page-38.png",
+      "path": "1384\\page-38.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "answer_key",
+      "section_en": "Answer Key",
+      "courses": [],
+      "question_range": null,
+      "tags": [
+        "year-1384",
+        "page-38",
+        "answers",
+        "answer-key",
+        "solutions"
+      ]
+    },
+    {
+      "page_number": 39,
+      "filename": "page-39.png",
+      "path": "1384\\page-39.png",
+      "width": 1224,
+      "height": 1584,
+      "year": 1384,
+      "section": "answer_key",
+      "section_en": "Answer Key",
+      "courses": [],
+      "question_range": null,
+      "tags": [
+        "year-1384",
+        "page-39",
+        "answers",
+        "answer-key",
+        "solutions"
+      ]
+    }
+  ]
+}

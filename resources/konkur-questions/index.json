@@ -1,0 +1,153 @@
+{
+  "total_years": 24,
+  "total_questions": 2302,
+  "extracted_at": "2026-01-04T10:50:50.326914",
+  "years": [
+    1381,
+    1382,
+    1383,
+    1384,
+    1385,
+    1386,
+    1387,
+    1388,
+    1389,
+    1390,
+    1391,
+    1392,
+    1393,
+    1394,
+    1395,
+    1396,
+    1397,
+    1398,
+    1399,
+    1400,
+    1401,
+    1402,
+    1403,
+    1404
+  ],
+  "by_year": {
+    "1381": {
+      "year": 1381,
+      "total_questions": 95,
+      "extracted_at": "2026-01-04T10:49:34.099924"
+    },
+    "1382": {
+      "year": 1382,
+      "total_questions": 118,
+      "extracted_at": "2026-01-04T10:49:38.284872"
+    },
+    "1383": {
+      "year": 1383,
+      "total_questions": 112,
+      "extracted_at": "2026-01-04T10:49:42.073702"
+    },
+    "1384": {
+      "year": 1384,
+      "total_questions": 104,
+      "extracted_at": "2026-01-04T10:49:45.648522"
+    },
+    "1385": {
+      "year": 1385,
+      "total_questions": 124,
+      "extracted_at": "2026-01-04T10:49:50.375726"
+    },
+    "1386": {
+      "year": 1386,
+      "total_questions": 146,
+      "extracted_at": "2026-01-04T10:49:55.325298"
+    },
+    "1387": {
+      "year": 1387,
+      "total_questions": 92,
+      "extracted_at": "2026-01-04T10:49:58.676873"
+    },
+    "1388": {
+      "year": 1388,
+      "total_questions": 89,
+      "extracted_at": "2026-01-04T10:50:01.948231"
+    },
+    "1389": {
+      "year": 1389,
+      "total_questions": 92,
+      "extracted_at": "2026-01-04T10:50:05.013872"
+    },
+    "1390": {
+      "year": 1390,
+      "total_questions": 98,
+      "extracted_at": "2026-01-04T10:50:07.983691"
+    },
+    "1391": {
+      "year": 1391,
+      "total_questions": 87,
+      "extracted_at": "2026-01-04T10:50:10.817635"
+    },
+    "1392": {
+      "year": 1392,
+      "total_questions": 87,
+      "extracted_at": "2026-01-04T10:50:13.553819"
+    },
+    "1393": {
+      "year": 1393,
+      "total_questions": 92,
+      "extracted_at": "2026-01-04T10:50:16.720615"
+    },
+    "1394": {
+      "year": 1394,
+      "total_questions": 92,
+      "extracted_at": "2026-01-04T10:50:20.030878"
+    },
+    "1395": {
+      "year": 1395,
+      "total_questions": 92,
+      "extracted_at": "2026-01-04T10:50:23.150930"
+    },
+    "1396": {
+      "year": 1396,
+      "total_questions": 104,
+      "extracted_at": "2026-01-04T10:50:26.278172"
+    },
+    "1397": {
+      "year": 1397,
+      "total_questions": 89,
+      "extracted_at": "2026-01-04T10:50:29.841177"
+    },
+    "1398": {
+      "year": 1398,
+      "total_questions": 104,
+      "extracted_at": "2026-01-04T10:50:33.677143"
+    },
+    "1399": {
+      "year": 1399,
+      "total_questions": 101,
+      "extracted_at": "2026-01-04T10:50:37.486092"
+    },
+    "1400": {
+      "year": 1400,
+      "total_questions": 78,
+      "extracted_at": "2026-01-04T10:50:40.476582"
+    },
+    "1401": {
+      "year": 1401,
+      "total_questions": 78,
+      "extracted_at": "2026-01-04T10:50:43.239933"
+    },
+    "1402": {
+      "year": 1402,
+      "total_questions": 81,
+      "extracted_at": "2026-01-04T10:50:45.694702"
+    },
+    "1403": {
+      "year": 1403,
+      "total_questions": 78,
+      "extracted_at": "2026-01-04T10:50:48.062074"
+    },
+    "1404": {
+      "year": 1404,
+      "total_questions": 69,
+      "extracted_at": "2026-01-04T10:50:50.319886"
+    }
+  }
+}
