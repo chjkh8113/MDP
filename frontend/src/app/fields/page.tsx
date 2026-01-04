@@ -27,7 +27,7 @@ export default function FieldsPage() {
   return (
     <div className="min-h-screen bg-gray-50" dir="rtl">
       <Header />
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-8 pt-24">
         <h1 className="text-2xl font-bold text-gray-800 mb-6">
           رشته‌های تحصیلی
         </h1>

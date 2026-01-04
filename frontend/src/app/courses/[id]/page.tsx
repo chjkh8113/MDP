@@ -51,7 +51,7 @@ export default function CourseTopicsPage() {
   return (
     <div className="min-h-screen bg-gray-50" dir="rtl">
       <Header />
-      <main className="container mx-auto px-4 py-8">
+      <main className="container mx-auto px-4 py-8 pt-24">
         <Breadcrumb
           items={[
             { label: "رشته‌ها", href: "/fields" },
