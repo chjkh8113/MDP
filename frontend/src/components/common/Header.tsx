@@ -10,11 +10,8 @@ export function Header() {
           MDP
         </Link>
         <nav className="flex gap-8 text-sm font-medium">
-          <Link href="/exams" className="opacity-70 hover:opacity-100 transition">
-            آزمون‌ها
-          </Link>
           <Link href="/fields" className="opacity-70 hover:opacity-100 transition">
-            رشته‌ها
+            مشاهده سوالات
           </Link>
         </nav>
       </div>

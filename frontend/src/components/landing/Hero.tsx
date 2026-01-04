@@ -25,7 +25,7 @@ export function Hero({ onStartQuiz, loading }: HeroProps) {
             {loading ? "در حال آماده‌سازی..." : "شروع آزمون"}
           </Button>
           <Button size="lg" variant="outline" asChild>
-            <Link href="/exams">مشاهده سوالات</Link>
+            <Link href="/fields">مشاهده سوالات</Link>
           </Button>
         </div>
       </div>
