@@ -1,0 +1,87 @@
+{
+  "year": 1404,
+  "image_size": {"width": 1191, "height": 1701},
+  "header_trim": 35,
+  "footer_trim": 50,
+  "pages": {
+    "page-13": {
+      "questions": [
+        {
+          "number": 55,
+          "y_start": 35,
+          "y_end": 175,
+          "section": "Theory & Signals",
+          "topic": "Fourier transform",
+          "note": "End of signals section"
+        },
+        {
+          "number": 56,
+          "y_start": 210,
+          "y_end": 395,
+          "section": "DS & Algorithms",
+          "topic": "Recurrence relation T(x)"
+        },
+        {
+          "number": 57,
+          "y_start": 395,
+          "y_end": 540,
+          "section": "DS & Algorithms",
+          "topic": "Bitonic sequence sorting"
+        },
+        {
+          "number": 58,
+          "y_start": 540,
+          "y_end": 640,
+          "section": "DS & Algorithms",
+          "topic": "Backtracking complexity"
+        },
+        {
+          "number": 59,
+          "y_start": 640,
+          "y_end": 900,
+          "section": "DS & Algorithms",
+          "topic": "Branch and Bound, Maximum Profit"
+        }
+      ]
+    },
+    "page-14": {
+      "questions": [
+        {
+          "number": 60,
+          "y_start": 35,
+          "y_end": 130,
+          "section": "DS & Algorithms",
+          "topic": "Insertion Sort binary search"
+        },
+        {
+          "number": 61,
+          "y_start": 130,
+          "y_end": 310,
+          "section": "DS & Algorithms",
+          "topic": "Subsequence selection, DP vs Greedy"
+        },
+        {
+          "number": 62,
+          "y_start": 310,
+          "y_end": 475,
+          "section": "DS & Algorithms",
+          "topic": "Maximum Coverage greedy"
+        },
+        {
+          "number": 63,
+          "y_start": 475,
+          "y_end": 700,
+          "section": "DS & Algorithms",
+          "topic": "Algorithm complexity statements"
+        },
+        {
+          "number": 64,
+          "y_start": 700,
+          "y_end": 870,
+          "section": "DS & Algorithms",
+          "topic": "Second largest element comparisons"
+        }
+      ]
+    }
+  }
+}

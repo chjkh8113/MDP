@@ -1,1866 +1,1436 @@
 {
   "year": 1404,
-  "total_questions": 69,
-  "extracted_at": "2026-01-04T10:50:50.319886",
+  "total_questions": 94,
   "questions": [
     {
-      "id": "1404-q-001",
+      "number": 1,
       "filename": "q-001.png",
-      "year": 1404,
-      "question_number": 1,
-      "page_source": "page-02.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 343
-      },
-      "tags": [
-        "year-1404",
-        "question-1",
-        "english",
-        "زبان-انگلیسی"
-      ]
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Vocabulary - evolution selected",
+      "topic_fa": "واژگان - انتخاب تکاملی",
+      "question_type": "vocabulary",
+      "source_page": "page-02"
     },
     {
-      "id": "1404-q-002",
+      "number": 2,
       "filename": "q-002.png",
-      "year": 1404,
-      "question_number": 2,
-      "page_source": "page-02.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 489,
-        "width": 1191,
-        "height": 249
-      },
-      "tags": [
-        "year-1404",
-        "question-2",
-        "english",
-        "زبان-انگلیسی"
-      ]
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Vocabulary - greenhouse effect",
+      "topic_fa": "واژگان - اثر گلخانه‌ای",
+      "question_type": "vocabulary",
+      "source_page": "page-02"
     },
     {
-      "id": "1404-q-003",
+      "number": 3,
       "filename": "q-003.png",
-      "year": 1404,
-      "question_number": 3,
-      "page_source": "page-02.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 718,
-        "width": 1191,
-        "height": 324
-      },
-      "tags": [
-        "year-1404",
-        "question-3",
-        "english",
-        "زبان-انگلیسی"
-      ]
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Vocabulary - charitable motives",
+      "topic_fa": "واژگان - انگیزه‌های خیرخواهانه",
+      "question_type": "vocabulary",
+      "source_page": "page-02"
     },
     {
-      "id": "1404-q-004",
+      "number": 4,
       "filename": "q-004.png",
-      "year": 1404,
-      "question_number": 4,
-      "page_source": "page-02.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1022,
-        "width": 1191,
-        "height": 308
-      },
-      "tags": [
-        "year-1404",
-        "question-4",
-        "english",
-        "زبان-انگلیسی"
-      ]
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Vocabulary - Nigerian intervention",
+      "topic_fa": "واژگان - مداخله نیجریه",
+      "question_type": "vocabulary",
+      "source_page": "page-02"
     },
     {
-      "id": "1404-q-005",
+      "number": 5,
       "filename": "q-005.png",
-      "year": 1404,
-      "question_number": 5,
-      "page_source": "page-02.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1349,
-        "width": 1191,
-        "height": 217
-      },
-      "tags": [
-        "year-1404",
-        "question-5",
-        "english",
-        "زبان-انگلیسی"
-      ]
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Vocabulary - idyllic environment",
+      "topic_fa": "واژگان - محیط آرمانی",
+      "question_type": "vocabulary",
+      "source_page": "page-02"
     },
     {
-      "id": "1404-q-006",
+      "number": 6,
       "filename": "q-006.png",
-      "year": 1404,
-      "question_number": 6,
-      "page_source": "page-03.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 324
-      },
-      "tags": [
-        "year-1404",
-        "question-6",
-        "english",
-        "زبان-انگلیسی"
-      ]
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Vocabulary - Die Hards movie",
+      "topic_fa": "واژگان - فیلم دای هارد",
+      "question_type": "vocabulary",
+      "source_page": "page-02"
     },
     {
-      "id": "1404-q-007",
+      "number": 7,
       "filename": "q-007.png",
-      "year": 1404,
-      "question_number": 7,
-      "page_source": "page-03.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 414,
-        "width": 1191,
-        "height": 357
-      },
-      "tags": [
-        "year-1404",
-        "question-7",
-        "english",
-        "زبان-انگلیسی"
-      ]
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Vocabulary - China-Soviet relations",
+      "topic_fa": "واژگان - روابط چین-شوروی",
+      "question_type": "vocabulary",
+      "source_page": "page-02"
     },
     {
-      "id": "1404-q-008",
+      "number": 8,
       "filename": "q-008.png",
-      "year": 1404,
-      "question_number": 8,
-      "page_source": "page-03.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 784,
-        "width": 1191,
-        "height": 258
-      },
-      "tags": [
-        "year-1404",
-        "question-8",
-        "english",
-        "زبان-انگلیسی"
-      ]
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Cloze test - Olympic Games",
+      "topic_fa": "آزمون کلوز - بازی‌های المپیک",
+      "question_type": "cloze",
+      "related_passage": "passage-cloze",
+      "source_page": "page-03"
     },
     {
-      "id": "1404-q-009",
+      "number": 9,
       "filename": "q-009.png",
-      "year": 1404,
-      "question_number": 9,
-      "page_source": "page-03.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1022,
-        "width": 1191,
-        "height": 310
-      },
-      "tags": [
-        "year-1404",
-        "question-9",
-        "english",
-        "زبان-انگلیسی"
-      ]
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Cloze test - Olympic Games",
+      "topic_fa": "آزمون کلوز - بازی‌های المپیک",
+      "question_type": "cloze",
+      "related_passage": "passage-cloze",
+      "source_page": "page-03"
     },
     {
-      "id": "1404-q-010",
+      "number": 10,
       "filename": "q-010.png",
-      "year": 1404,
-      "question_number": 10,
-      "page_source": "page-03.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1353,
-        "width": 1191,
-        "height": 298
-      },
-      "tags": [
-        "year-1404",
-        "question-10",
-        "english",
-        "زبان-انگلیسی"
-      ]
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Cloze test - Olympic Games",
+      "topic_fa": "آزمون کلوز - بازی‌های المپیک",
+      "question_type": "cloze",
+      "related_passage": "passage-cloze",
+      "source_page": "page-03"
     },
     {
-      "id": "1404-q-011",
+      "number": 11,
       "filename": "q-011.png",
-      "year": 1404,
-      "question_number": 11,
-      "page_source": "page-04.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 324
-      },
-      "tags": [
-        "year-1404",
-        "question-11",
-        "english",
-        "زبان-انگلیسی"
-      ]
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Reading - utilize meaning",
+      "topic_fa": "درک مطلب - معنی utilize",
+      "question_type": "vocabulary",
+      "related_passage": "passage-01",
+      "source_page": "page-03"
     },
     {
-      "id": "1404-q-012",
+      "number": 12,
       "filename": "q-012.png",
-      "year": 1404,
-      "question_number": 12,
-      "page_source": "page-04.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 414,
-        "width": 1191,
-        "height": 327
-      },
-      "tags": [
-        "year-1404",
-        "question-12",
-        "english",
-        "زبان-انگلیسی"
-      ]
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Reading - them reference",
+      "topic_fa": "درک مطلب - ارجاع them",
+      "question_type": "reference",
+      "related_passage": "passage-01",
+      "source_page": "page-03"
     },
     {
-      "id": "1404-q-013",
+      "number": 13,
       "filename": "q-013.png",
-      "year": 1404,
-      "question_number": 13,
-      "page_source": "page-04.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 756,
-        "width": 1191,
-        "height": 286
-      },
-      "tags": [
-        "year-1404",
-        "question-13",
-        "english",
-        "زبان-انگلیسی"
-      ]
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Reading - paragraph 1 computer technology",
+      "topic_fa": "درک مطلب - پاراگراف ۱",
+      "question_type": "reading_comprehension",
+      "related_passage": "passage-01",
+      "source_page": "page-04"
     },
     {
-      "id": "1404-q-014",
+      "number": 14,
       "filename": "q-014.png",
-      "year": 1404,
-      "question_number": 14,
-      "page_source": "page-04.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1022,
-        "width": 1191,
-        "height": 325
-      },
-      "tags": [
-        "year-1404",
-        "question-14",
-        "english",
-        "زبان-انگلیسی"
-      ]
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Reading - words mentioned EXCEPT",
+      "topic_fa": "درک مطلب - کلمات به جز",
+      "question_type": "reading_comprehension",
+      "related_passage": "passage-01",
+      "source_page": "page-04"
     },
     {
-      "id": "1404-q-015",
+      "number": 15,
       "filename": "q-015.png",
-      "year": 1404,
-      "question_number": 15,
-      "page_source": "page-04.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Reading comprehension - computer ethics",
+      "topic_fa": "درک مطلب - اخلاق کامپیوتر",
+      "subtopics": [
+        "computer ethics",
+        "hackers",
+        "privacy",
+        "technology"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1368,
-        "width": 1191,
-        "height": 186
-      },
-      "tags": [
-        "year-1404",
-        "question-15",
-        "english",
-        "زبان-انگلیسی"
-      ]
+      "keywords": [
+        "ethics",
+        "hackers",
+        "privacy",
+        "technology",
+        "true statement"
+      ],
+      "question_type": "reading_comprehension",
+      "passage_topic": "computer_ethics",
+      "source_page": "page-04",
+      "related_passage": "passage-01"
     },
     {
-      "id": "1404-q-016",
+      "number": 16,
       "filename": "q-016.png",
-      "year": 1404,
-      "question_number": 16,
-      "page_source": "page-05.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Vocabulary - word meaning",
+      "topic_fa": "واژگان - معنی کلمه",
+      "subtopics": [
+        "vocabulary",
+        "synonym",
+        "context clues"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 502
-      },
-      "tags": [
-        "year-1404",
-        "question-16",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
+      "keywords": [
+        "required",
+        "meaning",
+        "vocabulary",
+        "synonym"
+      ],
+      "question_type": "vocabulary",
+      "target_word": "required",
+      "source_page": "page-04",
+      "related_passage": "passage-02"
     },
     {
-      "id": "1404-q-017",
+      "number": 17,
       "filename": "q-017.png",
-      "year": 1404,
-      "question_number": 17,
-      "page_source": "page-05.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Reading comprehension - abacus definition",
+      "topic_fa": "درک مطلب - تعریف چرتکه",
+      "subtopics": [
+        "abacus",
+        "ancient computers",
+        "definition"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 633,
-        "width": 1191,
-        "height": 511
-      },
-      "tags": [
-        "year-1404",
-        "question-17",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
+      "keywords": [
+        "abacus",
+        "invention",
+        "device",
+        "ancient"
+      ],
+      "question_type": "reading_comprehension",
+      "passage_topic": "early_computers",
+      "source_page": "page-04",
+      "related_passage": "passage-02"
     },
     {
-      "id": "1404-q-018",
+      "number": 18,
       "filename": "q-018.png",
-      "year": 1404,
-      "question_number": 18,
-      "page_source": "page-05.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Reading comprehension - paragraph 1 main idea",
+      "topic_fa": "درک مطلب - ایده اصلی پاراگراف ۱",
+      "subtopics": [
+        "main idea",
+        "Chinese",
+        "mathematical laws",
+        "computers"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1124,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-18",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
+      "keywords": [
+        "paragraph 1",
+        "Chinese",
+        "mathematical",
+        "computers"
+      ],
+      "question_type": "reading_comprehension",
+      "passage_topic": "computer_history",
+      "source_page": "page-05",
+      "related_passage": "passage-02"
     },
     {
-      "id": "1404-q-019",
+      "number": 19,
       "filename": "q-019.png",
-      "year": 1404,
-      "question_number": 19,
-      "page_source": "page-06.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Reading comprehension - Scheutz Difference Engine",
+      "topic_fa": "درک مطلب - ماشین تفاضل شویتس",
+      "subtopics": [
+        "Scheutz",
+        "Difference Engine",
+        "Babbage",
+        "1853"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 1319
-      },
-      "tags": [
-        "year-1404",
-        "question-19",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
+      "keywords": [
+        "Scheutz",
+        "Difference Engine",
+        "Babbage",
+        "computer history"
+      ],
+      "question_type": "reading_comprehension",
+      "passage_topic": "computer_history",
+      "source_page": "page-05",
+      "related_passage": "passage-02"
     },
     {
-      "id": "1404-q-020",
+      "number": 20,
       "filename": "q-020.png",
-      "year": 1404,
-      "question_number": 20,
-      "page_source": "page-06.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Reading comprehension - passage information scope",
+      "topic_fa": "درک مطلب - محدوده اطلاعات متن",
+      "subtopics": [
+        "passage scope",
+        "Mars",
+        "first computer country",
+        "older tools"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1409,
-        "width": 1191,
-        "height": 182
-      },
-      "tags": [
-        "year-1404",
-        "question-20",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
+      "keywords": [
+        "passage information",
+        "sufficient",
+        "Mars",
+        "first computer"
+      ],
+      "question_type": "reading_comprehension",
+      "has_sub_questions": true,
+      "source_page": "page-05",
+      "related_passage": "passage-02"
     },
     {
-      "id": "1404-q-021",
+      "number": 21,
       "filename": "q-021.png",
-      "year": 1404,
-      "question_number": 21,
-      "page_source": "page-06.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Reading comprehension - writing techniques",
+      "topic_fa": "درک مطلب - تکنیک‌های نگارش",
+      "subtopics": [
+        "writing techniques",
+        "definition",
+        "statistics",
+        "rhetorical"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1571,
-        "width": 1191,
-        "height": 80
-      },
-      "tags": [
-        "year-1404",
-        "question-21",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
+      "keywords": [
+        "techniques",
+        "definition",
+        "statistics",
+        "cause effect",
+        "rhetorical"
+      ],
+      "question_type": "reading_comprehension",
+      "passage_topic": "quantum_computing",
+      "source_page": "page-06",
+      "related_passage": "passage-03"
     },
     {
-      "id": "1404-q-022",
+      "number": 22,
       "filename": "q-022.png",
-      "year": 1404,
-      "question_number": 22,
-      "page_source": "page-07.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Reading comprehension - Landauer statements",
+      "topic_fa": "درک مطلب - گزاره‌های لانداور",
+      "subtopics": [
+        "Landauer",
+        "quantum computation",
+        "challenges"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 524
-      },
-      "tags": [
-        "year-1404",
-        "question-22",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
+      "keywords": [
+        "Landauer",
+        "quantum",
+        "computation",
+        "challenges",
+        "solutions"
+      ],
+      "question_type": "reading_comprehension",
+      "passage_topic": "quantum_computing",
+      "source_page": "page-06",
+      "related_passage": "passage-03"
     },
     {
-      "id": "1404-q-023",
+      "number": 23,
       "filename": "q-023.png",
-      "year": 1404,
-      "question_number": 23,
-      "page_source": "page-07.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Reading comprehension - paragraph 3 main discussion",
+      "topic_fa": "درک مطلب - موضوع اصلی پاراگراف ۳",
+      "subtopics": [
+        "main idea",
+        "quantum computers",
+        "qubit efficiency"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 671,
-        "width": 1191,
-        "height": 478
-      },
-      "tags": [
-        "year-1404",
-        "question-23",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
+      "keywords": [
+        "paragraph 3",
+        "quantum computers",
+        "qubit",
+        "efficiency"
+      ],
+      "question_type": "reading_comprehension",
+      "passage_topic": "quantum_computing",
+      "source_page": "page-06",
+      "related_passage": "passage-03"
     },
     {
-      "id": "1404-q-024",
+      "number": 24,
       "filename": "q-024.png",
-      "year": 1404,
-      "question_number": 24,
-      "page_source": "page-07.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Reading comprehension - qubits and quantum computers",
+      "topic_fa": "درک مطلب - کیوبیت و کامپیوترهای کوانتومی",
+      "subtopics": [
+        "qubits",
+        "Shor",
+        "quantum computers",
+        "Landauer"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1169,
-        "width": 1191,
-        "height": 482
-      },
-      "tags": [
-        "year-1404",
-        "question-24",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
+      "keywords": [
+        "qubits",
+        "quantum",
+        "Shor",
+        "Landauer",
+        "versatile"
+      ],
+      "question_type": "reading_comprehension",
+      "passage_topic": "quantum_computing",
+      "source_page": "page-06",
+      "related_passage": "passage-03"
     },
     {
-      "id": "1404-q-025",
+      "number": 25,
       "filename": "q-025.png",
-      "year": 1404,
-      "question_number": 25,
-      "page_source": "page-08.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
+      "section": "English",
+      "section_fa": "زبان انگلیسی",
+      "topic": "Reading comprehension - sentence insertion",
+      "topic_fa": "درک مطلب - جایگذاری جمله",
+      "subtopics": [
+        "quantum computing",
+        "Landauer",
+        "paragraph structure"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 1212
-      },
-      "tags": [
-        "year-1404",
-        "question-25",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
+      "keywords": [
+        "reading",
+        "passage",
+        "sentence position",
+        "coherence"
+      ],
+      "question_type": "sentence_insertion",
+      "has_passage": true,
+      "source_page": "page-06",
+      "related_passage": "passage-03"
     },
     {
-      "id": "1404-q-026",
+      "number": 26,
       "filename": "q-026.png",
-      "year": 1404,
-      "question_number": 26,
-      "page_source": "page-08.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
+      "section": "Math",
+      "section_fa": "ریاضی",
+      "topic": "Infinite series convergence",
+      "topic_fa": "همگرایی سری نامتناهی",
+      "subtopics": [
+        "alternating series",
+        "logarithm",
+        "convergence test"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1302,
-        "width": 1191,
-        "height": 227
-      },
-      "tags": [
-        "year-1404",
-        "question-26",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
+      "keywords": [
+        "series",
+        "Σ",
+        "ln",
+        "convergence",
+        "alternating"
+      ],
+      "formula": "Σ(-1)^n ln(n/(n+2))",
+      "question_type": "calculation",
+      "source_page": "page-06"
     },
     {
-      "id": "1404-q-027",
+      "number": 27,
       "filename": "q-027.png",
-      "year": 1404,
-      "question_number": 27,
-      "page_source": "page-08.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
+      "section": "Math",
+      "section_fa": "ریاضی",
+      "topic": "Area enclosed by polar curve",
+      "topic_fa": "مساحت ناحیه محصور به منحنی",
+      "subtopics": [
+        "lemniscate",
+        "polar coordinates",
+        "double integral"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1509,
-        "width": 1191,
-        "height": 142
-      },
-      "tags": [
-        "year-1404",
-        "question-27",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
+      "keywords": [
+        "area",
+        "curve",
+        "polar",
+        "lemniscate",
+        "a²"
+      ],
+      "formula": "(x²+y²)² = a²(x²-y²)",
+      "question_type": "calculation",
+      "source_page": "page-06"
     },
     {
-      "id": "1404-q-028",
+      "number": 28,
       "filename": "q-028.png",
-      "year": 1404,
-      "question_number": 28,
-      "page_source": "page-09.png",
-      "section": "دروس تخصصی ۱",
-      "section_en": "Theory & Signals",
-      "courses": [
-        "نظریه زبان‌ها و ماشین‌ها",
-        "سیگنال‌ها و سیستم‌ها"
+      "section": "Math",
+      "section_fa": "ریاضی",
+      "topic": "Implicit differentiation dz/dy",
+      "topic_fa": "مشتق‌گیری ضمنی",
+      "subtopics": [
+        "partial derivatives",
+        "implicit function",
+        "system of equations"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 533
-      },
-      "tags": [
-        "year-1404",
-        "question-28",
-        "theory-and-signals",
-        "نظریه-زبان‌ها-و-ماشین‌ها",
-        "سیگنال‌ها-و-سیستم‌ها"
-      ]
+      "keywords": [
+        "dz/dy",
+        "implicit",
+        "partial derivative",
+        "chain rule"
+      ],
+      "formula": "x²+y³sinz+y=2, 2x³yz-y²e^z+1=0",
+      "question_type": "calculation",
+      "source_page": "page-07"
     },
     {
-      "id": "1404-q-029",
+      "number": 29,
       "filename": "q-029.png",
-      "year": 1404,
-      "question_number": 29,
-      "page_source": "page-09.png",
-      "section": "دروس تخصصی ۱",
-      "section_en": "Theory & Signals",
-      "courses": [
-        "نظریه زبان‌ها و ماشین‌ها",
-        "سیگنال‌ها و سیستم‌ها"
+      "section": "Math",
+      "section_fa": "ریاضی",
+      "topic": "Limit of integral expression",
+      "topic_fa": "حد عبارت انتگرالی",
+      "subtopics": [
+        "L'Hopital",
+        "definite integral",
+        "exponential"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 650,
-        "width": 1191,
-        "height": 462
-      },
-      "tags": [
-        "year-1404",
-        "question-29",
-        "theory-and-signals",
-        "نظریه-زبان‌ها-و-ماشین‌ها",
-        "سیگنال‌ها-و-سیستم‌ها"
-      ]
+      "keywords": [
+        "limit",
+        "integral",
+        "lim",
+        "e^2t",
+        "x→0"
+      ],
+      "question_type": "calculation",
+      "source_page": "page-07"
     },
     {
-      "id": "1404-q-030",
+      "number": 30,
       "filename": "q-030.png",
-      "year": 1404,
-      "question_number": 30,
-      "page_source": "page-09.png",
-      "section": "دروس تخصصی ۱",
-      "section_en": "Theory & Signals",
-      "courses": [
-        "نظریه زبان‌ها و ماشین‌ها",
-        "سیگنال‌ها و سیستم‌ها"
+      "section": "Math",
+      "section_fa": "ریاضی",
+      "topic": "Surface area of revolution",
+      "topic_fa": "مساحت رویه دوران",
+      "subtopics": [
+        "parametric curve",
+        "surface integral",
+        "exponential spiral"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1113,
-        "width": 1191,
-        "height": 538
-      },
-      "tags": [
-        "year-1404",
-        "question-30",
-        "theory-and-signals",
-        "نظریه-زبان‌ها-و-ماشین‌ها",
-        "سیگنال‌ها-و-سیستم‌ها"
-      ]
+      "keywords": [
+        "surface area",
+        "revolution",
+        "parametric",
+        "e^t cost",
+        "e^t sint"
+      ],
+      "formula": "x=e^t cost, y=e^t sint",
+      "question_type": "calculation",
+      "source_page": "page-07"
     },
     {
-      "id": "1404-q-031",
+      "number": 31,
       "filename": "q-031.png",
-      "year": 1404,
-      "question_number": 31,
-      "page_source": "page-10.png",
-      "section": "دروس تخصصی ۱",
-      "section_en": "Theory & Signals",
-      "courses": [
-        "نظریه زبان‌ها و ماشین‌ها",
-        "سیگنال‌ها و سیستم‌ها"
+      "section": "Math",
+      "section_fa": "ریاضی",
+      "topic": "Volume of bounded region",
+      "topic_fa": "حجم ناحیه محدود",
+      "subtopics": [
+        "triple integral",
+        "cylindrical coordinates",
+        "logarithm surface"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-31",
-        "theory-and-signals",
-        "نظریه-زبان‌ها-و-ماشین‌ها",
-        "سیگنال‌ها-و-سیستم‌ها"
-      ]
+      "keywords": [
+        "volume",
+        "cylinder",
+        "ln",
+        "bounded region",
+        "z=1"
+      ],
+      "formula": "z=ln√(x²+y²), x²+y²=1",
+      "question_type": "calculation",
+      "source_page": "page-07"
     },
     {
-      "id": "1404-q-032",
+      "number": 32,
       "filename": "q-032.png",
-      "year": 1404,
-      "question_number": 32,
-      "page_source": "page-10.png",
-      "section": "دروس تخصصی ۱",
-      "section_en": "Theory & Signals",
-      "courses": [
-        "نظریه زبان‌ها و ماشین‌ها",
-        "سیگنال‌ها و سیستم‌ها"
+      "section": "Math",
+      "section_fa": "ریاضی",
+      "topic": "Vector field surface integral",
+      "topic_fa": "انتگرال سطحی میدان برداری",
+      "subtopics": [
+        "flux",
+        "divergence theorem",
+        "parametric surface"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 617,
-        "width": 1191,
-        "height": 533
-      },
-      "tags": [
-        "year-1404",
-        "question-32",
-        "theory-and-signals",
-        "نظریه-زبان‌ها-و-ماشین‌ها",
-        "سیگنال‌ها-و-سیستم‌ها"
-      ]
+      "keywords": [
+        "surface integral",
+        "vector field",
+        "F.dS",
+        "hemisphere",
+        "flux"
+      ],
+      "formula": "F=2i-j+4k, ∬F.dS",
+      "question_type": "calculation",
+      "source_page": "page-08"
     },
     {
-      "id": "1404-q-033",
+      "number": 33,
       "filename": "q-033.png",
-      "year": 1404,
-      "question_number": 33,
-      "page_source": "page-10.png",
-      "section": "دروس تخصصی ۱",
-      "section_en": "Theory & Signals",
-      "courses": [
-        "نظریه زبان‌ها و ماشین‌ها",
-        "سیگنال‌ها و سیستم‌ها"
+      "section": "Math",
+      "section_fa": "ریاضی",
+      "topic": "Outlier detection with quartiles",
+      "topic_fa": "تشخیص نقاط دورافتاده با چارک",
+      "subtopics": [
+        "IQR",
+        "quartile",
+        "box plot",
+        "outliers"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1165,
-        "width": 1191,
-        "height": 486
-      },
-      "tags": [
-        "year-1404",
-        "question-33",
-        "theory-and-signals",
-        "نظریه-زبان‌ها-و-ماشین‌ها",
-        "سیگنال‌ها-و-سیستم‌ها"
-      ]
+      "keywords": [
+        "outlier",
+        "quartile",
+        "Q1",
+        "Q3",
+        "IQR",
+        "data"
+      ],
+      "has_table": true,
+      "question_type": "statistics",
+      "source_page": "page-08"
     },
     {
-      "id": "1404-q-034",
+      "number": 34,
       "filename": "q-034.png",
-      "year": 1404,
-      "question_number": 34,
-      "page_source": "page-11.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
+      "section": "Math",
+      "section_fa": "ریاضی",
+      "topic": "Probability of brand purchase",
+      "topic_fa": "احتمال خرید برند",
+      "subtopics": [
+        "conditional probability",
+        "joint probability",
+        "independence"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 523
-      },
-      "tags": [
-        "year-1404",
-        "question-34",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
+      "keywords": [
+        "probability",
+        "brand",
+        "purchase",
+        "conditional",
+        "joint"
+      ],
+      "has_table": true,
+      "question_type": "probability",
+      "source_page": "page-08"
     },
     {
-      "id": "1404-q-035",
+      "number": 35,
       "filename": "q-035.png",
-      "year": 1404,
-      "question_number": 35,
-      "page_source": "page-11.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
+      "section": "Math",
+      "topic": "Bayes theorem security system",
+      "source_page": "page-08",
+      "topic_fa": "قضیه بیز - سیستم امنیتی",
+      "subtopics": [
+        "Bayes theorem",
+        "conditional probability",
+        "false positive"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 644,
-        "width": 1191,
-        "height": 500
-      },
-      "tags": [
-        "year-1404",
-        "question-35",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
+      "keywords": [
+        "security",
+        "probability",
+        "Bayes",
+        "detection"
+      ],
+      "question_type": "probability",
+      "section_fa": "ریاضی"
     },
     {
-      "id": "1404-q-036",
+      "number": 36,
       "filename": "q-036.png",
-      "year": 1404,
-      "question_number": 36,
-      "page_source": "page-11.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
+      "section": "Math",
+      "topic": "Expected value E(Y)=max(X1,X2)",
+      "source_page": "page-08",
+      "topic_fa": "امید ریاضی ماکزیمم",
+      "subtopics": [
+        "expected value",
+        "order statistics",
+        "max function"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1124,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-36",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
+      "keywords": [
+        "E(Y)",
+        "max",
+        "expected value",
+        "random variable"
+      ],
+      "question_type": "probability",
+      "section_fa": "ریاضی"
     },
     {
-      "id": "1404-q-037",
+      "number": 37,
       "filename": "q-037.png",
-      "year": 1404,
-      "question_number": 37,
-      "page_source": "page-12.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
+      "section": "Math",
+      "topic": "Confidence interval statistics",
+      "source_page": "page-09",
+      "topic_fa": "فاصله اطمینان",
+      "subtopics": [
+        "confidence interval",
+        "t-distribution",
+        "sample mean"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-37",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
+      "keywords": [
+        "confidence",
+        "interval",
+        "statistics",
+        "estimation"
+      ],
+      "question_type": "statistics",
+      "section_fa": "ریاضی"
     },
     {
-      "id": "1404-q-038",
+      "number": 38,
       "filename": "q-038.png",
-      "year": 1404,
-      "question_number": 38,
-      "page_source": "page-12.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
+      "section": "Math",
+      "topic": "Hypothesis testing Type I error",
+      "source_page": "page-09",
+      "topic_fa": "آزمون فرض - خطای نوع اول",
+      "subtopics": [
+        "hypothesis testing",
+        "Type I error",
+        "significance level"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 617,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-38",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
+      "keywords": [
+        "H0",
+        "H1",
+        "Type I",
+        "hypothesis",
+        "test"
+      ],
+      "question_type": "statistics",
+      "section_fa": "ریاضی"
     },
     {
-      "id": "1404-q-039",
+      "number": 39,
       "filename": "q-039.png",
-      "year": 1404,
-      "question_number": 39,
-      "page_source": "page-12.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
+      "section": "Math",
+      "topic": "Regression model coefficients",
+      "source_page": "page-09",
+      "topic_fa": "مدل رگرسیون",
+      "subtopics": [
+        "regression",
+        "coefficients",
+        "prediction"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1124,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-39",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
+      "keywords": [
+        "regression",
+        "model",
+        "coefficient",
+        "prediction"
+      ],
+      "has_formula": true,
+      "question_type": "statistics",
+      "section_fa": "ریاضی"
     },
     {
-      "id": "1404-q-040",
+      "number": 40,
       "filename": "q-040.png",
-      "year": 1404,
-      "question_number": 40,
-      "page_source": "page-13.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
+      "section": "Math",
+      "topic": "Nested loops execution count",
+      "source_page": "page-09",
+      "topic_fa": "شمارش اجرای حلقه",
+      "subtopics": [
+        "nested loops",
+        "complexity",
+        "counting"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 499
-      },
-      "tags": [
-        "year-1404",
-        "question-40",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
+      "keywords": [
+        "loop",
+        "nested",
+        "execution count",
+        "algorithm"
+      ],
+      "has_code": true,
+      "question_type": "algorithm",
+      "section_fa": "ریاضی"
     },
     {
-      "id": "1404-q-041",
+      "number": 41,
       "filename": "q-041.png",
-      "year": 1404,
-      "question_number": 41,
-      "page_source": "page-13.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
+      "section": "Math",
+      "topic": "Combinatorics packet distribution",
+      "source_page": "page-10",
+      "topic_fa": "ترکیبیات توزیع بسته",
+      "subtopics": [
+        "combinatorics",
+        "distribution",
+        "counting"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 631,
-        "width": 1191,
-        "height": 513
-      },
-      "tags": [
-        "year-1404",
-        "question-41",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
+      "keywords": [
+        "combinatorics",
+        "network",
+        "packet",
+        "distribution"
+      ],
+      "question_type": "discrete_math",
+      "section_fa": "ریاضی"
     },
     {
-      "id": "1404-q-042",
+      "number": 42,
       "filename": "q-042.png",
-      "year": 1404,
-      "question_number": 42,
-      "page_source": "page-13.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
+      "section": "Math",
+      "topic": "Propositional logic negation",
+      "source_page": "page-10",
+      "topic_fa": "نقیض گزاره منطقی",
+      "subtopics": [
+        "propositional logic",
+        "negation",
+        "quantifiers"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1124,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-42",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
+      "keywords": [
+        "logic",
+        "negation",
+        "proposition",
+        "quantifier"
+      ],
+      "question_type": "logic",
+      "section_fa": "ریاضی"
     },
     {
-      "id": "1404-q-043",
+      "number": 43,
       "filename": "q-043.png",
-      "year": 1404,
-      "question_number": 43,
-      "page_source": "page-14.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
+      "section": "Math",
+      "topic": "Graph relation properties",
+      "source_page": "page-10",
+      "topic_fa": "خواص رابطه روی گراف",
+      "subtopics": [
+        "relation",
+        "graph",
+        "properties"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 493
-      },
-      "tags": [
-        "year-1404",
-        "question-43",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
+      "keywords": [
+        "relation",
+        "graph",
+        "directed",
+        "properties"
+      ],
+      "has_figure": true,
+      "question_type": "discrete_math",
+      "section_fa": "ریاضی"
     },
     {
-      "id": "1404-q-044",
+      "number": 44,
       "filename": "q-044.png",
-      "year": 1404,
-      "question_number": 44,
-      "page_source": "page-14.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
+      "section": "Math",
+      "topic": "Generating function n! sequence",
+      "source_page": "page-10",
+      "topic_fa": "تابع مولد n!",
+      "subtopics": [
+        "generating function",
+        "factorial",
+        "sequence"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 607,
-        "width": 1191,
-        "height": 574
-      },
-      "tags": [
-        "year-1404",
-        "question-44",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
+      "keywords": [
+        "generating function",
+        "factorial",
+        "sequence",
+        "f(x)"
+      ],
+      "question_type": "discrete_math",
+      "section_fa": "ریاضی"
     },
     {
-      "id": "1404-q-045",
+      "number": 45,
       "filename": "q-045.png",
-      "year": 1404,
-      "question_number": 45,
-      "page_source": "page-14.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
+      "section": "Theory",
+      "topic": "Recurrence relation solution",
+      "source_page": "page-10",
+      "topic_fa": "حل رابطه بازگشتی",
+      "subtopics": [
+        "recurrence",
+        "factorial",
+        "closed form"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1185,
-        "width": 1191,
-        "height": 466
-      },
-      "tags": [
-        "year-1404",
-        "question-45",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
+      "keywords": [
+        "recurrence",
+        "relation",
+        "solution",
+        "factorial"
+      ],
+      "question_type": "discrete_math",
+      "section_fa": "نظریه زبان‌ها"
     },
     {
-      "id": "1404-q-046",
+      "number": 46,
       "filename": "q-046.png",
-      "year": 1404,
-      "question_number": 46,
-      "page_source": "page-15.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
+      "section": "Theory",
+      "topic": "Regular language identification",
+      "source_page": "page-11",
+      "topic_fa": "تشخیص زبان منظم",
+      "subtopics": [
+        "regular language",
+        "pumping lemma",
+        "finite automaton"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 514
-      },
-      "tags": [
-        "year-1404",
-        "question-46",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
+      "keywords": [
+        "regular",
+        "language",
+        "L",
+        "automaton"
+      ],
+      "question_type": "theory",
+      "section_fa": "نظریه زبان‌ها"
     },
     {
-      "id": "1404-q-047",
+      "number": 47,
       "filename": "q-047.png",
-      "year": 1404,
-      "question_number": 47,
-      "page_source": "page-15.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
+      "section": "Theory",
+      "topic": "Regular expression comparison",
+      "source_page": "page-11",
+      "topic_fa": "مقایسه عبارات منظم",
+      "subtopics": [
+        "regular expression",
+        "equivalence",
+        "language"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 625,
-        "width": 1191,
-        "height": 532
-      },
-      "tags": [
-        "year-1404",
-        "question-47",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
+      "keywords": [
+        "regex",
+        "regular expression",
+        "equivalence"
+      ],
+      "question_type": "theory",
+      "section_fa": "نظریه زبان‌ها"
     },
     {
-      "id": "1404-q-048",
+      "number": 48,
       "filename": "q-048.png",
-      "year": 1404,
-      "question_number": 48,
-      "page_source": "page-15.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
+      "section": "Theory",
+      "topic": "Context-free grammar ambiguity",
+      "source_page": "page-11",
+      "topic_fa": "ابهام گرامر مستقل از متن",
+      "subtopics": [
+        "CFG",
+        "ambiguity",
+        "parse tree"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1172,
-        "width": 1191,
-        "height": 479
-      },
-      "tags": [
-        "year-1404",
-        "question-48",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
+      "keywords": [
+        "grammar",
+        "CFG",
+        "ambiguity",
+        "derivation"
+      ],
+      "question_type": "theory",
+      "section_fa": "نظریه زبان‌ها"
     },
     {
-      "id": "1404-q-049",
+      "number": 49,
       "filename": "q-049.png",
-      "year": 1404,
-      "question_number": 49,
-      "page_source": "page-16.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
+      "section": "Theory",
+      "topic": "Context-free language closure",
+      "source_page": "page-11",
+      "topic_fa": "بسته بودن زبان مستقل از متن",
+      "subtopics": [
+        "CFL",
+        "closure",
+        "union"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-49",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
+      "keywords": [
+        "context-free",
+        "closure",
+        "union",
+        "language"
+      ],
+      "question_type": "theory",
+      "section_fa": "نظریه زبان‌ها"
     },
     {
-      "id": "1404-q-050",
+      "number": 50,
       "filename": "q-050.png",
-      "year": 1404,
-      "question_number": 50,
-      "page_source": "page-16.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
+      "section": "Theory",
+      "topic": "NPDA decidability",
+      "source_page": "page-11",
+      "topic_fa": "تصمیم‌پذیری NPDA",
+      "subtopics": [
+        "NPDA",
+        "decidability",
+        "pushdown automaton"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 617,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-50",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
+      "keywords": [
+        "NPDA",
+        "decidability",
+        "automaton",
+        "language"
+      ],
+      "question_type": "theory",
+      "section_fa": "نظریه زبان‌ها"
     },
     {
-      "id": "1404-q-051",
+      "number": 51,
       "filename": "q-051.png",
-      "year": 1404,
-      "question_number": 51,
-      "page_source": "page-16.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
+      "section": "Theory & Signals",
+      "topic": "Signal transformation graphs",
+      "source_page": "page-12",
+      "topic_fa": "تبدیل سیگنال با گراف",
+      "subtopics": [
+        "signal transformation",
+        "time scaling",
+        "shifting"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1124,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-51",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
+      "keywords": [
+        "signal",
+        "x(t)",
+        "transformation",
+        "graph"
+      ],
+      "has_figure": true,
+      "question_type": "signals",
+      "section_fa": "نظریه و سیگنال"
     },
     {
-      "id": "1404-q-052",
+      "number": 52,
       "filename": "q-052.png",
-      "year": 1404,
-      "question_number": 52,
-      "page_source": "page-17.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
+      "section": "Theory & Signals",
+      "topic": "LTI system properties",
+      "source_page": "page-12",
+      "topic_fa": "خواص سیستم LTI",
+      "subtopics": [
+        "LTI",
+        "linearity",
+        "time-invariance"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-52",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
+      "keywords": [
+        "LTI",
+        "system",
+        "linear",
+        "time-invariant"
+      ],
+      "question_type": "signals",
+      "section_fa": "نظریه و سیگنال"
     },
     {
-      "id": "1404-q-053",
+      "number": 53,
       "filename": "q-053.png",
-      "year": 1404,
-      "question_number": 53,
-      "page_source": "page-17.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
+      "section": "Theory & Signals",
+      "topic": "Fourier transform convolution",
+      "source_page": "page-12",
+      "topic_fa": "کانولوشن فوریه",
+      "subtopics": [
+        "Fourier",
+        "convolution",
+        "transform"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 617,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-53",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
+      "keywords": [
+        "Fourier",
+        "convolution",
+        "X(jω)",
+        "Y(jω)"
+      ],
+      "question_type": "signals",
+      "section_fa": "نظریه و سیگنال"
     },
     {
-      "id": "1404-q-054",
+      "number": 54,
       "filename": "q-054.png",
-      "year": 1404,
-      "question_number": 54,
-      "page_source": "page-17.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
+      "section": "Theory & Signals",
+      "topic": "Laplace transform X(s)",
+      "source_page": "page-12",
+      "topic_fa": "تبدیل لاپلاس",
+      "subtopics": [
+        "Laplace",
+        "poles",
+        "zeros",
+        "ROC"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1124,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-54",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
+      "keywords": [
+        "Laplace",
+        "X(s)",
+        "poles",
+        "zeros",
+        "ROC"
+      ],
+      "question_type": "signals",
+      "section_fa": "نظریه و سیگنال"
     },
     {
-      "id": "1404-q-055",
+      "number": 55,
       "filename": "q-055.png",
-      "year": 1404,
-      "question_number": 55,
-      "page_source": "page-18.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
+      "section": "Theory & Signals",
+      "topic": "Fourier transform",
+      "source_page": "page-13",
+      "topic_fa": "تبدیل فوریه",
+      "subtopics": [
+        "Fourier transform",
+        "frequency domain"
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-55",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
+      "keywords": [
+        "Fourier",
+        "transform",
+        "frequency"
+      ],
+      "question_type": "signals",
+      "section_fa": "نظریه و سیگنال"
     },
     {
-      "id": "1404-q-056",
+      "number": 56,
       "filename": "q-056.png",
-      "year": 1404,
-      "question_number": 56,
-      "page_source": "page-18.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 617,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-56",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
+      "section": "DS & Algorithms",
+      "topic": "Recurrence relation T(x)",
+      "source_page": "page-13"
     },
     {
-      "id": "1404-q-057",
+      "number": 57,
       "filename": "q-057.png",
-      "year": 1404,
-      "question_number": 57,
-      "page_source": "page-18.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1124,
-        "width": 1191,
-        "height": 497
-      },
-      "tags": [
-        "year-1404",
-        "question-57",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
+      "section": "DS & Algorithms",
+      "topic": "Bitonic sequence sorting",
+      "source_page": "page-13"
     },
     {
-      "id": "1404-q-058",
+      "number": 58,
       "filename": "q-058.png",
-      "year": 1404,
-      "question_number": 58,
-      "page_source": "page-19.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 225
-      },
-      "tags": [
-        "year-1404",
-        "question-58",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
+      "section": "DS & Algorithms",
+      "topic": "Backtracking complexity",
+      "source_page": "page-13"
     },
     {
-      "id": "1404-q-059",
+      "number": 59,
       "filename": "q-059.png",
-      "year": 1404,
-      "question_number": 59,
-      "page_source": "page-19.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 315,
-        "width": 1191,
-        "height": 348
-      },
-      "tags": [
-        "year-1404",
-        "question-59",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
+      "section": "DS & Algorithms",
+      "topic": "Branch and Bound, Maximum Profit",
+      "source_page": "page-13"
     },
     {
-      "id": "1404-q-060",
+      "number": 60,
       "filename": "q-060.png",
-      "year": 1404,
-      "question_number": 60,
-      "page_source": "page-19.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 643,
-        "width": 1191,
-        "height": 1008
-      },
-      "tags": [
-        "year-1404",
-        "question-60",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
+      "section": "DS & Algorithms",
+      "topic": "Insertion Sort binary search",
+      "source_page": "page-14"
     },
     {
-      "id": "1404-q-061",
+      "number": 61,
       "filename": "q-061.png",
-      "year": 1404,
-      "question_number": 61,
-      "page_source": "page-20.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-61",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
+      "section": "DS & Algorithms",
+      "topic": "Subsequence selection, DP vs Greedy",
+      "source_page": "page-14"
     },
     {
-      "id": "1404-q-062",
+      "number": 62,
       "filename": "q-062.png",
-      "year": 1404,
-      "question_number": 62,
-      "page_source": "page-20.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 617,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-62",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
+      "section": "DS & Algorithms",
+      "topic": "Maximum Coverage greedy",
+      "source_page": "page-14"
     },
     {
-      "id": "1404-q-063",
+      "number": 63,
       "filename": "q-063.png",
-      "year": 1404,
-      "question_number": 63,
-      "page_source": "page-20.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1124,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-63",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
+      "section": "DS & Algorithms",
+      "topic": "Algorithm complexity statements",
+      "source_page": "page-14"
     },
     {
-      "id": "1404-q-064",
+      "number": 64,
       "filename": "q-064.png",
-      "year": 1404,
-      "question_number": 64,
-      "page_source": "page-21.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 479
-      },
-      "tags": [
-        "year-1404",
-        "question-64",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
+      "section": "DS & Algorithms",
+      "topic": "Second largest element comparisons",
+      "source_page": "page-14"
     },
     {
-      "id": "1404-q-065",
+      "number": 65,
       "filename": "q-065.png",
-      "year": 1404,
-      "question_number": 65,
-      "page_source": "page-21.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 569,
-        "width": 1191,
-        "height": 740
-      },
-      "tags": [
-        "year-1404",
-        "question-65",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
+      "section": "DS & Algorithms",
+      "topic": "Dynamic Priority List",
+      "source_page": "page-15"
     },
     {
-      "id": "1404-q-066",
+      "number": 66,
       "filename": "q-066.png",
-      "year": 1404,
-      "question_number": 66,
-      "page_source": "page-21.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1289,
-        "width": 1191,
-        "height": 362
-      },
-      "tags": [
-        "year-1404",
-        "question-66",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
+      "section": "DS & Algorithms",
+      "topic": "Quick Sort vs Merge Sort",
+      "source_page": "page-15"
     },
     {
-      "id": "1404-q-067",
+      "number": 67,
       "filename": "q-067.png",
-      "year": 1404,
-      "question_number": 67,
-      "page_source": "page-22.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 527
-      },
-      "tags": [
-        "year-1404",
-        "question-67",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
+      "section": "DS & Algorithms",
+      "topic": "Linked list 3n/4 position",
+      "source_page": "page-15"
     },
     {
-      "id": "1404-q-068",
+      "number": 68,
       "filename": "q-068.png",
-      "year": 1404,
-      "question_number": 68,
-      "page_source": "page-22.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
+      "section": "AI",
+      "topic": "Iterative Deepening Search",
+      "source_page": "page-16"
+    },
+    {
+      "number": 69,
+      "filename": "q-069.png",
+      "section": "AI",
+      "topic": "Alpha-beta pruning tree",
+      "source_page": "page-16"
+    },
+    {
+      "number": 70,
+      "filename": "q-070.png",
+      "section": "AI",
+      "topic": "Propositional logic Resolution",
+      "source_page": "page-16"
+    },
+    {
+      "number": 71,
+      "filename": "q-071.png",
+      "section": "AI",
+      "topic": "Consistent/Admissible heuristic",
+      "source_page": "page-16"
+    },
+    {
+      "number": 72,
+      "filename": "q-072.png",
+      "section": "AI",
+      "topic": "Local beam search vs hill climbing",
+      "source_page": "page-17"
+    },
+    {
+      "number": 73,
+      "filename": "q-073.png",
+      "section": "AI",
+      "topic": "CSP map coloring heuristics",
+      "source_page": "page-17"
+    },
+    {
+      "number": 74,
+      "filename": "q-074.png",
+      "section": "AI",
+      "topic": "Heuristic h1 h2 Admissible Consistent",
+      "source_page": "page-17"
+    },
+    {
+      "number": 75,
+      "filename": "q-075.png",
+      "section": "AI",
+      "topic": "CSP Arc Consistency",
+      "source_page": "page-18"
+    },
+    {
+      "number": 76,
+      "filename": "q-076.png",
+      "section": "Hardware",
+      "topic": "NAND gates AB+CD+EF+GH",
+      "source_page": "page-18"
+    },
+    {
+      "number": 77,
+      "filename": "q-077.png",
+      "section": "Hardware",
+      "topic": "Digital circuit flip-flop timing",
+      "source_page": "page-18"
+    },
+    {
+      "number": 78,
+      "filename": "q-078.png",
+      "section": "Hardware",
+      "topic": "State table equivalent states",
+      "source_page": "page-18"
+    },
+    {
+      "number": 79,
+      "filename": "q-079.png",
+      "section": "Hardware",
+      "topic": "AND gates Boolean function",
+      "source_page": "page-19"
+    },
+    {
+      "number": 80,
+      "filename": "q-080.png",
+      "section": "Hardware",
+      "topic": "Circuit function XNOR/XOR/NAND/NOR",
+      "source_page": "page-19"
+    },
+    {
+      "number": 81,
+      "filename": "q-081.png",
+      "section": "Hardware",
+      "topic": "Ring oscillator frequency",
+      "source_page": "page-19"
+    },
+    {
+      "number": 82,
+      "filename": "q-082.png",
+      "section": "Hardware",
+      "topic": "Full Adder + MUX circuit",
+      "source_page": "page-19"
+    },
+    {
+      "number": 83,
+      "filename": "q-083.png",
+      "section": "Hardware",
+      "topic": "Computer architecture registers",
+      "source_page": "page-19"
+    },
+    {
+      "number": 84,
+      "filename": "q-084.png",
+      "section": "Hardware",
+      "topic": "Pipeline processor instructions",
+      "source_page": "page-20"
+    },
+    {
+      "number": 85,
+      "filename": "q-085.png",
+      "section": "Hardware",
+      "topic": "Arithmetic Unit MUX + FA",
+      "source_page": "page-20"
+    },
+    {
+      "number": 86,
+      "filename": "q-086.png",
+      "section": "Hardware",
+      "topic": "RAM/disk access time",
+      "source_page": "page-20"
+    },
+    {
+      "number": 87,
+      "filename": "q-087.png",
+      "section": "Hardware",
+      "topic": "RTL Control Circuit",
+      "source_page": "page-21"
+    },
+    {
+      "number": 88,
+      "filename": "q-088.png",
+      "section": "Hardware",
+      "topic": "Cache LRU hit rate",
+      "source_page": "page-21"
+    },
+    {
+      "number": 89,
+      "filename": "q-089.png",
+      "section": "Hardware",
+      "topic": "Stack-based architecture",
+      "source_page": "page-21"
+    },
+    {
+      "number": 90,
+      "filename": "q-090.png",
+      "section": "Hardware",
+      "topic": "CMOS inverter W/L ratio",
+      "source_page": "page-21"
+    },
+    {
+      "number": 91,
+      "filename": "q-091.png",
+      "section": "Hardware",
+      "topic": "NAND transistor sizing delay",
+      "source_page": "page-22"
+    },
+    {
+      "number": 92,
+      "filename": "q-092.png",
+      "section": "Hardware",
+      "topic": "Transistor logic function",
+      "source_page": "page-22"
+    },
+    {
+      "number": 93,
+      "filename": "q-093.png",
+      "section": "Hardware",
+      "topic": "PMOS/NMOS voltage output",
+      "source_page": "page-22"
+    },
+    {
+      "number": 94,
+      "filename": "q-094.png",
+      "section": "Hardware",
+      "topic": "NMOS inverter W/L calculation",
+      "source_page": "page-22"
+    }
+  ],
+  "passages": [
+    {
+      "id": "passage-01",
+      "filename": "passage-01.png",
+      "title": "Computer Ethics",
+      "title_fa": "اخلاق کامپیوتر",
+      "topic": "computer_ethics",
+      "description": "The emergence of computers and ethical concerns including privacy, hackers, and technology ethics",
+      "source_page": "page-03",
+      "linked_questions": [
+        11,
+        12,
+        13,
+        14,
+        15
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 617,
-        "width": 1191,
-        "height": 552
-      },
-      "tags": [
-        "year-1404",
-        "question-68",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
+      "keywords": [
+        "computer ethics",
+        "internet",
+        "privacy",
+        "hackers",
+        "technology",
+        "ethical standards"
       ]
     },
     {
-      "id": "1404-q-069",
-      "filename": "q-069.png",
-      "year": 1404,
-      "question_number": 69,
-      "page_source": "page-22.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
+      "id": "passage-02",
+      "filename": "passage-02.png",
+      "title": "Early Computers and Babbage",
+      "title_fa": "کامپیوترهای اولیه و بابیج",
+      "topic": "early_computers",
+      "description": "History of computing from abacus to Babbage's Difference Engine and Scheutz's machine",
+      "source_page": "page-04",
+      "linked_questions": [
+        16,
+        17,
+        18,
+        19,
+        20
       ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1174,
-        "width": 1191,
-        "height": 393
-      },
-      "tags": [
-        "year-1404",
-        "question-69",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
+      "keywords": [
+        "abacus",
+        "Babbage",
+        "Difference Engine",
+        "Scheutz",
+        "computer history",
+        "1823",
+        "1853"
+      ]
+    },
+    {
+      "id": "passage-03",
+      "filename": "passage-03.png",
+      "title": "Quantum Computing",
+      "title_fa": "محاسبات کوانتومی",
+      "topic": "quantum_computing",
+      "description": "Shor's algorithm, Landauer's work on quantum computation challenges, qubits, and quantum computer construction",
+      "source_page": "page-05",
+      "linked_questions": [
+        21,
+        22,
+        23,
+        24,
+        25
+      ],
+      "keywords": [
+        "quantum computing",
+        "Shor",
+        "Landauer",
+        "qubits",
+        "quantum gates",
+        "entanglement",
+        "coherence"
+      ]
+    },
+    {
+      "id": "passage-cloze",
+      "filename": "passage-cloze.png",
+      "title": "Olympic Games History",
+      "title_fa": "تاریخچه بازی‌های المپیک",
+      "topic": "olympic_games",
+      "description": "History of Olympic Games from ancient times to modern professional era",
+      "source_page": "page-02",
+      "linked_questions": [
+        8,
+        9,
+        10
+      ],
+      "keywords": [
+        "Olympic Games",
+        "professional athletes",
+        "amateur",
+        "sports"
       ]
     }
   ]
