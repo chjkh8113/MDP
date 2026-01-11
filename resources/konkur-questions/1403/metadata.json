@@ -1,2113 +1,246 @@
 {
   "year": 1403,
-  "total_questions": 78,
-  "extracted_at": "2026-01-04T10:50:48.062074",
+  "total_questions": 21,
+  "extracted_batches": [
+    "batch1_q80-q100"
+  ],
   "questions": [
     {
-      "id": "1403-q-001",
-      "filename": "q-001.png",
-      "year": 1403,
-      "question_number": 1,
-      "page_source": "page-02.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 338
-      },
-      "tags": [
-        "year-1403",
-        "question-1",
-        "english",
-        "زبان-انگلیسی"
-      ]
-    },
-    {
-      "id": "1403-q-002",
-      "filename": "q-002.png",
-      "year": 1403,
-      "question_number": 2,
-      "page_source": "page-02.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 459,
-        "width": 1191,
-        "height": 273
-      },
-      "tags": [
-        "year-1403",
-        "question-2",
-        "english",
-        "زبان-انگلیسی"
-      ]
-    },
-    {
-      "id": "1403-q-003",
-      "filename": "q-003.png",
-      "year": 1403,
-      "question_number": 3,
-      "page_source": "page-02.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 712,
-        "width": 1191,
-        "height": 321
-      },
-      "tags": [
-        "year-1403",
-        "question-3",
-        "english",
-        "زبان-انگلیسی"
-      ]
-    },
-    {
-      "id": "1403-q-004",
-      "filename": "q-004.png",
-      "year": 1403,
-      "question_number": 4,
-      "page_source": "page-02.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1013,
-        "width": 1191,
-        "height": 307
-      },
-      "tags": [
-        "year-1403",
-        "question-4",
-        "english",
-        "زبان-انگلیسی"
-      ]
-    },
-    {
-      "id": "1403-q-005",
-      "filename": "q-005.png",
-      "year": 1403,
-      "question_number": 5,
-      "page_source": "page-02.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1323,
-        "width": 1191,
-        "height": 254
-      },
-      "tags": [
-        "year-1403",
-        "question-5",
-        "english",
-        "زبان-انگلیسی"
-      ]
-    },
-    {
-      "id": "1403-q-006",
-      "filename": "q-006.png",
-      "year": 1403,
-      "question_number": 6,
-      "page_source": "page-03.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 321
-      },
-      "tags": [
-        "year-1403",
-        "question-6",
-        "english",
-        "زبان-انگلیسی"
-      ]
-    },
-    {
-      "id": "1403-q-007",
-      "filename": "q-007.png",
-      "year": 1403,
-      "question_number": 7,
-      "page_source": "page-03.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 411,
-        "width": 1191,
-        "height": 302
-      },
-      "tags": [
-        "year-1403",
-        "question-7",
-        "english",
-        "زبان-انگلیسی"
-      ]
-    },
-    {
-      "id": "1403-q-008",
-      "filename": "q-008.png",
-      "year": 1403,
-      "question_number": 8,
-      "page_source": "page-03.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 728,
-        "width": 1191,
-        "height": 305
-      },
-      "tags": [
-        "year-1403",
-        "question-8",
-        "english",
-        "زبان-انگلیسی"
-      ]
-    },
-    {
-      "id": "1403-q-009",
-      "filename": "q-009.png",
-      "year": 1403,
-      "question_number": 9,
-      "page_source": "page-03.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1013,
-        "width": 1191,
-        "height": 321
-      },
-      "tags": [
-        "year-1403",
-        "question-9",
-        "english",
-        "زبان-انگلیسی"
-      ]
-    },
-    {
-      "id": "1403-q-010",
-      "filename": "q-010.png",
-      "year": 1403,
-      "question_number": 10,
-      "page_source": "page-03.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1314,
-        "width": 1191,
-        "height": 321
-      },
-      "tags": [
-        "year-1403",
-        "question-10",
-        "english",
-        "زبان-انگلیسی"
-      ]
-    },
-    {
-      "id": "1403-q-011",
-      "filename": "q-011.png",
-      "year": 1403,
-      "question_number": 11,
-      "page_source": "page-04.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 321
-      },
-      "tags": [
-        "year-1403",
-        "question-11",
-        "english",
-        "زبان-انگلیسی"
-      ]
-    },
-    {
-      "id": "1403-q-012",
-      "filename": "q-012.png",
-      "year": 1403,
-      "question_number": 12,
-      "page_source": "page-04.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 411,
-        "width": 1191,
-        "height": 321
-      },
-      "tags": [
-        "year-1403",
-        "question-12",
-        "english",
-        "زبان-انگلیسی"
-      ]
-    },
-    {
-      "id": "1403-q-013",
-      "filename": "q-013.png",
-      "year": 1403,
-      "question_number": 13,
-      "page_source": "page-04.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 712,
-        "width": 1191,
-        "height": 299
-      },
-      "tags": [
-        "year-1403",
-        "question-13",
-        "english",
-        "زبان-انگلیسی"
-      ]
-    },
-    {
-      "id": "1403-q-014",
-      "filename": "q-014.png",
-      "year": 1403,
-      "question_number": 14,
-      "page_source": "page-04.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1026,
-        "width": 1191,
-        "height": 308
-      },
-      "tags": [
-        "year-1403",
-        "question-14",
-        "english",
-        "زبان-انگلیسی"
-      ]
-    },
-    {
-      "id": "1403-q-015",
-      "filename": "q-015.png",
-      "year": 1403,
-      "question_number": 15,
-      "page_source": "page-04.png",
-      "section": "زبان عمومی و تخصصی",
-      "section_en": "English",
-      "courses": [
-        "زبان انگلیسی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1314,
-        "width": 1191,
-        "height": 259
-      },
-      "tags": [
-        "year-1403",
-        "question-15",
-        "english",
-        "زبان-انگلیسی"
-      ]
-    },
-    {
-      "id": "1403-q-016",
-      "filename": "q-016.png",
-      "year": 1403,
-      "question_number": 16,
-      "page_source": "page-05.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 521
-      },
-      "tags": [
-        "year-1403",
-        "question-16",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
-    },
-    {
-      "id": "1403-q-017",
-      "filename": "q-017.png",
-      "year": 1403,
-      "question_number": 17,
-      "page_source": "page-05.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 611,
-        "width": 1191,
-        "height": 521
-      },
-      "tags": [
-        "year-1403",
-        "question-17",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
-    },
-    {
-      "id": "1403-q-018",
-      "filename": "q-018.png",
-      "year": 1403,
-      "question_number": 18,
-      "page_source": "page-05.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1112,
-        "width": 1191,
-        "height": 523
-      },
-      "tags": [
-        "year-1403",
-        "question-18",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
-    },
-    {
-      "id": "1403-q-019",
-      "filename": "q-019.png",
-      "year": 1403,
-      "question_number": 19,
-      "page_source": "page-06.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 521
-      },
-      "tags": [
-        "year-1403",
-        "question-19",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
-    },
-    {
-      "id": "1403-q-020",
-      "filename": "q-020.png",
-      "year": 1403,
-      "question_number": 20,
-      "page_source": "page-06.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 611,
-        "width": 1191,
-        "height": 538
-      },
-      "tags": [
-        "year-1403",
-        "question-20",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
-    },
-    {
-      "id": "1403-q-021",
-      "filename": "q-021.png",
-      "year": 1403,
-      "question_number": 21,
-      "page_source": "page-06.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1171,
-        "width": 1191,
-        "height": 464
-      },
-      "tags": [
-        "year-1403",
-        "question-21",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
-    },
-    {
-      "id": "1403-q-022",
-      "filename": "q-022.png",
-      "year": 1403,
-      "question_number": 22,
-      "page_source": "page-07.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 165,
-        "width": 1191,
-        "height": 396
-      },
-      "tags": [
-        "year-1403",
-        "question-22",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
-    },
-    {
-      "id": "1403-q-023",
-      "filename": "q-023.png",
-      "year": 1403,
-      "question_number": 23,
-      "page_source": "page-07.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 680,
-        "width": 1191,
-        "height": 488
-      },
-      "tags": [
-        "year-1403",
-        "question-23",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
-    },
-    {
-      "id": "1403-q-024",
-      "filename": "q-024.png",
-      "year": 1403,
-      "question_number": 24,
-      "page_source": "page-07.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1169,
-        "width": 1191,
-        "height": 466
-      },
-      "tags": [
-        "year-1403",
-        "question-24",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
-    },
-    {
-      "id": "1403-q-025",
-      "filename": "q-025.png",
-      "year": 1403,
-      "question_number": 25,
-      "page_source": "page-08.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 166
-      },
-      "tags": [
-        "year-1403",
-        "question-25",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
-    },
-    {
-      "id": "1403-q-026",
-      "filename": "q-026.png",
-      "year": 1403,
-      "question_number": 26,
-      "page_source": "page-08.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 256,
-        "width": 1191,
-        "height": 1222
-      },
-      "tags": [
-        "year-1403",
-        "question-26",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
-    },
-    {
-      "id": "1403-q-027",
-      "filename": "q-027.png",
-      "year": 1403,
-      "question_number": 27,
-      "page_source": "page-08.png",
-      "section": "ریاضیات",
-      "section_en": "Mathematics",
-      "courses": [
-        "ریاضی عمومی",
-        "آمار و احتمال",
-        "ریاضیات گسسته"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1458,
-        "width": 1191,
-        "height": 177
-      },
-      "tags": [
-        "year-1403",
-        "question-27",
-        "mathematics",
-        "ریاضی-عمومی",
-        "آمار-و-احتمال",
-        "ریاضیات-گسسته"
-      ]
-    },
-    {
-      "id": "1403-q-028",
-      "filename": "q-028.png",
-      "year": 1403,
-      "question_number": 28,
-      "page_source": "page-09.png",
-      "section": "دروس تخصصی ۱",
-      "section_en": "Theory & Signals",
-      "courses": [
-        "نظریه زبان‌ها و ماشین‌ها",
-        "سیگنال‌ها و سیستم‌ها"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 549
-      },
-      "tags": [
-        "year-1403",
-        "question-28",
-        "theory-and-signals",
-        "نظریه-زبان‌ها-و-ماشین‌ها",
-        "سیگنال‌ها-و-سیستم‌ها"
-      ]
-    },
-    {
-      "id": "1403-q-029",
-      "filename": "q-029.png",
-      "year": 1403,
-      "question_number": 29,
-      "page_source": "page-09.png",
-      "section": "دروس تخصصی ۱",
-      "section_en": "Theory & Signals",
-      "courses": [
-        "نظریه زبان‌ها و ماشین‌ها",
-        "سیگنال‌ها و سیستم‌ها"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 664,
-        "width": 1191,
-        "height": 408
-      },
-      "tags": [
-        "year-1403",
-        "question-29",
-        "theory-and-signals",
-        "نظریه-زبان‌ها-و-ماشین‌ها",
-        "سیگنال‌ها-و-سیستم‌ها"
-      ]
-    },
-    {
-      "id": "1403-q-030",
-      "filename": "q-030.png",
-      "year": 1403,
-      "question_number": 30,
-      "page_source": "page-09.png",
-      "section": "دروس تخصصی ۱",
-      "section_en": "Theory & Signals",
-      "courses": [
-        "نظریه زبان‌ها و ماشین‌ها",
-        "سیگنال‌ها و سیستم‌ها"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1086,
-        "width": 1191,
-        "height": 549
-      },
-      "tags": [
-        "year-1403",
-        "question-30",
-        "theory-and-signals",
-        "نظریه-زبان‌ها-و-ماشین‌ها",
-        "سیگنال‌ها-و-سیستم‌ها"
-      ]
-    },
-    {
-      "id": "1403-q-031",
-      "filename": "q-031.png",
-      "year": 1403,
-      "question_number": 31,
-      "page_source": "page-10.png",
-      "section": "دروس تخصصی ۱",
-      "section_en": "Theory & Signals",
-      "courses": [
-        "نظریه زبان‌ها و ماشین‌ها",
-        "سیگنال‌ها و سیستم‌ها"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 143
-      },
-      "tags": [
-        "year-1403",
-        "question-31",
-        "theory-and-signals",
-        "نظریه-زبان‌ها-و-ماشین‌ها",
-        "سیگنال‌ها-و-سیستم‌ها"
-      ]
-    },
-    {
-      "id": "1403-q-032",
-      "filename": "q-032.png",
-      "year": 1403,
-      "question_number": 32,
-      "page_source": "page-10.png",
-      "section": "دروس تخصصی ۱",
-      "section_en": "Theory & Signals",
-      "courses": [
-        "نظریه زبان‌ها و ماشین‌ها",
-        "سیگنال‌ها و سیستم‌ها"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 233,
-        "width": 1191,
-        "height": 772
-      },
-      "tags": [
-        "year-1403",
-        "question-32",
-        "theory-and-signals",
-        "نظریه-زبان‌ها-و-ماشین‌ها",
-        "سیگنال‌ها-و-سیستم‌ها"
-      ]
-    },
-    {
-      "id": "1403-q-033",
-      "filename": "q-033.png",
-      "year": 1403,
-      "question_number": 33,
-      "page_source": "page-10.png",
-      "section": "دروس تخصصی ۱",
-      "section_en": "Theory & Signals",
-      "courses": [
-        "نظریه زبان‌ها و ماشین‌ها",
-        "سیگنال‌ها و سیستم‌ها"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 985,
-        "width": 1191,
-        "height": 650
-      },
-      "tags": [
-        "year-1403",
-        "question-33",
-        "theory-and-signals",
-        "نظریه-زبان‌ها-و-ماشین‌ها",
-        "سیگنال‌ها-و-سیستم‌ها"
-      ]
-    },
-    {
-      "id": "1403-q-034",
-      "filename": "q-034.png",
-      "year": 1403,
-      "question_number": 34,
-      "page_source": "page-11.png",
-      "section": "دروس تخصصی ۱",
-      "section_en": "Theory & Signals",
-      "courses": [
-        "نظریه زبان‌ها و ماشین‌ها",
-        "سیگنال‌ها و سیستم‌ها"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 521
-      },
-      "tags": [
-        "year-1403",
-        "question-34",
-        "theory-and-signals",
-        "نظریه-زبان‌ها-و-ماشین‌ها",
-        "سیگنال‌ها-و-سیستم‌ها"
-      ]
-    },
-    {
-      "id": "1403-q-035",
-      "filename": "q-035.png",
-      "year": 1403,
-      "question_number": 35,
-      "page_source": "page-11.png",
-      "section": "دروس تخصصی ۱",
-      "section_en": "Theory & Signals",
-      "courses": [
-        "نظریه زبان‌ها و ماشین‌ها",
-        "سیگنال‌ها و سیستم‌ها"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 611,
-        "width": 1191,
-        "height": 521
-      },
-      "tags": [
-        "year-1403",
-        "question-35",
-        "theory-and-signals",
-        "نظریه-زبان‌ها-و-ماشین‌ها",
-        "سیگنال‌ها-و-سیستم‌ها"
-      ]
-    },
-    {
-      "id": "1403-q-036",
-      "filename": "q-036.png",
-      "year": 1403,
-      "question_number": 36,
-      "page_source": "page-11.png",
-      "section": "دروس تخصصی ۱",
-      "section_en": "Theory & Signals",
-      "courses": [
-        "نظریه زبان‌ها و ماشین‌ها",
-        "سیگنال‌ها و سیستم‌ها"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1112,
-        "width": 1191,
-        "height": 523
-      },
-      "tags": [
-        "year-1403",
-        "question-36",
-        "theory-and-signals",
-        "نظریه-زبان‌ها-و-ماشین‌ها",
-        "سیگنال‌ها-و-سیستم‌ها"
-      ]
-    },
-    {
-      "id": "1403-q-037",
-      "filename": "q-037.png",
-      "year": 1403,
-      "question_number": 37,
-      "page_source": "page-12.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 165,
-        "width": 1191,
-        "height": 466
-      },
-      "tags": [
-        "year-1403",
-        "question-37",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
-    },
-    {
-      "id": "1403-q-038",
-      "filename": "q-038.png",
-      "year": 1403,
-      "question_number": 38,
-      "page_source": "page-12.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 611,
-        "width": 1191,
-        "height": 532
-      },
-      "tags": [
-        "year-1403",
-        "question-38",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
-    },
-    {
-      "id": "1403-q-039",
-      "filename": "q-039.png",
-      "year": 1403,
-      "question_number": 39,
-      "page_source": "page-12.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1153,
-        "width": 1191,
-        "height": 482
-      },
-      "tags": [
-        "year-1403",
-        "question-39",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
-    },
-    {
-      "id": "1403-q-040",
-      "filename": "q-040.png",
-      "year": 1403,
-      "question_number": 40,
-      "page_source": "page-13.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 521
-      },
-      "tags": [
-        "year-1403",
-        "question-40",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
-    },
-    {
-      "id": "1403-q-041",
-      "filename": "q-041.png",
-      "year": 1403,
-      "question_number": 41,
-      "page_source": "page-13.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 611,
-        "width": 1191,
-        "height": 521
-      },
-      "tags": [
-        "year-1403",
-        "question-41",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
-    },
-    {
-      "id": "1403-q-042",
-      "filename": "q-042.png",
-      "year": 1403,
-      "question_number": 42,
-      "page_source": "page-13.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1112,
-        "width": 1191,
-        "height": 523
-      },
-      "tags": [
-        "year-1403",
-        "question-42",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
-    },
-    {
-      "id": "1403-q-043",
-      "filename": "q-043.png",
-      "year": 1403,
-      "question_number": 43,
-      "page_source": "page-14.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 536
-      },
-      "tags": [
-        "year-1403",
-        "question-43",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
-    },
-    {
-      "id": "1403-q-044",
-      "filename": "q-044.png",
-      "year": 1403,
-      "question_number": 44,
-      "page_source": "page-14.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 656,
-        "width": 1191,
-        "height": 476
-      },
-      "tags": [
-        "year-1403",
-        "question-44",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
-    },
-    {
-      "id": "1403-q-045",
-      "filename": "q-045.png",
-      "year": 1403,
-      "question_number": 45,
-      "page_source": "page-14.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1112,
-        "width": 1191,
-        "height": 447
-      },
-      "tags": [
-        "year-1403",
-        "question-45",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
-    },
-    {
-      "id": "1403-q-046",
-      "filename": "q-046.png",
-      "year": 1403,
-      "question_number": 46,
-      "page_source": "page-15.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 545
-      },
-      "tags": [
-        "year-1403",
-        "question-46",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
-    },
-    {
-      "id": "1403-q-047",
-      "filename": "q-047.png",
-      "year": 1403,
-      "question_number": 47,
-      "page_source": "page-15.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 657,
-        "width": 1191,
-        "height": 475
-      },
-      "tags": [
-        "year-1403",
-        "question-47",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
-    },
-    {
-      "id": "1403-q-048",
-      "filename": "q-048.png",
-      "year": 1403,
-      "question_number": 48,
-      "page_source": "page-15.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1112,
-        "width": 1191,
-        "height": 523
-      },
-      "tags": [
-        "year-1403",
-        "question-48",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
-    },
-    {
-      "id": "1403-q-049",
-      "filename": "q-049.png",
-      "year": 1403,
-      "question_number": 49,
-      "page_source": "page-16.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 157,
-        "width": 1191,
-        "height": 474
-      },
-      "tags": [
-        "year-1403",
-        "question-49",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
-    },
-    {
-      "id": "1403-q-050",
-      "filename": "q-050.png",
-      "year": 1403,
-      "question_number": 50,
-      "page_source": "page-16.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 611,
-        "width": 1191,
-        "height": 559
-      },
-      "tags": [
-        "year-1403",
-        "question-50",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
-    },
-    {
-      "id": "1403-q-051",
-      "filename": "q-051.png",
-      "year": 1403,
-      "question_number": 51,
-      "page_source": "page-16.png",
-      "section": "دروس تخصصی ۲",
-      "section_en": "DS & Algorithms",
-      "courses": [
-        "ساختمان داده",
-        "طراحی الگوریتم",
-        "هوش مصنوعی"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1172,
-        "width": 1191,
-        "height": 463
-      },
-      "tags": [
-        "year-1403",
-        "question-51",
-        "ds-and-algorithms",
-        "ساختمان-داده",
-        "طراحی-الگوریتم",
-        "هوش-مصنوعی"
-      ]
-    },
-    {
-      "id": "1403-q-052",
-      "filename": "q-052.png",
-      "year": 1403,
-      "question_number": 52,
-      "page_source": "page-17.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 187,
-        "width": 1191,
-        "height": 481
-      },
-      "tags": [
-        "year-1403",
-        "question-52",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
-    },
-    {
-      "id": "1403-q-053",
-      "filename": "q-053.png",
-      "year": 1403,
-      "question_number": 53,
-      "page_source": "page-17.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 672,
-        "width": 1191,
-        "height": 392
-      },
-      "tags": [
-        "year-1403",
-        "question-53",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
-    },
-    {
-      "id": "1403-q-054",
-      "filename": "q-054.png",
-      "year": 1403,
-      "question_number": 54,
-      "page_source": "page-17.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1094,
-        "width": 1191,
-        "height": 541
-      },
-      "tags": [
-        "year-1403",
-        "question-54",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
-    },
-    {
-      "id": "1403-q-055",
-      "filename": "q-055.png",
-      "year": 1403,
-      "question_number": 55,
-      "page_source": "page-18.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 436
-      },
-      "tags": [
-        "year-1403",
-        "question-55",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
-    },
-    {
-      "id": "1403-q-056",
-      "filename": "q-056.png",
-      "year": 1403,
-      "question_number": 56,
-      "page_source": "page-18.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 664,
-        "width": 1191,
-        "height": 411
-      },
-      "tags": [
-        "year-1403",
-        "question-56",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
-    },
-    {
-      "id": "1403-q-057",
-      "filename": "q-057.png",
-      "year": 1403,
-      "question_number": 57,
-      "page_source": "page-18.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1081,
-        "width": 1191,
-        "height": 476
-      },
-      "tags": [
-        "year-1403",
-        "question-57",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
-    },
-    {
-      "id": "1403-q-058",
-      "filename": "q-058.png",
-      "year": 1403,
-      "question_number": 58,
-      "page_source": "page-19.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 524
-      },
-      "tags": [
-        "year-1403",
-        "question-58",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
-    },
+      "number": 80,
+      "filename": "q-080.png",
+      "section": "Hardware",
+      "topic": "Verilog/VHDL timing analysis",
+      "source_page": "page-19"
+    },
+    {
+      "number": 81,
+      "filename": "q-081.png",
+      "section": "Hardware",
+      "topic": "Timing diagram, flip-flops",
+      "source_page": "page-20"
+    },
+    {
+      "number": 82,
+      "filename": "q-082.png",
+      "section": "Hardware",
+      "topic": "Shift register, majority circuit",
+      "source_page": "page-20"
+    },
     {
-      "id": "1403-q-059",
-      "filename": "q-059.png",
-      "year": 1403,
-      "question_number": 59,
-      "page_source": "page-19.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 652,
-        "width": 1191,
-        "height": 422
-      },
-      "tags": [
-        "year-1403",
-        "question-59",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
-    },
-    {
-      "id": "1403-q-060",
-      "filename": "q-060.png",
-      "year": 1403,
-      "question_number": 60,
-      "page_source": "page-19.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1092,
-        "width": 1191,
-        "height": 543
-      },
-      "tags": [
-        "year-1403",
-        "question-60",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
-    },
-    {
-      "id": "1403-q-061",
-      "filename": "q-061.png",
-      "year": 1403,
-      "question_number": 61,
-      "page_source": "page-20.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 530
-      },
-      "tags": [
-        "year-1403",
-        "question-61",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
-    },
-    {
-      "id": "1403-q-062",
-      "filename": "q-062.png",
-      "year": 1403,
-      "question_number": 62,
-      "page_source": "page-20.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 652,
-        "width": 1191,
-        "height": 428
-      },
-      "tags": [
-        "year-1403",
-        "question-62",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
-    },
-    {
-      "id": "1403-q-063",
-      "filename": "q-063.png",
-      "year": 1403,
-      "question_number": 63,
-      "page_source": "page-20.png",
-      "section": "دروس تخصصی ۳",
-      "section_en": "Hardware",
-      "courses": [
-        "مدار منطقی",
-        "معماری کامپیوتر",
-        "الکترونیک دیجیتال"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1082,
-        "width": 1191,
-        "height": 553
-      },
-      "tags": [
-        "year-1403",
-        "question-63",
-        "hardware",
-        "مدار-منطقی",
-        "معماری-کامپیوتر",
-        "الکترونیک-دیجیتال"
-      ]
-    },
-    {
-      "id": "1403-q-064",
-      "filename": "q-064.png",
-      "year": 1403,
-      "question_number": 64,
-      "page_source": "page-21.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 521
-      },
-      "tags": [
-        "year-1403",
-        "question-64",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
-    },
-    {
-      "id": "1403-q-065",
-      "filename": "q-065.png",
-      "year": 1403,
-      "question_number": 65,
-      "page_source": "page-21.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 611,
-        "width": 1191,
-        "height": 499
-      },
-      "tags": [
-        "year-1403",
-        "question-65",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
-    },
-    {
-      "id": "1403-q-066",
-      "filename": "q-066.png",
-      "year": 1403,
-      "question_number": 66,
-      "page_source": "page-21.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1139,
-        "width": 1191,
-        "height": 496
-      },
-      "tags": [
-        "year-1403",
-        "question-66",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
-    },
-    {
-      "id": "1403-q-067",
-      "filename": "q-067.png",
-      "year": 1403,
-      "question_number": 67,
-      "page_source": "page-22.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 521
-      },
-      "tags": [
-        "year-1403",
-        "question-67",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
-    },
-    {
-      "id": "1403-q-068",
-      "filename": "q-068.png",
-      "year": 1403,
-      "question_number": 68,
-      "page_source": "page-22.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 611,
-        "width": 1191,
-        "height": 507
-      },
-      "tags": [
-        "year-1403",
-        "question-68",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
-    },
-    {
-      "id": "1403-q-069",
-      "filename": "q-069.png",
-      "year": 1403,
-      "question_number": 69,
-      "page_source": "page-22.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1128,
-        "width": 1191,
-        "height": 464
-      },
-      "tags": [
-        "year-1403",
-        "question-69",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
-    },
-    {
-      "id": "1403-q-070",
-      "filename": "q-070.png",
-      "year": 1403,
-      "question_number": 70,
-      "page_source": "page-23.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 161,
-        "width": 1191,
-        "height": 422
-      },
-      "tags": [
-        "year-1403",
-        "question-70",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
-    },
-    {
-      "id": "1403-q-071",
-      "filename": "q-071.png",
-      "year": 1403,
-      "question_number": 71,
-      "page_source": "page-23.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 594,
-        "width": 1191,
-        "height": 538
-      },
-      "tags": [
-        "year-1403",
-        "question-71",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
-    },
-    {
-      "id": "1403-q-072",
-      "filename": "q-072.png",
-      "year": 1403,
-      "question_number": 72,
-      "page_source": "page-23.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1112,
-        "width": 1191,
-        "height": 523
-      },
-      "tags": [
-        "year-1403",
-        "question-72",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
-    },
-    {
-      "id": "1403-q-073",
-      "filename": "q-073.png",
-      "year": 1403,
-      "question_number": 73,
-      "page_source": "page-24.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 538
-      },
-      "tags": [
-        "year-1403",
-        "question-73",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
-    },
-    {
-      "id": "1403-q-074",
-      "filename": "q-074.png",
-      "year": 1403,
-      "question_number": 74,
-      "page_source": "page-24.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 649,
-        "width": 1191,
-        "height": 488
-      },
-      "tags": [
-        "year-1403",
-        "question-74",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
-    },
-    {
-      "id": "1403-q-075",
-      "filename": "q-075.png",
-      "year": 1403,
-      "question_number": 75,
-      "page_source": "page-24.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1144,
-        "width": 1191,
-        "height": 491
-      },
-      "tags": [
-        "year-1403",
-        "question-75",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
-    },
-    {
-      "id": "1403-q-076",
-      "filename": "q-076.png",
-      "year": 1403,
-      "question_number": 76,
-      "page_source": "page-25.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 110,
-        "width": 1191,
-        "height": 521
-      },
-      "tags": [
-        "year-1403",
-        "question-76",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
-    },
-    {
-      "id": "1403-q-077",
-      "filename": "q-077.png",
-      "year": 1403,
-      "question_number": 77,
-      "page_source": "page-25.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 611,
-        "width": 1191,
-        "height": 521
-      },
-      "tags": [
-        "year-1403",
-        "question-77",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
-    },
-    {
-      "id": "1403-q-078",
-      "filename": "q-078.png",
-      "year": 1403,
-      "question_number": 78,
-      "page_source": "page-25.png",
-      "section": "دروس تخصصی ۴",
-      "section_en": "Systems",
-      "courses": [
-        "سیستم عامل",
-        "شبکه‌های کامپیوتری",
-        "پایگاه داده"
-      ],
-      "crop_coords": {
-        "x": 0,
-        "y": 1112,
-        "width": 1191,
-        "height": 523
-      },
-      "tags": [
-        "year-1403",
-        "question-78",
-        "systems",
-        "سیستم-عامل",
-        "شبکه‌های-کامپیوتری",
-        "پایگاه-داده"
-      ]
+      "number": 83,
+      "filename": "q-083.png",
+      "section": "Hardware",
+      "topic": "Cache memory 2-way set associative",
+      "source_page": "page-20"
+    },
+    {
+      "number": 84,
+      "filename": "q-084.png",
+      "section": "Hardware",
+      "topic": "Floating point representation",
+      "source_page": "page-20"
+    },
+    {
+      "number": 85,
+      "filename": "q-085.png",
+      "section": "Architecture",
+      "topic": "CPI implementations comparison",
+      "source_page": "page-21"
+    },
+    {
+      "number": 86,
+      "filename": "q-086.png",
+      "section": "Architecture",
+      "topic": "ALU speedup calculation",
+      "source_page": "page-21",
+      "crop_coords": {
+        "y_start": 520,
+        "y_end": 720,
+        "height": 200,
+        "source_page": "page-21"
+      }
+    },
+    {
+      "number": 87,
+      "filename": "q-087.png",
+      "section": "Architecture",
+      "topic": "Subroutine control unit INDRCT",
+      "source_page": "page-21",
+      "crop_coords": {
+        "y_start": 720,
+        "y_end": 1010,
+        "height": 290,
+        "source_page": "page-21"
+      }
+    },
+    {
+      "number": 88,
+      "filename": "q-088.png",
+      "section": "Architecture",
+      "topic": "Cache hierarchy MRU policy",
+      "source_page": "page-21",
+      "crop_coords": {
+        "y_start": 1010,
+        "y_end": 1310,
+        "height": 300,
+        "source_page": "page-21"
+      }
+    },
+    {
+      "number": 89,
+      "filename": "q-089.png",
+      "section": "Digital",
+      "topic": "Booth algorithm shifts",
+      "source_page": "page-22",
+      "crop_coords": {
+        "y_start": 140,
+        "y_end": 290,
+        "height": 150,
+        "source_page": "page-22"
+      }
+    },
+    {
+      "number": 90,
+      "filename": "q-090.png",
+      "section": "Digital",
+      "topic": "CMOS circuit output function",
+      "source_page": "page-22",
+      "crop_coords": {
+        "y_start": 290,
+        "y_end": 735,
+        "height": 445,
+        "source_page": "page-22"
+      }
+    },
+    {
+      "number": 91,
+      "filename": "q-091.png",
+      "section": "Digital",
+      "topic": "CMOS power consumption",
+      "source_page": "page-22",
+      "crop_coords": {
+        "y_start": 735,
+        "y_end": 1000,
+        "height": 265,
+        "source_page": "page-22"
+      }
+    },
+    {
+      "number": 92,
+      "filename": "q-092.png",
+      "section": "Digital",
+      "topic": "Circuit VOH/VOL analysis",
+      "source_page": "page-22",
+      "crop_coords": {
+        "y_start": 1000,
+        "y_end": 1560,
+        "height": 560,
+        "source_page": "page-22"
+      }
+    },
+    {
+      "number": 93,
+      "filename": "q-093.png",
+      "section": "Digital",
+      "topic": "CMOS inverter power",
+      "source_page": "page-23",
+      "crop_coords": {
+        "y_start": 140,
+        "y_end": 435,
+        "height": 295,
+        "source_page": "page-23"
+      }
+    },
+    {
+      "number": 94,
+      "filename": "q-094.png",
+      "section": "Digital",
+      "topic": "Transistor Vout calculation",
+      "source_page": "page-23",
+      "crop_coords": {
+        "y_start": 435,
+        "y_end": 800,
+        "height": 365,
+        "source_page": "page-23"
+      }
+    },
+    {
+      "number": 95,
+      "filename": "q-095.png",
+      "section": "Digital",
+      "topic": "Charge sharing",
+      "source_page": "page-23",
+      "crop_coords": {
+        "y_start": 800,
+        "y_end": 1200,
+        "height": 400,
+        "source_page": "page-23"
+      }
+    },
+    {
+      "number": 96,
+      "filename": "q-096.png",
+      "section": "OS",
+      "topic": "Thread statements",
+      "source_page": "page-24",
+      "crop_coords": {
+        "y_start": 35,
+        "y_end": 520,
+        "height": 485,
+        "source_page": "page-24"
+      }
+    },
+    {
+      "number": 97,
+      "filename": "q-097.png",
+      "section": "OS",
+      "topic": "Round Robin scheduling",
+      "source_page": "page-24",
+      "crop_coords": {
+        "y_start": 520,
+        "y_end": 785,
+        "height": 265,
+        "source_page": "page-24"
+      }
+    },
+    {
+      "number": 98,
+      "filename": "q-098.png",
+      "section": "OS",
+      "topic": "Kernel operations",
+      "source_page": "page-24",
+      "crop_coords": {
+        "y_start": 785,
+        "y_end": 920,
+        "height": 135,
+        "source_page": "page-24"
+      }
+    },
+    {
+      "number": 99,
+      "filename": "q-099.png",
+      "section": "OS",
+      "topic": "Virtual memory page table",
+      "source_page": "page-24",
+      "crop_coords": {
+        "y_start": 920,
+        "y_end": 1260,
+        "height": 340,
+        "source_page": "page-24"
+      }
+    },
+    {
+      "number": 100,
+      "filename": "q-100.png",
+      "section": "OS",
+      "topic": "Convoy effect",
+      "source_page": "page-24",
+      "crop_coords": {
+        "y_start": 1260,
+        "y_end": 1420,
+        "height": 160,
+        "source_page": "page-24"
+      }
     }
   ]
 }
