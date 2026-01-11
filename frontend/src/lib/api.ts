@@ -39,6 +39,66 @@ export interface Stats {
   years_covered: number;
 }
 
+// Vocabulary Types
+export interface VocabularyCategory {
+  id: string;
+  name_fa: string;
+  name_en: string;
+  description_fa?: string;
+  description_en?: string;
+  icon?: string;
+  word_count: number;
+}
+
+export interface VocabularyWord {
+  id: string;
+  category_name?: string;
+  word_en: string;
+  meaning_fa: string;
+  pronunciation?: string;
+  example_en?: string;
+  example_fa?: string;
+  difficulty: number;
+}
+
+export interface StudyQueueItem {
+  type: 'new' | 'review';
+  word: VocabularyWord;
+  progress: {
+    easiness: number;
+    interval_days: number;
+    repetitions: number;
+  };
+}
+
+export interface StudyQueue {
+  queue: StudyQueueItem[];
+  total: number;
+  due_count: number;
+  new_count: number;
+}
+
+export interface VocabularyReviewResponse {
+  success: boolean;
+  next_review: string;
+  interval_days: number;
+  easiness: number;
+  xp_earned: number;
+  streak: number;
+}
+
+export interface VocabularyStats {
+  total_words: number;
+  words_learned: number;
+  words_due: number;
+  words_new: number;
+  reviews_today: number;
+  current_streak: number;
+  longest_streak: number;
+  total_xp: number;
+  accuracy_percent: number;
+}
+
 async function fetchAPI<T>(endpoint: string, options?: RequestInit): Promise<T> {
   const res = await fetch(`${API_BASE}${endpoint}`, {
     ...options,
@@ -92,4 +152,31 @@ export const api = {
       method: 'POST',
       body: JSON.stringify({ question_id: questionId, selected }),
     }),
+
+  // Vocabulary
+  getVocabularyCategories: () =>
+    fetchAPI<VocabularyCategory[]>('/vocabulary/categories'),
+
+  getVocabularyWords: (params?: { category?: string; limit?: number; offset?: number }) => {
+    const query = new URLSearchParams();
+    if (params?.category) query.set('category', params.category);
+    if (params?.limit) query.set('limit', String(params.limit));
+    if (params?.offset) query.set('offset', String(params.offset));
+    return fetchAPI<{ words: VocabularyWord[]; total: number }>(`/vocabulary/words?${query}`);
+  },
+
+  getStudyQueue: (limit: number = 10, category?: string) => {
+    const query = new URLSearchParams();
+    query.set('limit', String(limit));
+    if (category) query.set('category', category);
+    return fetchAPI<StudyQueue>(`/vocabulary/study?${query}`);
+  },
+
+  reviewWord: (wordId: string, quality: number) =>
+    fetchAPI<VocabularyReviewResponse>('/vocabulary/review', {
+      method: 'POST',
+      body: JSON.stringify({ word_id: wordId, quality }),
+    }),
+
+  getVocabularyStats: () => fetchAPI<VocabularyStats>('/vocabulary/stats'),
 };

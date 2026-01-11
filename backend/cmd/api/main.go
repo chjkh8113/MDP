@@ -84,6 +84,17 @@ func main() {
 	api.Get("/years", h.GetYears)
 	api.Get("/stats", h.GetStats)
 
+	// Vocabulary Learning
+	vocab := api.Group("/vocabulary")
+	vocab.Get("/categories", h.GetVocabularyCategories)
+	vocab.Get("/words", h.GetVocabularyWords)
+	vocab.Get("/words/:uuid", h.GetVocabularyWord)
+	vocab.Get("/study", h.GetStudyQueue)
+	vocab.Get("/due", h.GetDueWords)
+	vocab.Get("/new", h.GetNewWords)
+	vocab.Post("/review", h.ReviewWord)
+	vocab.Get("/stats", h.GetVocabularyStats)
+
 	// Graceful shutdown
 	quit := make(chan os.Signal, 1)
 	signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
