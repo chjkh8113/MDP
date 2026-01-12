@@ -2,7 +2,8 @@
 
 import { useState, useEffect, useCallback } from 'react';
 import { api, StudyQueueItem, VocabularyStats as VocabStatsType } from '@/lib/api';
-import { FlashCard, RatingButtons, Quality } from '@/components/vocabulary/FlashCard';
+import { FlashCard, RatingButtons, CardActions, Quality } from '@/components/vocabulary/FlashCard';
+import { CardAction } from '@/lib/api';
 import { VocabularyStats } from '@/components/vocabulary/VocabularyStats';
 import { Button } from '@/components/ui/button';
 import Link from 'next/link';
@@ -16,6 +17,7 @@ export default function VocabularyPage() {
   const [isReviewing, setIsReviewing] = useState(false);
   const [sessionComplete, setSessionComplete] = useState(false);
   const [lastReview, setLastReview] = useState<{ xp: number; interval: number } | null>(null);
+  const [cardActionMessage, setCardActionMessage] = useState<string | null>(null);
 
   const loadStudyQueue = useCallback(async () => {
     setIsLoading(true);
@@ -77,6 +79,20 @@ export default function VocabularyPage() {
       console.error('Failed to submit review:', error);
       setIsReviewing(false);
     }
+  };
+
+  const handleCardAction = (action: CardAction, message: string) => {
+    setCardActionMessage(message);
+    // Move to next card after action
+    setTimeout(() => {
+      if (currentIndex < queue.length - 1) {
+        setCurrentIndex(currentIndex + 1);
+        setShowAnswer(false);
+      } else {
+        setSessionComplete(true);
+      }
+      setCardActionMessage(null);
+    }, 1500);
   };
 
   const currentWord = queue[currentIndex];
@@ -143,6 +159,9 @@ export default function VocabularyPage() {
               <Button onClick={loadStudyQueue} variant="default">
                 مطالعه بیشتر
               </Button>
+              <Link href="/vocabulary/quiz">
+                <Button variant="outline">آزمون</Button>
+              </Link>
               <Link href="/">
                 <Button variant="outline">صفحه اصلی</Button>
               </Link>
@@ -179,6 +198,22 @@ export default function VocabularyPage() {
                 {lastReview && (
                   <div className="text-center text-sm text-gray-600 animate-fade-in">
                     +{lastReview.xp} XP · مرور بعدی در {lastReview.interval} روز
+                  </div>
+                )}
+
+                {/* Card actions */}
+                <div className="pt-4 border-t border-gray-200">
+                  <CardActions
+                    wordId={currentWord.word.id}
+                    onAction={handleCardAction}
+                    disabled={isReviewing}
+                  />
+                </div>
+
+                {/* Card action message toast */}
+                {cardActionMessage && (
+                  <div className="fixed bottom-4 left-1/2 transform -translate-x-1/2 bg-gray-800 text-white px-4 py-2 rounded-lg shadow-lg z-50 animate-fade-in">
+                    {cardActionMessage}
                   </div>
                 )}
               </div>

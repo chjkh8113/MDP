@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { VocabularyWord } from '@/lib/api';
+import { VocabularyWord, CardAction, api } from '@/lib/api';
 import { cn } from '@/lib/utils';
 
 interface FlashCardProps {
@@ -100,6 +100,59 @@ export function RatingButtons({ onRate, disabled }: RatingButtonsProps) {
         >
           <span className="font-semibold">{btn.label}</span>
           <span className="text-xs opacity-80">{btn.subLabel}</span>
+        </button>
+      ))}
+    </div>
+  );
+}
+
+// Card action buttons for suspend/bury/delete
+interface CardActionsProps {
+  wordId: string;
+  onAction?: (action: CardAction, message: string) => void;
+  disabled?: boolean;
+}
+
+export function CardActions({ wordId, onAction, disabled }: CardActionsProps) {
+  const [isLoading, setIsLoading] = useState(false);
+
+  const handleAction = async (action: CardAction) => {
+    if (isLoading) return;
+    setIsLoading(true);
+    try {
+      const response = await api.updateCardStatus(wordId, action);
+      if (response.success && onAction) {
+        onAction(action, response.message);
+      }
+    } catch (error) {
+      console.error('Failed to update card status:', error);
+    } finally {
+      setIsLoading(false);
+    }
+  };
+
+  const actions = [
+    { action: 'bury' as CardAction, icon: '⏸️', label: 'تعویق', title: 'تعویق تا فردا' },
+    { action: 'suspend' as CardAction, icon: '😴', label: 'مخفی', title: 'مخفی برای ۳۰ روز' },
+    { action: 'delete' as CardAction, icon: '🗑️', label: 'حذف', title: 'حذف از صف' },
+  ];
+
+  return (
+    <div className="flex gap-2 justify-center">
+      {actions.map((item) => (
+        <button
+          key={item.action}
+          onClick={() => handleAction(item.action)}
+          disabled={disabled || isLoading}
+          title={item.title}
+          className={cn(
+            "flex items-center gap-1 px-3 py-1.5 rounded-lg text-sm transition-all",
+            "bg-gray-100 hover:bg-gray-200 text-gray-700",
+            "disabled:opacity-50 disabled:cursor-not-allowed"
+          )}
+        >
+          <span>{item.icon}</span>
+          <span>{item.label}</span>
         </button>
       ))}
     </div>

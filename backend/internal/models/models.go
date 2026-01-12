@@ -185,3 +185,37 @@ type VocabularyStats struct {
 	TotalXP         int     `json:"total_xp"`
 	AccuracyPercent float64 `json:"accuracy_percent"`
 }
+
+// VocabQuizQuestion represents a quiz question with options
+type VocabQuizQuestion struct {
+	Word    VocabularyWord `json:"word"`
+	Options []string       `json:"options"`
+	Type    string         `json:"type"` // "meaning" or "word"
+}
+
+// VocabQuizAnswerRequest represents a quiz answer submission
+type VocabQuizAnswerRequest struct {
+	WordUUID string `json:"word_id"`
+	Answer   string `json:"answer"`
+	QuizType string `json:"quiz_type"`
+	TimeMs   int    `json:"time_ms,omitempty"`
+}
+
+// VocabQuizAnswerResponse represents the response after answering
+type VocabQuizAnswerResponse struct {
+	Correct       bool   `json:"correct"`
+	CorrectAnswer string `json:"correct_answer"`
+	XPEarned      int    `json:"xp_earned"`
+}
+
+// CardActionRequest represents a request to suspend/bury/delete a card
+type CardActionRequest struct {
+	WordUUID string `json:"word_id"`
+	Action   string `json:"action"` // "suspend", "bury", "delete", "restore"
+}
+
+// CardActionResponse represents the response after a card action
+type CardActionResponse struct {
+	Success bool   `json:"success"`
+	Message string `json:"message"`
+}

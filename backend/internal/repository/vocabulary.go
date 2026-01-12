@@ -128,6 +128,7 @@ func (r *Repository) GetDueWords(userID, limit int) ([]models.UserVocabulary, er
 		FROM user_vocabulary uv
 		JOIN vocabulary_words w ON uv.word_id = w.id
 		WHERE uv.user_id = $1 AND uv.next_review <= NOW()
+		  AND (uv.status IS NULL OR uv.status = 'active' OR (uv.status_until IS NOT NULL AND uv.status_until <= NOW()))
 		ORDER BY uv.next_review
 		LIMIT $2`, userID, limit)
 	if err != nil {
@@ -159,7 +160,10 @@ func (r *Repository) GetNewWords(userID, limit int, categoryUUID string) ([]mode
 		       COALESCE(w.example_fa, ''), w.difficulty
 		FROM vocabulary_words w
 		LEFT JOIN vocabulary_categories c ON w.category_id = c.id
-		WHERE w.id NOT IN (SELECT word_id FROM user_vocabulary WHERE user_id = $1)`
+		WHERE w.id NOT IN (
+			SELECT word_id FROM user_vocabulary
+			WHERE user_id = $1 AND (status IS NULL OR status = 'active' OR status = 'suspended' OR status = 'deleted')
+		)`
 	args := []interface{}{userID}
 
 	if categoryUUID != "" {

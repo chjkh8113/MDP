@@ -99,6 +99,33 @@ export interface VocabularyStats {
   accuracy_percent: number;
 }
 
+// Quiz Types
+export interface VocabQuizQuestion {
+  word: VocabularyWord;
+  options: string[];
+  type: 'meaning' | 'word'; // meaning = en->fa, word = fa->en
+}
+
+export interface VocabQuizResponse {
+  questions: VocabQuizQuestion[];
+  total: number;
+  type: string;
+}
+
+export interface VocabQuizAnswerResponse {
+  correct: boolean;
+  correct_answer: string;
+  xp_earned: number;
+}
+
+// Card Action Types
+export type CardAction = 'suspend' | 'bury' | 'delete' | 'restore';
+
+export interface CardActionResponse {
+  success: boolean;
+  message: string;
+}
+
 async function fetchAPI<T>(endpoint: string, options?: RequestInit): Promise<T> {
   const res = await fetch(`${API_BASE}${endpoint}`, {
     ...options,
@@ -180,4 +207,33 @@ export const api = {
     }),
 
   getVocabularyStats: () => fetchAPI<VocabularyStats>('/vocabulary/stats'),
+
+  // Vocabulary Quiz
+  getVocabQuiz: (type: 'meaning' | 'word' = 'meaning', count: number = 10) => {
+    const query = new URLSearchParams();
+    query.set('type', type);
+    query.set('count', String(count));
+    return fetchAPI<VocabQuizResponse>(`/vocabulary/quiz?${query}`);
+  },
+
+  submitVocabQuizAnswer: (wordId: string, answer: string, quizType: string, timeMs?: number) =>
+    fetchAPI<VocabQuizAnswerResponse>('/vocabulary/quiz/answer', {
+      method: 'POST',
+      body: JSON.stringify({
+        word_id: wordId,
+        answer,
+        quiz_type: quizType,
+        time_ms: timeMs,
+      }),
+    }),
+
+  // Card Actions
+  updateCardStatus: (wordId: string, action: CardAction) =>
+    fetchAPI<CardActionResponse>('/vocabulary/card/action', {
+      method: 'POST',
+      body: JSON.stringify({ word_id: wordId, action }),
+    }),
+
+  getSuspendedCards: () =>
+    fetchAPI<{ cards: VocabularyWord[]; total: number }>('/vocabulary/card/suspended'),
 };

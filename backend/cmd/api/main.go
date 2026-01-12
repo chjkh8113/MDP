@@ -96,6 +96,14 @@ func main() {
 	vocab.Post("/review", h.ReviewWord)
 	vocab.Get("/stats", h.GetVocabularyStats)
 
+	// Quiz mode
+	vocab.Get("/quiz", h.GetVocabQuiz)
+	vocab.Post("/quiz/answer", h.SubmitVocabQuizAnswer)
+
+	// Card actions (suspend/bury/delete/restore)
+	vocab.Post("/card/action", h.UpdateCardStatus)
+	vocab.Get("/card/suspended", h.GetSuspendedCards)
+
 	// Graceful shutdown
 	quit := make(chan os.Signal, 1)
 	signal.Notify(quit, syscall.SIGINT, syscall.SIGTERM)
