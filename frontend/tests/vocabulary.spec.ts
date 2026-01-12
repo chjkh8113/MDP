@@ -6,8 +6,9 @@ test.describe('Vocabulary Flashcard System', () => {
   });
 
   test('should load vocabulary page', async ({ page }) => {
-    // Wait for page to load (Persian title)
-    await expect(page.getByRole('heading', { name: /تمرین لغات/i })).toBeVisible();
+    // Wait for page to load - check for MDP logo and Persian title
+    await expect(page.getByText('MDP')).toBeVisible();
+    await expect(page.getByText('تمرین لغات')).toBeVisible();
   });
 
   test('should display stats cards', async ({ page }) => {

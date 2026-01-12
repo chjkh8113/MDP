@@ -102,6 +102,7 @@ export interface VocabularyStats {
 async function fetchAPI<T>(endpoint: string, options?: RequestInit): Promise<T> {
   const res = await fetch(`${API_BASE}${endpoint}`, {
     ...options,
+    credentials: 'include', // Include cookies for user identification
     headers: {
       'Content-Type': 'application/json',
       ...options?.headers,

@@ -106,10 +106,10 @@ export default function VocabularyPage() {
         {/* Header */}
         <div className="flex items-center justify-between">
           <div>
-            <Link href="/" className="text-blue-600 hover:text-blue-800 text-sm mb-1 block">
-              → بازگشت به خانه
+            <Link href="/" className="text-2xl font-bold text-gray-900 hover:text-blue-600 transition mb-1 block">
+              MDP
             </Link>
-            <h1 className="text-2xl font-bold text-gray-900">تمرین لغات</h1>
+            <h1 className="text-lg text-gray-600">تمرین لغات</h1>
           </div>
           {queue.length > 0 && !sessionComplete && (
             <div className="text-sm text-gray-600">
@@ -144,7 +144,7 @@ export default function VocabularyPage() {
                 مطالعه بیشتر
               </Button>
               <Link href="/">
-                <Button variant="outline">بازگشت به خانه</Button>
+                <Button variant="outline">صفحه اصلی</Button>
               </Link>
             </div>
           </div>

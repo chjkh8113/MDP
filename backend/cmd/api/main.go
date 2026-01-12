@@ -54,9 +54,10 @@ func main() {
 		TimeFormat: "2006-01-02 15:04:05",
 	}))
 	app.Use(cors.New(cors.Config{
-		AllowOrigins: "*",
-		AllowMethods: "GET,POST,PUT,DELETE,OPTIONS",
-		AllowHeaders: "Origin,Content-Type,Accept,Authorization",
+		AllowOrigins:     "http://localhost:4444,http://localhost:3000,http://127.0.0.1:4444",
+		AllowMethods:     "GET,POST,PUT,DELETE,OPTIONS",
+		AllowHeaders:     "Origin,Content-Type,Accept,Authorization",
+		AllowCredentials: true,
 	}))
 
 	// API Routes
