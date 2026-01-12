@@ -6,33 +6,34 @@ test.describe('Vocabulary Flashcard System', () => {
   });
 
   test('should load vocabulary page', async ({ page }) => {
-    // Wait for page to load
-    await expect(page.getByRole('heading', { name: /Vocabulary Practice/i })).toBeVisible();
+    // Wait for page to load (Persian title)
+    await expect(page.getByRole('heading', { name: /تمرین لغات/i })).toBeVisible();
   });
 
   test('should display stats cards', async ({ page }) => {
-    // Wait for stats to load (check for streak icon)
+    // Wait for stats to load
     await page.waitForTimeout(2000);
 
-    // Check for stats cards
-    const streakCard = page.locator('text=Streak');
+    // Check for stats cards (Persian labels) - use exact match
+    const streakCard = page.getByText('استریک', { exact: true });
     await expect(streakCard).toBeVisible();
 
-    const wordsCard = page.locator('text=Words Due');
+    const wordsCard = page.getByText('لغات موعد', { exact: true });
     await expect(wordsCard).toBeVisible();
 
-    const learnedCard = page.locator('text=Learned');
+    const learnedCard = page.getByText('یادگرفته', { exact: true });
     await expect(learnedCard).toBeVisible();
 
-    const xpCard = page.locator('text=XP');
-    await expect(xpCard).toBeVisible();
+    // XP card - check for the label only
+    const xpLabel = page.getByText('مجموع امتیازات', { exact: true });
+    await expect(xpLabel).toBeVisible();
   });
 
   test('should display flashcard with English word', async ({ page }) => {
     await page.waitForTimeout(2000);
 
-    // Check for English text on card
-    const englishLabel = page.locator('text=English');
+    // Check for English label on card (Persian text)
+    const englishLabel = page.locator('text=انگلیسی');
     await expect(englishLabel).toBeVisible();
   });
 
@@ -50,7 +51,7 @@ test.describe('Vocabulary Flashcard System', () => {
     await page.waitForTimeout(600);
 
     // Check for Persian label (back of card)
-    const persianLabel = page.locator('text=Persian');
+    const persianLabel = page.locator('text=فارسی');
     await expect(persianLabel).toBeVisible();
   });
 
@@ -63,11 +64,11 @@ test.describe('Vocabulary Flashcard System', () => {
 
     await page.waitForTimeout(600);
 
-    // Check for rating buttons
-    const againBtn = page.getByRole('button', { name: /Again/i });
-    const hardBtn = page.getByRole('button', { name: /Hard/i });
-    const goodBtn = page.getByRole('button', { name: /Good/i });
-    const easyBtn = page.getByRole('button', { name: /Easy/i });
+    // Check for rating buttons (Persian labels)
+    const againBtn = page.getByRole('button', { name: /دوباره/i });
+    const hardBtn = page.getByRole('button', { name: /سخت/i });
+    const goodBtn = page.getByRole('button', { name: /خوب/i });
+    const easyBtn = page.getByRole('button', { name: /آسان/i });
 
     await expect(againBtn).toBeVisible();
     await expect(hardBtn).toBeVisible();
@@ -86,8 +87,8 @@ test.describe('Vocabulary Flashcard System', () => {
     await card.click();
     await page.waitForTimeout(600);
 
-    // Click Good button
-    const goodBtn = page.getByRole('button', { name: /Good/i });
+    // Click Good button (Persian)
+    const goodBtn = page.getByRole('button', { name: /خوب/i });
     await goodBtn.click();
 
     // Wait for next card animation
@@ -108,7 +109,7 @@ test.describe('Vocabulary Flashcard System', () => {
         await card.click();
         await page.waitForTimeout(300);
 
-        const goodBtn = page.getByRole('button', { name: /Good/i });
+        const goodBtn = page.getByRole('button', { name: /خوب/i });
         if (await goodBtn.isVisible()) {
           await goodBtn.click();
           await page.waitForTimeout(1000);
@@ -116,8 +117,8 @@ test.describe('Vocabulary Flashcard System', () => {
       }
     }
 
-    // Check for completion message or no more cards
-    const completionOrEmpty = page.locator('text=Session Complete').or(page.locator('text=No Words to Study'));
+    // Check for completion message or no more cards (Persian)
+    const completionOrEmpty = page.locator('text=جلسه تمام شد').or(page.locator('text=لغتی برای مطالعه نیست'));
     await expect(completionOrEmpty).toBeVisible({ timeout: 15000 });
   });
 });
