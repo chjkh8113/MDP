@@ -84,7 +84,7 @@ export default function VocabularyPage() {
 
   if (isLoading) {
     return (
-      <div className="min-h-screen bg-gray-50 p-6">
+      <div className="min-h-screen bg-gray-50 p-6" dir="rtl">
         <div className="max-w-2xl mx-auto">
           <div className="animate-pulse space-y-6">
             <div className="h-8 bg-gray-200 rounded w-1/3" />
@@ -101,15 +101,15 @@ export default function VocabularyPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 p-6">
+    <div className="min-h-screen bg-gray-50 p-6" dir="rtl">
       <div className="max-w-2xl mx-auto space-y-6">
         {/* Header */}
         <div className="flex items-center justify-between">
           <div>
             <Link href="/" className="text-blue-600 hover:text-blue-800 text-sm mb-1 block">
-              ← Back to Home
+              → بازگشت به خانه
             </Link>
-            <h1 className="text-2xl font-bold text-gray-900">Vocabulary Practice</h1>
+            <h1 className="text-2xl font-bold text-gray-900">تمرین لغات</h1>
           </div>
           {queue.length > 0 && !sessionComplete && (
             <div className="text-sm text-gray-600">
@@ -135,16 +135,16 @@ export default function VocabularyPage() {
         {sessionComplete ? (
           <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
             <div className="text-6xl mb-4">🎉</div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">Session Complete!</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">جلسه تمام شد!</h2>
             <p className="text-gray-600 mb-6">
-              Great job! You've reviewed all your cards for now.
+              آفرین! همه کارت‌های امروز را مرور کردید.
             </p>
             <div className="flex gap-4 justify-center">
               <Button onClick={loadStudyQueue} variant="default">
-                Study More
+                مطالعه بیشتر
               </Button>
               <Link href="/">
-                <Button variant="outline">Back to Home</Button>
+                <Button variant="outline">بازگشت به خانه</Button>
               </Link>
             </div>
           </div>
@@ -159,7 +159,7 @@ export default function VocabularyPage() {
                     : 'bg-amber-100 text-amber-700'
                 }`}
               >
-                {currentWord.type === 'new' ? 'New Word' : 'Review'}
+                {currentWord.type === 'new' ? 'لغت جدید' : 'مرور'}
               </span>
             </div>
 
@@ -178,7 +178,7 @@ export default function VocabularyPage() {
                 {/* Last review feedback */}
                 {lastReview && (
                   <div className="text-center text-sm text-gray-600 animate-fade-in">
-                    +{lastReview.xp} XP · Next review in {lastReview.interval} day(s)
+                    +{lastReview.xp} XP · مرور بعدی در {lastReview.interval} روز
                   </div>
                 )}
               </div>
@@ -187,18 +187,18 @@ export default function VocabularyPage() {
             {/* Flip hint */}
             {!showAnswer && (
               <p className="text-center text-gray-500 text-sm">
-                Click the card to reveal the answer
+                روی کارت کلیک کنید تا جواب نمایش داده شود
               </p>
             )}
           </div>
         ) : (
           <div className="bg-white rounded-2xl shadow-lg p-8 text-center">
             <div className="text-6xl mb-4">📚</div>
-            <h2 className="text-2xl font-bold text-gray-900 mb-2">No Words to Study</h2>
+            <h2 className="text-2xl font-bold text-gray-900 mb-2">لغتی برای مطالعه نیست</h2>
             <p className="text-gray-600 mb-6">
-              Great job! You've completed all available reviews.
+              آفرین! همه مرورهای موجود را تکمیل کردید.
             </p>
-            <Button onClick={loadStudyQueue}>Refresh</Button>
+            <Button onClick={loadStudyQueue}>بارگذاری مجدد</Button>
           </div>
         )}
       </div>

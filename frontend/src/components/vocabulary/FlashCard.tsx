@@ -25,7 +25,7 @@ export function FlashCard({ word, showAnswer, onFlip }: FlashCardProps) {
         {/* Front - English word */}
         <div className="absolute w-full h-full backface-hidden">
           <div className="w-full h-full bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl shadow-xl p-6 flex flex-col items-center justify-center text-white">
-            <span className="text-sm opacity-80 mb-2">English</span>
+            <span className="text-sm opacity-80 mb-2">انگلیسی</span>
             <h2 className="text-3xl font-bold mb-2">{word.word_en}</h2>
             {word.pronunciation && (
               <span className="text-lg opacity-90">{word.pronunciation}</span>
@@ -41,14 +41,14 @@ export function FlashCard({ word, showAnswer, onFlip }: FlashCardProps) {
                 />
               ))}
             </div>
-            <p className="text-sm opacity-70 mt-4">Click to reveal meaning</p>
+            <p className="text-sm opacity-70 mt-4">کلیک کنید تا معنی نمایش داده شود</p>
           </div>
         </div>
 
         {/* Back - Persian meaning */}
         <div className="absolute w-full h-full backface-hidden rotate-y-180">
           <div className="w-full h-full bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl shadow-xl p-6 flex flex-col items-center justify-center text-white">
-            <span className="text-sm opacity-80 mb-2">Persian</span>
+            <span className="text-sm opacity-80 mb-2">فارسی</span>
             <h2 className="text-2xl font-bold mb-4 text-center" dir="rtl">
               {word.meaning_fa}
             </h2>
@@ -79,10 +79,10 @@ interface RatingButtonsProps {
 
 export function RatingButtons({ onRate, disabled }: RatingButtonsProps) {
   const buttons = [
-    { quality: 0 as Quality, label: 'Again', subLabel: 'Forgot', color: 'bg-red-500 hover:bg-red-600' },
-    { quality: 3 as Quality, label: 'Hard', subLabel: '~1 day', color: 'bg-orange-500 hover:bg-orange-600' },
-    { quality: 4 as Quality, label: 'Good', subLabel: '~3 days', color: 'bg-blue-500 hover:bg-blue-600' },
-    { quality: 5 as Quality, label: 'Easy', subLabel: '~7 days', color: 'bg-emerald-500 hover:bg-emerald-600' },
+    { quality: 0 as Quality, label: 'دوباره', subLabel: 'یادم نبود', color: 'bg-red-500 hover:bg-red-600' },
+    { quality: 3 as Quality, label: 'سخت', subLabel: '~۱ روز', color: 'bg-orange-500 hover:bg-orange-600' },
+    { quality: 4 as Quality, label: 'خوب', subLabel: '~۳ روز', color: 'bg-blue-500 hover:bg-blue-600' },
+    { quality: 5 as Quality, label: 'آسان', subLabel: '~۷ روز', color: 'bg-emerald-500 hover:bg-emerald-600' },
   ];
 
   return (

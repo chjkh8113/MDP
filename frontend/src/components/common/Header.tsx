@@ -1,6 +1,7 @@
 "use client";
 
 import Link from "next/link";
+import { BookOpen } from "lucide-react";
 
 export function Header() {
   return (
@@ -9,7 +10,10 @@ export function Header() {
         <Link href="/" className="text-2xl font-bold tracking-tight">
           MDP
         </Link>
-        <nav className="flex gap-8 text-sm font-medium">
+        <nav className="flex gap-8 text-sm font-medium items-center">
+          <Link href="/vocabulary" className="opacity-70 hover:opacity-100 transition" title="تمرین لغات">
+            <BookOpen size={20} />
+          </Link>
           <Link href="/fields" className="opacity-70 hover:opacity-100 transition">
             مشاهده سوالات
           </Link>

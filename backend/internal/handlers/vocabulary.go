@@ -4,7 +4,31 @@ import (
 	"mdp-api/internal/models"
 
 	"github.com/gofiber/fiber/v2"
+	"github.com/google/uuid"
 )
+
+// getUserFromCookie gets or creates a user based on client_id cookie
+func (h *Handler) getUserFromCookie(c *fiber.Ctx) (int, error) {
+	clientID := c.Cookies("client_id")
+	if clientID == "" {
+		// Generate new client ID
+		clientID = uuid.New().String()
+		c.Cookie(&fiber.Cookie{
+			Name:     "client_id",
+			Value:    clientID,
+			MaxAge:   365 * 24 * 60 * 60, // 1 year
+			HTTPOnly: false,
+			SameSite: "Lax",
+		})
+	}
+
+	// Get or create user by client ID
+	userID, err := h.repo.GetOrCreateUserByClientID(clientID)
+	if err != nil {
+		return 0, err
+	}
+	return userID, nil
+}
 
 // GetVocabularyCategories returns all vocabulary categories
 func (h *Handler) GetVocabularyCategories(c *fiber.Ctx) error {
@@ -54,10 +78,12 @@ func (h *Handler) GetVocabularyWord(c *fiber.Ctx) error {
 
 // GetDueWords returns words due for review
 func (h *Handler) GetDueWords(c *fiber.Ctx) error {
-	// For now, use user ID 1 (demo user) - in production, get from auth
-	userID := 1
-	limit := c.QueryInt("limit", 10)
+	userID, err := h.getUserFromCookie(c)
+	if err != nil {
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to identify user"})
+	}
 
+	limit := c.QueryInt("limit", 10)
 	if limit > 50 {
 		limit = 50
 	}
@@ -75,8 +101,11 @@ func (h *Handler) GetDueWords(c *fiber.Ctx) error {
 
 // GetNewWords returns words not yet started by user
 func (h *Handler) GetNewWords(c *fiber.Ctx) error {
-	// For now, use user ID 1 (demo user)
-	userID := 1
+	userID, err := h.getUserFromCookie(c)
+	if err != nil {
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to identify user"})
+	}
+
 	limit := c.QueryInt("limit", 10)
 	categoryUUID := c.Query("category")
 
@@ -97,8 +126,11 @@ func (h *Handler) GetNewWords(c *fiber.Ctx) error {
 
 // GetStudyQueue returns combined due and new words for study session
 func (h *Handler) GetStudyQueue(c *fiber.Ctx) error {
-	// For now, use user ID 1 (demo user)
-	userID := 1
+	userID, err := h.getUserFromCookie(c)
+	if err != nil {
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to identify user"})
+	}
+
 	limit := c.QueryInt("limit", 10)
 	categoryUUID := c.Query("category")
 
@@ -159,8 +191,10 @@ func (h *Handler) GetStudyQueue(c *fiber.Ctx) error {
 
 // ReviewWord submits a review for a word
 func (h *Handler) ReviewWord(c *fiber.Ctx) error {
-	// For now, use user ID 1 (demo user)
-	userID := 1
+	userID, err := h.getUserFromCookie(c)
+	if err != nil {
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to identify user"})
+	}
 
 	var req models.VocabularyReviewRequest
 	if err := c.BodyParser(&req); err != nil {
@@ -185,8 +219,10 @@ func (h *Handler) ReviewWord(c *fiber.Ctx) error {
 
 // GetVocabularyStats returns user's vocabulary learning statistics
 func (h *Handler) GetVocabularyStats(c *fiber.Ctx) error {
-	// For now, use user ID 1 (demo user)
-	userID := 1
+	userID, err := h.getUserFromCookie(c)
+	if err != nil {
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to identify user"})
+	}
 
 	stats, err := h.repo.GetVocabularyStats(userID)
 	if err != nil {

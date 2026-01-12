@@ -7,6 +7,26 @@ import (
 	"time"
 )
 
+// GetOrCreateUserByClientID finds or creates a user by client_id cookie value
+func (r *Repository) GetOrCreateUserByClientID(clientID string) (int, error) {
+	var userID int
+	err := r.db.QueryRow(context.Background(),
+		"SELECT id FROM users WHERE client_id = $1", clientID).Scan(&userID)
+	if err == nil {
+		return userID, nil
+	}
+
+	// Create new user with this client_id
+	err = r.db.QueryRow(context.Background(), `
+		INSERT INTO users (client_id, created_at, updated_at)
+		VALUES ($1, NOW(), NOW())
+		RETURNING id`, clientID).Scan(&userID)
+	if err != nil {
+		return 0, err
+	}
+	return userID, nil
+}
+
 // GetVocabularyCategories returns all vocabulary categories
 func (r *Repository) GetVocabularyCategories() ([]models.VocabularyCategory, error) {
 	rows, err := r.db.Query(context.Background(), `

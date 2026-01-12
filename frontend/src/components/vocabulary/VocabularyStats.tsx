@@ -22,31 +22,31 @@ export function VocabularyStats({ stats, isLoading }: VocabularyStatsProps) {
 
   const items = [
     {
-      label: 'Streak',
+      label: 'استریک',
       value: stats.current_streak,
       icon: '🔥',
-      subLabel: `Best: ${stats.longest_streak}`,
+      subLabel: `بهترین: ${stats.longest_streak}`,
       color: 'from-orange-400 to-red-500',
     },
     {
-      label: 'Words Due',
+      label: 'لغات موعد',
       value: stats.words_due,
       icon: '📚',
-      subLabel: `Today: ${stats.reviews_today}`,
+      subLabel: `امروز: ${stats.reviews_today}`,
       color: 'from-blue-400 to-blue-600',
     },
     {
-      label: 'Learned',
+      label: 'یادگرفته',
       value: stats.words_learned,
       icon: '✓',
-      subLabel: `of ${stats.total_words}`,
+      subLabel: `از ${stats.total_words}`,
       color: 'from-emerald-400 to-emerald-600',
     },
     {
-      label: 'XP',
+      label: 'امتیاز',
       value: stats.total_xp,
       icon: '⭐',
-      subLabel: 'Total points',
+      subLabel: 'مجموع امتیازات',
       color: 'from-yellow-400 to-amber-500',
     },
   ];
