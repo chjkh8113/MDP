@@ -28,7 +28,7 @@ func (h *Handler) HealthCheck(c *fiber.Ctx) error {
 func (h *Handler) GetFields(c *fiber.Ctx) error {
 	fields, err := h.repo.GetFields()
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to load fields"})
 	}
 	return c.JSON(fields)
 }
@@ -47,7 +47,7 @@ func (h *Handler) GetCourses(c *fiber.Ctx) error {
 
 	courses, err := h.repo.GetCoursesByField(field.ID)
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to load courses"})
 	}
 	return c.JSON(courses)
 }
@@ -59,7 +59,7 @@ func (h *Handler) GetExams(c *fiber.Ctx) error {
 
 	exams, err := h.repo.GetExams(year, fieldID)
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to load exams"})
 	}
 	return c.JSON(exams)
 }
@@ -74,7 +74,7 @@ func (h *Handler) GetQuestions(c *fiber.Ctx) error {
 
 	questions, total, err := h.repo.GetQuestions(year, fieldID, courseID, limit, offset)
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to load questions"})
 	}
 
 	return c.JSON(fiber.Map{
@@ -115,7 +115,7 @@ func (h *Handler) GenerateQuiz(c *fiber.Ctx) error {
 
 	questions, err := h.repo.GetRandomQuestions(req.FieldID, req.CourseID, req.Year, req.Count)
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to generate quiz"})
 	}
 
 	return c.JSON(models.QuizResponse{
@@ -148,7 +148,7 @@ func (h *Handler) SubmitAnswer(c *fiber.Ctx) error {
 func (h *Handler) GetYears(c *fiber.Ctx) error {
 	years, err := h.repo.GetAvailableYears()
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to load years"})
 	}
 	return c.JSON(years)
 }
@@ -157,7 +157,7 @@ func (h *Handler) GetYears(c *fiber.Ctx) error {
 func (h *Handler) GetStats(c *fiber.Ctx) error {
 	stats, err := h.repo.GetStats()
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to load stats"})
 	}
 	return c.JSON(stats)
 }
@@ -176,7 +176,7 @@ func (h *Handler) GetTopics(c *fiber.Ctx) error {
 
 	topics, err := h.repo.GetTopicsByCourse(course.ID)
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to load topics"})
 	}
 	return c.JSON(topics)
 }
@@ -195,7 +195,7 @@ func (h *Handler) GetQuestionsByTopic(c *fiber.Ctx) error {
 
 	questions, err := h.repo.GetQuestionsByTopic(topic.ID)
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to load questions"})
 	}
 	return c.JSON(questions)
 }

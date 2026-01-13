@@ -17,8 +17,9 @@ func (h *Handler) getUserFromCookie(c *fiber.Ctx) (int, error) {
 			Name:     "client_id",
 			Value:    clientID,
 			MaxAge:   365 * 24 * 60 * 60, // 1 year
-			HTTPOnly: false,
-			SameSite: "Lax",
+			HTTPOnly: true,               // Security: prevent XSS access
+			Secure:   true,               // Security: HTTPS only
+			SameSite: "Strict",           // Security: prevent CSRF
 		})
 	}
 
@@ -34,7 +35,7 @@ func (h *Handler) getUserFromCookie(c *fiber.Ctx) (int, error) {
 func (h *Handler) GetVocabularyCategories(c *fiber.Ctx) error {
 	categories, err := h.repo.GetVocabularyCategories()
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to load categories"})
 	}
 	return c.JSON(categories)
 }
@@ -51,7 +52,7 @@ func (h *Handler) GetVocabularyWords(c *fiber.Ctx) error {
 
 	words, total, err := h.repo.GetVocabularyWords(categoryUUID, limit, offset)
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to load words"})
 	}
 
 	return c.JSON(fiber.Map{
@@ -90,7 +91,7 @@ func (h *Handler) GetDueWords(c *fiber.Ctx) error {
 
 	dueWords, err := h.repo.GetDueWords(userID, limit)
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to load due words"})
 	}
 
 	return c.JSON(fiber.Map{
@@ -115,7 +116,7 @@ func (h *Handler) GetNewWords(c *fiber.Ctx) error {
 
 	words, err := h.repo.GetNewWords(userID, limit, categoryUUID)
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to load new words"})
 	}
 
 	return c.JSON(fiber.Map{
@@ -141,7 +142,7 @@ func (h *Handler) GetStudyQueue(c *fiber.Ctx) error {
 	// First get due words (priority)
 	dueWords, err := h.repo.GetDueWords(userID, limit)
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to load study queue"})
 	}
 
 	// Fill remaining slots with new words
@@ -150,7 +151,7 @@ func (h *Handler) GetStudyQueue(c *fiber.Ctx) error {
 	if remaining > 0 {
 		newWords, err = h.repo.GetNewWords(userID, remaining, categoryUUID)
 		if err != nil {
-			return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+			return c.Status(500).JSON(fiber.Map{"error": "Failed to load study queue"})
 		}
 	}
 
@@ -211,7 +212,7 @@ func (h *Handler) ReviewWord(c *fiber.Ctx) error {
 
 	response, err := h.repo.ReviewWord(userID, req.WordUUID, req.Quality)
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to submit review"})
 	}
 
 	return c.JSON(response)
@@ -226,7 +227,7 @@ func (h *Handler) GetVocabularyStats(c *fiber.Ctx) error {
 
 	stats, err := h.repo.GetVocabularyStats(userID)
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to load stats"})
 	}
 
 	return c.JSON(stats)

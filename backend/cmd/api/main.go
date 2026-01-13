@@ -14,6 +14,8 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
+	"github.com/gofiber/fiber/v2/middleware/helmet"
+	"github.com/gofiber/fiber/v2/middleware/limiter"
 	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/fiber/v2/middleware/recover"
 	"github.com/jackc/pgx/v5/pgxpool"
@@ -47,14 +49,44 @@ func main() {
 		WriteTimeout: 10 * time.Second,
 	})
 
-	// Middleware
+	// Security: Recover from panics
 	app.Use(recover.New())
+
+	// Security: Rate limiting (100 requests per minute per IP)
+	app.Use(limiter.New(limiter.Config{
+		Max:        100,
+		Expiration: 1 * time.Minute,
+		KeyGenerator: func(c *fiber.Ctx) string {
+			return c.IP()
+		},
+		LimitReached: func(c *fiber.Ctx) error {
+			return c.Status(429).JSON(fiber.Map{
+				"error": "Too many requests. Please try again later.",
+			})
+		},
+	}))
+
+	// Security: HTTP security headers
+	app.Use(helmet.New(helmet.Config{
+		XSSProtection:         "1; mode=block",
+		ContentTypeNosniff:    "nosniff",
+		XFrameOptions:         "DENY",
+		ReferrerPolicy:        "strict-origin-when-cross-origin",
+		CrossOriginEmbedderPolicy: "require-corp",
+		CrossOriginOpenerPolicy:   "same-origin",
+		CrossOriginResourcePolicy: "same-origin",
+	}))
+
+	// Logging
 	app.Use(logger.New(logger.Config{
-		Format:     "${time} | ${status} | ${latency} | ${method} ${path}\n",
+		Format:     "${time} | ${status} | ${latency} | ${ip} | ${method} ${path}\n",
 		TimeFormat: "2006-01-02 15:04:05",
 	}))
+
+	// CORS - environment-aware configuration
+	allowedOrigins := getEnvOrDefault("CORS_ORIGINS", "http://localhost:4444,http://localhost:3000,http://127.0.0.1:4444")
 	app.Use(cors.New(cors.Config{
-		AllowOrigins:     "http://localhost:4444,http://localhost:3000,http://127.0.0.1:4444",
+		AllowOrigins:     allowedOrigins,
 		AllowMethods:     "GET,POST,PUT,DELETE,OPTIONS",
 		AllowHeaders:     "Origin,Content-Type,Accept,Authorization",
 		AllowCredentials: true,
@@ -117,8 +149,15 @@ func main() {
 	}()
 
 	// Start server
-	log.Printf("MDP API starting on port %s", cfg.Port)
+	log.Printf("MDP API starting on port %s (Environment: %s)", cfg.Port, cfg.Environment)
 	if err := app.Listen(":" + cfg.Port); err != nil {
 		log.Fatalf("Error starting server: %v", err)
 	}
+}
+
+func getEnvOrDefault(key, defaultValue string) string {
+	if value := os.Getenv(key); value != "" {
+		return value
+	}
+	return defaultValue
 }

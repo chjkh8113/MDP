@@ -26,7 +26,7 @@ func (h *Handler) GetVocabQuiz(c *fiber.Ctx) error {
 
 	questions, err := h.repo.GetQuizQuestions(userID, quizType, count)
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to load quiz questions"})
 	}
 
 	return c.JSON(fiber.Map{
@@ -54,7 +54,7 @@ func (h *Handler) SubmitVocabQuizAnswer(c *fiber.Ctx) error {
 
 	response, err := h.repo.SubmitQuizAnswer(userID, req.WordUUID, req.Answer, req.QuizType, req.TimeMs)
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to submit answer"})
 	}
 
 	return c.JSON(response)
@@ -83,7 +83,7 @@ func (h *Handler) UpdateCardStatus(c *fiber.Ctx) error {
 
 	response, err := h.repo.UpdateCardStatus(userID, req.WordUUID, req.Action)
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to update card status"})
 	}
 
 	return c.JSON(response)
@@ -98,7 +98,7 @@ func (h *Handler) GetSuspendedCards(c *fiber.Ctx) error {
 
 	cards, err := h.repo.GetSuspendedCards(userID)
 	if err != nil {
-		return c.Status(500).JSON(fiber.Map{"error": err.Error()})
+		return c.Status(500).JSON(fiber.Map{"error": "Failed to load suspended cards"})
 	}
 
 	return c.JSON(fiber.Map{
