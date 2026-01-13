@@ -14,7 +14,6 @@ import (
 
 	"github.com/gofiber/fiber/v2"
 	"github.com/gofiber/fiber/v2/middleware/cors"
-	"github.com/gofiber/fiber/v2/middleware/helmet"
 	"github.com/gofiber/fiber/v2/middleware/limiter"
 	"github.com/gofiber/fiber/v2/middleware/logger"
 	"github.com/gofiber/fiber/v2/middleware/recover"
@@ -66,17 +65,6 @@ func main() {
 		},
 	}))
 
-	// Security: HTTP security headers
-	app.Use(helmet.New(helmet.Config{
-		XSSProtection:         "1; mode=block",
-		ContentTypeNosniff:    "nosniff",
-		XFrameOptions:         "DENY",
-		ReferrerPolicy:        "strict-origin-when-cross-origin",
-		CrossOriginEmbedderPolicy: "require-corp",
-		CrossOriginOpenerPolicy:   "same-origin",
-		CrossOriginResourcePolicy: "same-origin",
-	}))
-
 	// Logging
 	app.Use(logger.New(logger.Config{
 		Format:     "${time} | ${status} | ${latency} | ${ip} | ${method} ${path}\n",
@@ -91,6 +79,20 @@ func main() {
 		AllowHeaders:     "Origin,Content-Type,Accept,Authorization",
 		AllowCredentials: true,
 	}))
+
+	// Security: HTTP security headers (custom middleware for reliability)
+	app.Use(func(c *fiber.Ctx) error {
+		c.Set("X-XSS-Protection", "1; mode=block")
+		c.Set("X-Content-Type-Options", "nosniff")
+		c.Set("X-Frame-Options", "DENY")
+		c.Set("X-DNS-Prefetch-Control", "off")
+		c.Set("X-Download-Options", "noopen")
+		c.Set("Referrer-Policy", "strict-origin-when-cross-origin")
+		c.Set("X-Permitted-Cross-Domain-Policies", "none")
+		c.Set("Cross-Origin-Opener-Policy", "same-origin")
+		c.Set("Cross-Origin-Resource-Policy", "same-origin")
+		return c.Next()
+	})
 
 	// API Routes
 	api := app.Group("/api/v1")
