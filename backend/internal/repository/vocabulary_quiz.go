@@ -4,6 +4,7 @@ import (
 	"context"
 	"math/rand"
 	"mdp-api/internal/models"
+	"strings"
 	"time"
 )
 
@@ -131,7 +132,8 @@ func (r *Repository) SubmitQuizAnswer(userID int, wordUUID, answer, quizType str
 	} else {
 		correctAnswer = word.WordEN
 	}
-	isCorrect := answer == correctAnswer
+	// Trim whitespace and compare (handles encoding/whitespace differences)
+	isCorrect := strings.TrimSpace(answer) == strings.TrimSpace(correctAnswer)
 
 	// Record result
 	_, err = r.db.Exec(context.Background(), `
