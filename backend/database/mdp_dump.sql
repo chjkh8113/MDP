@@ -1137,6 +1137,55 @@ COPY public.vocabulary_words (id, uuid, category_id, word_en, meaning_fa, pronun
 100	8dab13bc-92e1-46cc-91fd-f3f1f1853043	5	pioneering	پیشگامانه، نوآورانه	/ˌpaɪəˈnɪərɪŋ/	Google did pioneering work in distributed systems.	گوگل کار پیشگامانه‌ای در سیستم‌های توزیع‌شده انجام داد.	3	2026-01-12 15:43:42.530724
 101	aae446b9-eadc-4a03-ad8a-2b0d52efda98	5	firm	شرکت، محکم، قاطع	/fɜːrm/	The tech firm developed innovative solutions.	شرکت فناوری راه‌حل‌های نوآورانه توسعه داد.	1	2026-01-12 15:43:42.530724
 102	bd4892b7-9491-4075-af43-c353d8d841a3	5	gleaned	جمع‌آوری کردن، استخراج کردن	/ɡliːnd/	Insights were gleaned from the log analysis.	بینش‌ها از تحلیل لاگ استخراج شدند.	3	2026-01-12 15:43:42.530724
+103	7f0541bd-7a47-48d8-8c2b-2b96ebee8820	2	insure	بیمه کردن، تضمین کردن	/ɪnˈʃʊr/	We must insure the shipment against damage.	باید محموله را در برابر آسیب بیمه کنیم.	2	2026-01-13 13:09:16.395326
+104	9f95a288-8571-4db8-9220-3b5249bcb664	2	projections	پیش‌بینی‌ها، تخمین‌ها	/prəˈdʒekʃənz/	Sales projections for next year are optimistic.	پیش‌بینی‌های فروش برای سال آینده خوش‌بینانه است.	3	2026-01-13 13:09:16.395326
+105	c1358b0e-c59d-4b8a-8812-0030b760a2a2	2	inclinations	تمایلات، گرایش‌ها	/ˌɪnklɪˈneɪʃənz/	He has strong inclinations toward research.	او تمایل شدیدی به تحقیق دارد.	3	2026-01-13 13:09:16.395326
+106	cc2563dc-007b-4583-b03c-5ccec6f0a731	2	interventions	مداخلات، دخالت‌ها	/ˌɪntərˈvenʃənz/	Medical interventions saved many lives.	مداخلات پزشکی جان بسیاری را نجات داد.	3	2026-01-13 13:09:16.395326
+107	3e80bfdc-7d84-4e17-8733-698bfadf985d	2	premises	مفروضات، محل	/ˈpremɪsɪz/	The argument is based on false premises.	این استدلال بر مفروضات غلط استوار است.	3	2026-01-13 13:09:16.395326
+108	f70ec1d6-e688-448b-8631-b52017d1a8d8	2	exonerated	تبرئه شده، مبرا	/ɪɡˈzɒnəreɪtɪd/	The defendant was exonerated of all charges.	متهم از تمام اتهامات تبرئه شد.	4	2026-01-13 13:09:16.395326
+109	333a5f28-3acc-4135-86bf-ecb62abd7de8	2	intensified	تشدید شده، شدت یافته	/ɪnˈtensɪfaɪd/	The conflict intensified over time.	درگیری با گذشت زمان تشدید شد.	2	2026-01-13 13:09:16.395326
+110	0de74226-3964-4e57-bd26-5e7641973dbe	2	prosecuted	تحت پیگرد قرار گرفته	/ˈprɒsɪkjuːtɪd/	He was prosecuted for fraud.	او به اتهام کلاهبرداری تحت پیگرد قرار گرفت.	3	2026-01-13 13:09:16.395326
+111	350d81fc-6f52-4720-9ae8-b9b1487c72da	2	legitimized	مشروعیت بخشیده، قانونی شده	/lɪˈdʒɪtɪmaɪzd/	The election legitimized the new government.	انتخابات به دولت جدید مشروعیت بخشید.	4	2026-01-13 13:09:16.395326
+112	917dfceb-ce68-4227-97ba-a36686a5ffaf	2	inflammatory	تحریک‌آمیز، التهابی	/ɪnˈflæmətəri/	His inflammatory speech caused riots.	سخنرانی تحریک‌آمیز او باعث شورش شد.	3	2026-01-13 13:09:16.395326
+113	5eeea041-c455-45e1-83c8-31a8538dad39	2	exacerbating	تشدیدکننده، بدتر کننده	/ɪɡˈzæsərbeɪtɪŋ/	Pollution is exacerbating health problems.	آلودگی مشکلات سلامتی را تشدید می‌کند.	4	2026-01-13 13:09:16.395326
+114	29a1fe05-9cfa-4fab-98b0-d07be777c5ce	2	dispelling	از بین بردن، رفع کردن	/dɪˈspelɪŋ/	The evidence succeeded in dispelling doubts.	شواهد در رفع تردیدها موفق شد.	3	2026-01-13 13:09:16.395326
+115	bd753b4c-c6be-47cb-8e68-7b89bb91ef90	2	affirming	تأیید کردن، اثبات کردن	/əˈfɜːrmɪŋ/	The court ruling is affirming our position.	حکم دادگاه موضع ما را تأیید می‌کند.	2	2026-01-13 13:09:16.395326
+116	52548d8a-1b69-4fc8-9860-91301aa13e30	2	captivated	مجذوب، شیفته	/ˈkæptɪveɪtɪd/	The audience was captivated by her performance.	تماشاگران مجذوب اجرای او شدند.	2	2026-01-13 13:09:16.395326
+117	9250ca31-940d-473d-b036-1a9808214492	2	superseded	جایگزین شده، منسوخ	/ˌsuːpərˈsiːdɪd/	The old law was superseded by new regulations.	قانون قدیمی با مقررات جدید جایگزین شد.	4	2026-01-13 13:09:16.395326
+118	02da697d-5a02-466b-99ac-78574c656be0	2	commenced	آغاز شده، شروع شده	/kəˈmenst/	The trial commenced last Monday.	محاکمه دوشنبه گذشته آغاز شد.	2	2026-01-13 13:09:16.395326
+119	5873a426-53fa-4dea-9aa9-5823c7fa2c67	2	aesthetic	زیبایی‌شناختی، هنری	/esˈθetɪk/	The building has great aesthetic value.	این ساختمان ارزش زیبایی‌شناختی بالایی دارد.	3	2026-01-13 13:09:16.395326
+120	ee138394-74d8-4c9e-a552-accf6675620b	2	unforeseen	پیش‌بینی نشده، غیرمنتظره	/ˌʌnfɔːrˈsiːn/	Unforeseen circumstances delayed the project.	شرایط پیش‌بینی نشده پروژه را به تأخیر انداخت.	2	2026-01-13 13:09:16.395326
+121	2d280900-66a7-4b0c-b761-e1802a035a43	2	altruistic	نوع‌دوستانه، فداکارانه	/ˌæltruˈɪstɪk/	Her motives were purely altruistic.	انگیزه‌های او کاملاً نوع‌دوستانه بود.	4	2026-01-13 13:09:16.395326
+122	393e2f38-e3e0-40ed-842f-ed283703f4fa	2	incipient	نوپا، در مراحل اولیه	/ɪnˈsɪpiənt/	We detected the incipient signs of disease.	ما نشانه‌های اولیه بیماری را تشخیص دادیم.	5	2026-01-13 13:09:16.395326
+123	41fbfda0-7b42-4936-8f3a-b7f169cb3c4d	2	skeptical	شکاک، مشکوک	/ˈskeptɪkəl/	Scientists remain skeptical about the claims.	دانشمندان نسبت به این ادعاها شکاک هستند.	2	2026-01-13 13:09:16.395326
+124	4a7d1bb9-4a99-489d-8113-5086a8991e1e	2	ambiguous	مبهم، دوپهلو	/æmˈbɪɡjuəs/	The contract language is ambiguous.	زبان قرارداد مبهم است.	3	2026-01-13 13:09:16.395326
+125	a86be2fb-bf25-4422-b373-285ad7cfd257	2	credible	معتبر، قابل باور	/ˈkredɪbəl/	She is a credible witness.	او شاهد معتبری است.	2	2026-01-13 13:09:16.395326
+126	75f06f09-1be7-4730-8b04-08f645ee503c	2	disorderly	بی‌نظم، آشفته	/dɪsˈɔːrdərli/	The protest became disorderly.	اعتراض آشفته شد.	2	2026-01-13 13:09:16.395326
+127	1e516791-901e-4e0e-8f7a-a08d889d9d1d	2	apparent	آشکار، ظاهری	/əˈpærənt/	The cause of failure is apparent.	علت شکست آشکار است.	2	2026-01-13 13:09:16.395326
+128	b8b0054b-002b-4403-807e-e53d97069f83	2	comprehension	درک، فهم	/ˌkɒmprɪˈhenʃən/	Reading comprehension is a key skill.	درک مطلب یک مهارت کلیدی است.	2	2026-01-13 13:09:16.395326
+129	e2040a43-28c9-464d-b157-8ac08d514e84	2	misspellings	غلط‌های املایی	/ˌmɪsˈspelɪŋz/	The essay contained many misspellings.	مقاله شامل غلط‌های املایی زیادی بود.	2	2026-01-13 13:09:16.395326
+130	1a3b1531-5266-41aa-84dd-b57f781f5403	2	morphological	ریخت‌شناختی، صرفی	/ˌmɔːrfəˈlɒdʒɪkəl/	Morphological analysis reveals word structure.	تحلیل ریخت‌شناختی ساختار کلمه را نشان می‌دهد.	4	2026-01-13 13:09:16.395326
+131	3a6d646f-eb92-4bc3-87fd-a099ef926a87	2	lexicon	واژگان، لغت‌نامه	/ˈleksɪkɒn/	The lexicon of medicine is vast.	واژگان پزشکی بسیار گسترده است.	3	2026-01-13 13:09:16.395326
+132	39c5929d-e0ed-46a7-a3c1-88dfce9bfaed	2	consecutive	متوالی، پشت سر هم	/kənˈsekjʊtɪv/	He won three consecutive matches.	او سه مسابقه متوالی را برد.	2	2026-01-13 13:09:16.395326
+133	90313d5b-6624-4269-aee2-e72c22619745	2	orthographical	املایی، نگارشی	/ˌɔːrθəˈɡræfɪkəl/	Orthographical rules vary by language.	قواعد املایی در هر زبان متفاوت است.	4	2026-01-13 13:09:16.395326
+134	71f1054d-fb07-46a9-b9fb-0af1f6eb3a6c	2	hence	از این رو، بنابراین	/hens/	He was tired, hence the mistakes.	او خسته بود، از این رو اشتباهات رخ داد.	2	2026-01-13 13:09:16.395326
+135	75a31104-be91-44f9-9f22-fb59b13a1673	2	derivative	مشتق، اقتباسی	/dɪˈrɪvətɪv/	This word is a derivative of Latin.	این کلمه مشتق از لاتین است.	3	2026-01-13 13:09:16.395326
+136	6ba507a0-d910-4462-8e74-9c4dad16741a	2	stem	ریشه، ساقه	/stem/	The stem of the word reveals its origin.	ریشه کلمه منشأ آن را نشان می‌دهد.	2	2026-01-13 13:09:16.395326
+137	794de41c-d9f9-4ef3-b827-3522f3b9188a	2	concatenated	الحاق شده، به هم پیوسته	/kənˈkætəneɪtɪd/	The strings were concatenated into one.	رشته‌ها به یکدیگر الحاق شدند.	4	2026-01-13 13:09:16.395326
+138	574ffc08-6168-4665-9271-699e39690a95	2	plenty	فراوان، زیاد	/ˈplenti/	There is plenty of time left.	زمان زیادی باقی مانده است.	1	2026-01-13 13:09:16.395326
+139	7a046728-2f0e-44f9-8fc4-1a20a0a8e727	2	stated	بیان شده، اظهار شده	/steɪtɪd/	As stated earlier, the deadline is Friday.	همانطور که قبلاً بیان شد، مهلت جمعه است.	1	2026-01-13 13:09:16.395326
+140	9a08651f-2527-4f63-a39f-d918fa4876dc	2	distorted	تحریف شده، مخدوش	/dɪˈstɔːrtɪd/	The media distorted the facts.	رسانه‌ها حقایق را تحریف کردند.	2	2026-01-13 13:09:16.395326
+141	ee760b5b-32a5-4cf0-824b-086a0d3a9e20	2	expenditure	هزینه، مخارج	/ɪkˈspendɪtʃər/	Government expenditure has increased.	هزینه‌های دولت افزایش یافته است.	3	2026-01-13 13:09:16.395326
+142	97643660-bbcf-47a0-a752-ef979a336258	2	twofold	دوگانه، دو برابر	/ˈtuːfəʊld/	The benefits are twofold.	مزایا دوگانه است.	2	2026-01-13 13:09:16.395326
+143	e6a96007-8831-4796-b6d1-393183ed6907	2	perception	درک، ادراک	/pərˈsepʃən/	Public perception of the issue changed.	درک عمومی از این موضوع تغییر کرد.	2	2026-01-13 13:09:16.395326
+144	60c09ec6-3c7c-4a6c-b865-7b9f44829258	2	disciplinary	انضباطی، تنبیهی	/ˈdɪsəplɪnəri/	He faced disciplinary action.	او با اقدام انضباطی مواجه شد.	3	2026-01-13 13:09:16.395326
+145	1469fad2-5e8c-4092-bc58-3dcd2b967aad	2	linguistics	زبان‌شناسی	/lɪŋˈɡwɪstɪks/	She studied linguistics at university.	او در دانشگاه زبان‌شناسی خواند.	3	2026-01-13 13:09:16.395326
+146	b8f4fe48-3b2f-46f4-9fb9-4258871cfd10	2	granted	اعطا شده، مسلم	/ˈɡræntɪd/	Permission was granted immediately.	مجوز فوراً اعطا شد.	2	2026-01-13 13:09:16.395326
+147	6ea3d7fc-8583-4c26-9194-249dfd97c022	2	inherent	ذاتی، درونی	/ɪnˈhɪərənt/	There are inherent risks in surgery.	خطرات ذاتی در جراحی وجود دارد.	3	2026-01-13 13:09:16.395326
+148	92ee1658-ea1c-4817-ad4f-48fba02b01e0	2	implied	ضمنی، تلویحی	/ɪmˈplaɪd/	The contract has implied obligations.	قرارداد تعهدات ضمنی دارد.	2	2026-01-13 13:09:16.395326
+149	76e63723-7c5d-4c7d-b656-544b1daecf93	2	yardstick	معیار، ملاک	/ˈjɑːrdstɪk/	Profit is not the only yardstick of success.	سود تنها معیار موفقیت نیست.	3	2026-01-13 13:09:16.395326
+150	752c8696-7740-4712-bfc7-ea8bc0ff395f	2	unprecedented	بی‌سابقه، بی‌نظیر	/ʌnˈpresɪdentɪd/	The crisis reached an unprecedented scale.	بحران به مقیاسی بی‌سابقه رسید.	3	2026-01-13 13:09:16.395326
+151	dd47eea6-2205-4106-9095-fd4bf752a6f0	2	weigh	سنجیدن، وزن کردن	/weɪ/	We must weigh the pros and cons.	باید مزایا و معایب را بسنجیم.	2	2026-01-13 13:09:16.395326
 \.
 
 
@@ -1228,7 +1277,7 @@ SELECT pg_catalog.setval('public.vocabulary_quiz_results_id_seq', 1, false);
 -- Name: vocabulary_words_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.vocabulary_words_id_seq', 102, true);
+SELECT pg_catalog.setval('public.vocabulary_words_id_seq', 151, true);
 
 
 --
