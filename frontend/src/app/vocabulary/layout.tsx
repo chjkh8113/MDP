@@ -1,0 +1,32 @@
+import { Metadata } from 'next';
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mdp.ir';
+
+export const metadata: Metadata = {
+  title: 'تمرین لغات تخصصی کنکور',
+  description: 'یادگیری و مرور لغات تخصصی کنکور ارشد با سیستم فلش‌کارت هوشمند - الگوریتم SM-2 برای یادگیری بهینه',
+  keywords: [
+    'لغات تخصصی کنکور',
+    'فلش کارت',
+    'یادگیری لغات',
+    'زبان تخصصی',
+    'کنکور ارشد',
+  ],
+  openGraph: {
+    title: 'تمرین لغات تخصصی کنکور | MDP',
+    description: 'یادگیری لغات تخصصی با فلش‌کارت هوشمند',
+    url: `${BASE_URL}/vocabulary`,
+    type: 'website',
+  },
+  alternates: {
+    canonical: `${BASE_URL}/vocabulary`,
+  },
+};
+
+export default function VocabularyLayout({
+  children,
+}: {
+  children: React.ReactNode;
+}) {
+  return <>{children}</>;
+}
