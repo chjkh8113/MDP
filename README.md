@@ -29,10 +29,13 @@ psql -U postgres -d mdp -c "SELECT COUNT(*) FROM vocabulary_words;"
 ```bash
 cd backend
 
-# Build
-go build -o mdp-api.exe ./cmd/api
+# Run pre-built executable (no build needed)
+./mdp-api.exe
+```
 
-# Run (default config works if PostgreSQL password is 'postgres')
+Or build from source:
+```bash
+go build -o mdp-api.exe ./cmd/api
 ./mdp-api.exe
 ```
 
