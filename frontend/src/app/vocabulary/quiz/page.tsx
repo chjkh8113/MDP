@@ -229,32 +229,38 @@ export default function VocabQuizPage() {
               {currentQuestion.options.map((option, index) => {
                 const isSelected = selectedAnswer === option;
                 const isCorrectOption = correctAnswer === option;
-                const showResult = selectedAnswer !== null;
+                const isWaiting = selectedAnswer !== null && correctAnswer === null;
+                const showResult = selectedAnswer !== null && correctAnswer !== null;
 
                 return (
                   <button
                     key={index}
                     onClick={() => handleAnswerSelect(option)}
-                    disabled={showResult}
+                    disabled={selectedAnswer !== null}
                     className={cn(
                       "p-4 rounded-xl text-lg font-medium transition-all",
                       "border-2",
-                      !showResult && "bg-white border-gray-200 hover:border-blue-400 hover:bg-blue-50",
+                      // Default state
+                      selectedAnswer === null && "bg-white border-gray-200 hover:border-blue-400 hover:bg-blue-50",
+                      // Waiting for API response - show selected with neutral color
+                      isWaiting && isSelected && "bg-blue-100 border-blue-400 text-blue-700",
+                      isWaiting && !isSelected && "bg-gray-100 border-gray-200 text-gray-500",
+                      // Show results after API response
                       showResult && isCorrectOption && "bg-emerald-100 border-emerald-500 text-emerald-700",
-                      showResult && isSelected && !isCorrect && "bg-red-100 border-red-500 text-red-700",
+                      showResult && isSelected && !isCorrectOption && "bg-red-100 border-red-500 text-red-700",
                       showResult && !isSelected && !isCorrectOption && "bg-gray-100 border-gray-200 text-gray-500"
                     )}
                   >
                     <span dir={quizType === 'meaning' ? 'rtl' : 'ltr'}>{option}</span>
                     {showResult && isCorrectOption && <span className="mr-2">✓</span>}
-                    {showResult && isSelected && !isCorrect && <span className="mr-2">✗</span>}
+                    {showResult && isSelected && !isCorrectOption && <span className="mr-2">✗</span>}
                   </button>
                 );
               })}
             </div>
 
             {/* Result and Next button */}
-            {selectedAnswer !== null && (
+            {selectedAnswer !== null && correctAnswer !== null && (
               <div className="text-center space-y-4">
                 <div className={cn(
                   "text-lg font-semibold",
@@ -265,6 +271,11 @@ export default function VocabQuizPage() {
                 <Button onClick={handleNext} variant="default" size="lg">
                   {currentIndex < questions.length - 1 ? 'سوال بعدی' : 'نمایش نتیجه'}
                 </Button>
+              </div>
+            )}
+            {selectedAnswer !== null && correctAnswer === null && (
+              <div className="text-center">
+                <div className="text-gray-500">در حال بررسی...</div>
               </div>
             )}
           </div>
