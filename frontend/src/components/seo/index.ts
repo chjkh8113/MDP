@@ -6,3 +6,4 @@ export {
   VocabularyLearningSchema,
   ItemListSchema
 } from './EducationalSchema';
+export { QuestionSchema, ExamPageSchema } from './QuestionSchema';
