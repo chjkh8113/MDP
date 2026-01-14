@@ -11,15 +11,16 @@ import (
 // GetQuizQuestions generates quiz questions for the user
 func (r *Repository) GetQuizQuestions(userID int, quizType string, count int) ([]models.VocabQuizQuestion, error) {
 	// Get words for quiz (prioritize due words, then learned words)
+	// Use DISTINCT ON to prevent duplicate words in the quiz
 	query := `
-		SELECT w.id, w.uuid, w.word_en, w.meaning_fa, w.pronunciation, w.difficulty
+		SELECT DISTINCT ON (w.id) w.id, w.uuid, w.word_en, w.meaning_fa, w.pronunciation, w.difficulty
 		FROM vocabulary_words w
 		LEFT JOIN user_vocabulary uv ON w.id = uv.word_id AND uv.user_id = $1
 		WHERE (uv.status IS NULL OR uv.status = 'active')
-		ORDER BY
-			CASE WHEN uv.id IS NOT NULL THEN 0 ELSE 1 END,
-			RANDOM()
-		LIMIT $2`
+		ORDER BY w.id, CASE WHEN uv.id IS NOT NULL THEN 0 ELSE 1 END`
+
+	// Wrap query to shuffle after deduplication
+	query = `SELECT * FROM (` + query + `) AS unique_words ORDER BY RANDOM() LIMIT $2`
 
 	rows, err := r.db.Query(context.Background(), query, userID, count)
 	if err != nil {
