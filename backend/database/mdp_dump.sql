@@ -761,6 +761,7 @@ COPY public.user_streaks (id, user_id, current_streak, longest_streak, last_acti
 36	89	1	1	2026-01-11	35	0	1	10	2026-01-11 16:14:51.736803	2026-01-11 16:14:51.736803
 37	110	1	1	2026-01-11	30	0	1	10	2026-01-11 16:20:47.364361	2026-01-11 16:20:47.364361
 39	115	1	1	2026-01-11	30	0	1	10	2026-01-11 16:20:51.211029	2026-01-11 16:20:51.211029
+44	136	1	1	2026-01-13	70	0	3	10	2026-01-13 14:39:45.276928	2026-01-13 14:41:24.862885
 38	113	1	1	2026-01-11	300	0	10	10	2026-01-11 16:20:50.789465	2026-01-11 16:21:05.182678
 41	129	1	1	2026-01-11	30	0	1	10	2026-01-11 16:57:06.019795	2026-01-11 16:57:06.019795
 43	134	1	1	2026-01-11	30	0	1	10	2026-01-11 16:57:09.279476	2026-01-11 16:57:09.279476
@@ -863,6 +864,9 @@ COPY public.user_vocabulary (id, user_id, word_id, easiness, interval_days, repe
 97	116	22	2.50	1	1	2026-01-13 15:10:42.171492	2026-01-12 15:10:42.172664	{}	2026-01-12 15:10:42.172664	2026-01-12 15:10:42.172664	active	\N
 98	116	23	2.50	1	1	2026-01-13 15:11:20.381126	2026-01-12 15:11:20.383568	{}	2026-01-12 15:11:20.383568	2026-01-12 15:11:20.383568	active	\N
 99	116	25	2.36	1	1	2026-01-13 15:11:55.748688	2026-01-12 15:11:55.749553	{}	2026-01-12 15:11:55.749553	2026-01-12 15:11:55.749553	active	\N
+100	136	2	2.60	1	1	2026-01-14 14:39:45.254239	2026-01-13 14:39:45.257385	{}	2026-01-13 14:39:45.257385	2026-01-13 14:39:45.257385	active	\N
+101	136	14	1.70	1	0	2026-01-14 14:40:22.551571	2026-01-13 14:40:22.55255	{}	2026-01-13 14:40:22.55255	2026-01-13 14:40:33.252798	suspended	2026-02-12 14:40:33.250347
+103	136	50	2.60	1	1	2026-01-14 14:41:24.855056	2026-01-13 14:41:24.856217	{}	2026-01-13 14:41:24.856217	2026-01-13 14:41:24.856217	active	\N
 \.
 
 
@@ -1006,6 +1010,16 @@ COPY public.users (id, email, name, password_hash, created_at, uuid, client_id, 
 133	\N	\N	\N	2026-01-11 16:57:07.09817	7524f3f6-ca5b-4d6a-bc5a-381d83516948	aab3f8a3-c422-42b2-aee9-5ae744da672d	2026-01-11 16:57:07.09817
 134	\N	\N	\N	2026-01-11 16:57:07.098475	a8bd9cb4-6001-49ec-9458-e1cdd036d9e9	702ef13e-9ab9-4137-be1c-d8dd9e6d23bc	2026-01-11 16:57:07.098475
 135	\N	\N	\N	2026-01-12 15:11:07.766152	364b4f65-9b6a-4a66-89d9-618b9733f93c	deca47bf-3475-4774-a91f-aa751925972d	2026-01-12 15:11:07.766152
+136	\N	\N	\N	2026-01-13 14:39:17.929342	00f79ff7-144f-400f-a1b0-ccc4cc5e473e	89e5ad47-7031-47dd-9aef-52f663ad6c45	2026-01-13 14:39:17.929342
+137	\N	\N	\N	2026-01-13 15:17:10.757398	2bed11e4-4895-4802-861a-f83381f2e7c3	1292bd68-cffa-4ee7-b2a2-8f9f67796e9c	2026-01-13 15:17:10.757398
+138	\N	\N	\N	2026-01-13 15:17:11.389752	bbe8478a-f604-424d-ad85-7e1a63b28e86	8d507267-9ff1-4d36-94bb-e767aab8f9a7	2026-01-13 15:17:11.389752
+139	\N	\N	\N	2026-01-14 12:19:47.015913	8379f8cb-f87f-48af-97a0-6e49068fea04	e22c3646-64e1-4ab0-991c-5f07327e7a9c	2026-01-14 12:19:47.015913
+140	\N	\N	\N	2026-01-14 12:24:18.419871	e1a812bc-1331-4c6f-95a3-b98d977ee3c5	0582242c-7aa2-4c03-b429-ff65fbc8225d	2026-01-14 12:24:18.419871
+141	\N	\N	\N	2026-01-14 12:24:27.789752	44989954-d044-4b00-829e-6ff7626d3e56	cc35b1dc-ab9e-4a3a-adf9-d4d0db48a140	2026-01-14 12:24:27.789752
+142	\N	\N	\N	2026-01-14 12:25:18.774861	b9b2d9b3-b1a9-4cf6-9d9d-5f1ca2f3d349	40242706-f3f0-4784-99ee-ec1d05c5330c	2026-01-14 12:25:18.774861
+143	\N	\N	\N	2026-01-14 12:25:32.080991	6306d930-c0b3-4427-82e0-ba79ae3f3a44	9f89a86f-445d-49df-ab36-bf0f5cf51507	2026-01-14 12:25:32.080991
+144	\N	\N	\N	2026-01-14 12:25:32.390881	a17930b3-eaa1-4e1b-b081-e7553e19ef5c	306a37df-7c1f-46e1-bf12-7fef0b2dbdf7	2026-01-14 12:25:32.390881
+145	\N	\N	\N	2026-01-14 12:26:46.999505	416e2fcc-6723-4055-b9d2-0dcce11669f2	d4ca4a50-d425-4c24-b6a0-96bf5a13f597	2026-01-14 12:26:46.999505
 \.
 
 
@@ -1027,6 +1041,7 @@ COPY public.vocabulary_categories (id, uuid, name_fa, name_en, description_fa, d
 --
 
 COPY public.vocabulary_quiz_results (id, user_id, word_id, quiz_type, correct, response_time_ms, created_at) FROM stdin;
+1	136	2	meaning	f	2500	2026-01-13 14:40:51.390009
 \.
 
 
@@ -1242,21 +1257,21 @@ SELECT pg_catalog.setval('public.topics_id_seq', 13, true);
 -- Name: user_streaks_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.user_streaks_id_seq', 43, true);
+SELECT pg_catalog.setval('public.user_streaks_id_seq', 44, true);
 
 
 --
 -- Name: user_vocabulary_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.user_vocabulary_id_seq', 99, true);
+SELECT pg_catalog.setval('public.user_vocabulary_id_seq', 103, true);
 
 
 --
 -- Name: users_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.users_id_seq', 135, true);
+SELECT pg_catalog.setval('public.users_id_seq', 145, true);
 
 
 --
@@ -1270,7 +1285,7 @@ SELECT pg_catalog.setval('public.vocabulary_categories_id_seq', 5, true);
 -- Name: vocabulary_quiz_results_id_seq; Type: SEQUENCE SET; Schema: public; Owner: -
 --
 
-SELECT pg_catalog.setval('public.vocabulary_quiz_results_id_seq', 1, false);
+SELECT pg_catalog.setval('public.vocabulary_quiz_results_id_seq', 1, true);
 
 
 --
