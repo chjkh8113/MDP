@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { CourseSchema, VocabularyLearningSchema } from '@/components/seo';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mdp.ir';
 
@@ -11,6 +12,8 @@ export const metadata: Metadata = {
     'یادگیری لغات',
     'زبان تخصصی',
     'کنکور ارشد',
+    'SM-2',
+    'spaced repetition',
   ],
   openGraph: {
     title: 'تمرین لغات تخصصی کنکور | MDP',
@@ -28,5 +31,15 @@ export default function VocabularyLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <CourseSchema
+        name="دوره یادگیری لغات تخصصی کنکور ارشد"
+        description="یادگیری لغات تخصصی انگلیسی برای آزمون کارشناسی ارشد با سیستم فلش‌کارت هوشمند"
+        url={`${BASE_URL}/vocabulary`}
+      />
+      <VocabularyLearningSchema />
+      {children}
+    </>
+  );
 }

@@ -1,4 +1,5 @@
 import { Metadata } from 'next';
+import { QuizSchema } from '@/components/seo';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mdp.ir';
 
@@ -10,6 +11,7 @@ export const metadata: Metadata = {
     'تست زبان',
     'کوییز انگلیسی',
     'سنجش یادگیری',
+    'آزمون آنلاین',
   ],
   openGraph: {
     title: 'آزمون لغات تخصصی | MDP',
@@ -27,5 +29,15 @@ export default function QuizLayout({
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <QuizSchema
+        name="آزمون لغات تخصصی کنکور ارشد"
+        description="آزمون چهارگزینه‌ای لغات تخصصی انگلیسی برای سنجش یادگیری"
+        questionCount={10}
+        url={`${BASE_URL}/vocabulary/quiz`}
+      />
+      {children}
+    </>
+  );
 }

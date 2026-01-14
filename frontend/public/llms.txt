@@ -1,0 +1,63 @@
+# MDP - Iranian Graduate Exam Question Bank
+
+> MDP is a comprehensive educational platform providing access to Iranian graduate entrance exam (Konkur) questions with answers, vocabulary flashcards, and online quizzes.
+
+## About MDP
+
+MDP (Master's Degree Preparation) is a free educational resource for Iranian students preparing for the national graduate entrance examination (کنکور کارشناسی ارشد). The platform offers:
+
+- 5+ years of past exam questions with detailed answers
+- Specialized vocabulary learning with spaced repetition (SM-2 algorithm)
+- Online quizzes for self-assessment
+- Questions categorized by field, course, and topic
+
+## Main Sections
+
+- [Home](https://mdp.ir/): Main landing page with quick quiz access
+- [Fields](https://mdp.ir/fields): Browse exam questions by academic field
+- [Vocabulary](https://mdp.ir/vocabulary): Flashcard-based vocabulary learning
+- [Quiz](https://mdp.ir/vocabulary/quiz): Online vocabulary assessment
+
+## Key Features
+
+### Question Bank
+Access thousands of real exam questions from previous years, organized by:
+- Academic field (Computer Engineering, Electrical, Mechanical, etc.)
+- Course (Data Structures, Algorithms, Networks, etc.)
+- Topic (specific subjects within each course)
+
+### Vocabulary Learning
+- Spaced repetition system using SM-2 algorithm
+- Persian-English technical vocabulary
+- Progress tracking with XP and streaks
+- Card actions: suspend, bury, delete, restore
+
+### Quiz Mode
+- Multiple choice questions
+- Immediate feedback on answers
+- Score tracking per session
+
+## Technical Stack
+
+- Frontend: Next.js 16, React 19, TypeScript
+- Backend: Go Fiber REST API
+- Database: PostgreSQL
+
+## Contact
+
+Website: https://mdp.ir
+Language: Persian (Farsi)
+
+## FAQ
+
+Q: How many years of exam questions are available?
+A: MDP provides access to 5+ years of past graduate entrance exam questions.
+
+Q: Is MDP free to use?
+A: Yes, MDP is completely free for all users.
+
+Q: Which academic fields are covered?
+A: Computer Engineering, Electrical Engineering, Mechanical Engineering, Civil Engineering, and other technical fields.
+
+Q: How does the vocabulary learning system work?
+A: MDP uses the SM-2 spaced repetition algorithm to optimize vocabulary retention through intelligent scheduling of reviews.

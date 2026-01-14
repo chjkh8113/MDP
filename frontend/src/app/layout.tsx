@@ -142,13 +142,24 @@ export default function RootLayout({
   return (
     <html lang="fa" dir="rtl">
       <head>
+        {/* Core Web Vitals: Preconnect to external origins */}
+        <link rel="preconnect" href="https://fonts.googleapis.com" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossOrigin="anonymous" />
+        <link rel="dns-prefetch" href="https://fonts.googleapis.com" />
+        <link rel="dns-prefetch" href="https://fonts.gstatic.com" />
+
+        {/* Font with display=swap for better CLS */}
         <link
           href="https://fonts.googleapis.com/css2?family=Vazirmatn:wght@300;400;500;600;700&display=swap"
           rel="stylesheet"
         />
+
+        {/* PWA and icons */}
         <link rel="manifest" href="/manifest.json" />
         <link rel="icon" href="/favicon.ico" />
         <link rel="apple-touch-icon" href="/apple-touch-icon.png" />
+
+        {/* Structured data */}
         <JsonLdSchema />
       </head>
       <body className="font-[Vazirmatn] antialiased min-h-screen bg-background">
