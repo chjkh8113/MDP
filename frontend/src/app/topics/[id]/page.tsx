@@ -7,6 +7,9 @@ import { api, Question, Topic, Course, Field } from "@/lib/api";
 import { Header } from "@/components/common/Header";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { QuestionCard } from "@/components/browse/QuestionCard";
+import { DynamicSEO } from "@/components/seo";
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mdp.ir';
 
 export default function TopicQuestionsPage() {
   const params = useParams();
@@ -54,6 +57,21 @@ export default function TopicQuestionsPage() {
 
   return (
     <div className="min-h-screen bg-gray-50" dir="rtl">
+      {topic && field && course && (
+        <DynamicSEO
+          title={`سوالات ${topic.name_fa}`}
+          description={`${questions.length} سوال کنکور ارشد ${field.name_fa} - ${course.name_fa} - ${topic.name_fa} با پاسخ تشریحی`}
+          type="topic"
+          itemCount={questions.length}
+          breadcrumbs={[
+            { name: 'خانه', url: BASE_URL },
+            { name: 'رشته‌ها', url: `${BASE_URL}/fields` },
+            { name: field.name_fa, url: `${BASE_URL}/fields/${field.id}` },
+            { name: course.name_fa, url: `${BASE_URL}/courses/${course.id}` },
+            { name: topic.name_fa, url: `${BASE_URL}/topics/${topicId}` },
+          ]}
+        />
+      )}
       <Header />
       <main className="container mx-auto px-4 py-8 pt-24">
         <Breadcrumb

@@ -6,6 +6,9 @@ import Link from "next/link";
 import { api, Course, Field } from "@/lib/api";
 import { Header } from "@/components/common/Header";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
+import { DynamicSEO } from "@/components/seo";
+
+const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mdp.ir';
 
 export default function FieldCoursesPage() {
   const params = useParams();
@@ -37,6 +40,19 @@ export default function FieldCoursesPage() {
 
   return (
     <div className="min-h-screen bg-gray-50" dir="rtl">
+      {field && (
+        <DynamicSEO
+          title={`دروس ${field.name_fa}`}
+          description={`لیست دروس تخصصی رشته ${field.name_fa} برای کنکور کارشناسی ارشد - ${courses.length} درس`}
+          type="field"
+          itemCount={courses.length}
+          breadcrumbs={[
+            { name: 'خانه', url: BASE_URL },
+            { name: 'رشته‌ها', url: `${BASE_URL}/fields` },
+            { name: field.name_fa, url: `${BASE_URL}/fields/${fieldId}` },
+          ]}
+        />
+      )}
       <Header />
       <main className="container mx-auto px-4 py-8 pt-24">
         <Breadcrumb

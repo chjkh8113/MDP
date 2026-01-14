@@ -7,3 +7,4 @@ export {
   ItemListSchema
 } from './EducationalSchema';
 export { QuestionSchema, ExamPageSchema } from './QuestionSchema';
+export { DynamicSEO } from './DynamicSEO';
