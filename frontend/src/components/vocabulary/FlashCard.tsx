@@ -11,64 +11,58 @@ interface FlashCardProps {
 }
 
 export function FlashCard({ word, showAnswer, onFlip }: FlashCardProps) {
-  // Simple approach: show one side at a time with fade transition
-  // This completely avoids the 3D backface-visibility issues
-
   return (
     <div
-      className="relative w-full max-w-md mx-auto h-64 cursor-pointer"
+      className="relative w-full max-w-md mx-auto h-64 cursor-pointer perspective-1000"
       onClick={onFlip}
     >
-      {/* Front - English word (shown when showAnswer is false) */}
       <div
         className={cn(
-          "absolute inset-0 transition-opacity duration-300",
-          showAnswer ? "opacity-0 pointer-events-none" : "opacity-100"
+          "absolute w-full h-full transition-transform duration-500 transform-style-preserve-3d",
+          showAnswer && "rotate-y-180"
         )}
       >
-        <div className="w-full h-full bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl shadow-xl p-6 flex flex-col items-center justify-center text-white">
-          <span className="text-sm opacity-80 mb-2">انگلیسی</span>
-          <h2 className="text-3xl font-bold mb-2">{word.word_en}</h2>
-          {word.pronunciation && (
-            <span className="text-lg opacity-90">{word.pronunciation}</span>
-          )}
-          <div className="mt-4 flex items-center gap-1">
-            {[...Array(5)].map((_, i) => (
-              <div
-                key={i}
-                className={cn(
-                  "w-2 h-2 rounded-full",
-                  i < word.difficulty ? "bg-yellow-400" : "bg-white/30"
-                )}
-              />
-            ))}
-          </div>
-          <p className="text-sm opacity-70 mt-4">کلیک کنید تا معنی نمایش داده شود</p>
-        </div>
-      </div>
-
-      {/* Back - Persian meaning (shown when showAnswer is true) */}
-      <div
-        className={cn(
-          "absolute inset-0 transition-opacity duration-300",
-          showAnswer ? "opacity-100" : "opacity-0 pointer-events-none"
-        )}
-      >
-        <div className="w-full h-full bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl shadow-xl p-6 flex flex-col items-center justify-center text-white">
-          <span className="text-sm opacity-80 mb-2">فارسی</span>
-          <h2 className="text-2xl font-bold mb-4 text-center" dir="rtl">
-            {word.meaning_fa}
-          </h2>
-          {word.example_en && (
-            <div className="mt-2 text-center">
-              <p className="text-sm opacity-90 italic">"{word.example_en}"</p>
-              {word.example_fa && (
-                <p className="text-sm opacity-80 mt-1" dir="rtl">
-                  {word.example_fa}
-                </p>
-              )}
+        {/* Front - English word */}
+        <div className="absolute w-full h-full backface-hidden">
+          <div className="w-full h-full bg-gradient-to-br from-blue-500 to-blue-600 rounded-2xl shadow-xl p-6 flex flex-col items-center justify-center text-white">
+            <span className="text-sm opacity-80 mb-2">انگلیسی</span>
+            <h2 className="text-3xl font-bold mb-2">{word.word_en}</h2>
+            {word.pronunciation && (
+              <span className="text-lg opacity-90">{word.pronunciation}</span>
+            )}
+            <div className="mt-4 flex items-center gap-1">
+              {[...Array(5)].map((_, i) => (
+                <div
+                  key={i}
+                  className={cn(
+                    "w-2 h-2 rounded-full",
+                    i < word.difficulty ? "bg-yellow-400" : "bg-white/30"
+                  )}
+                />
+              ))}
             </div>
-          )}
+            <p className="text-sm opacity-70 mt-4">کلیک کنید تا معنی نمایش داده شود</p>
+          </div>
+        </div>
+
+        {/* Back - Persian meaning */}
+        <div className="absolute w-full h-full backface-hidden rotate-y-180">
+          <div className="w-full h-full bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl shadow-xl p-6 flex flex-col items-center justify-center text-white">
+            <span className="text-sm opacity-80 mb-2">فارسی</span>
+            <h2 className="text-2xl font-bold mb-4 text-center" dir="rtl">
+              {word.meaning_fa}
+            </h2>
+            {word.example_en && (
+              <div className="mt-2 text-center">
+                <p className="text-sm opacity-90 italic">"{word.example_en}"</p>
+                {word.example_fa && (
+                  <p className="text-sm opacity-80 mt-1" dir="rtl">
+                    {word.example_fa}
+                  </p>
+                )}
+              </div>
+            )}
+          </div>
         </div>
       </div>
     </div>
