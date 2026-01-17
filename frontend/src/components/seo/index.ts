@@ -16,6 +16,7 @@ export {
   browseQuestionsHowTo
 } from './HowToSchema';
 export { OrganizationSchema } from './OrganizationSchema';
+export { LastUpdated, DateModifiedSchema, toISODate } from './LastUpdated';
 
 // Page-specific FAQs for AEO optimization
 export const vocabularyFAQs = [

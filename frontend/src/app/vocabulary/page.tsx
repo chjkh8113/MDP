@@ -6,8 +6,11 @@ import { FlashCard, RatingButtons, CardActions, Quality } from '@/components/voc
 import { CardAction } from '@/lib/api';
 import { VocabularyStats } from '@/components/vocabulary/VocabularyStats';
 import { Button } from '@/components/ui/button';
-import { FAQSection, vocabularyFAQs, HowToSchema, vocabularyHowTo } from '@/components/seo';
+import { FAQSection, vocabularyFAQs, HowToSchema, vocabularyHowTo, LastUpdated } from '@/components/seo';
 import Link from 'next/link';
+
+// Last vocabulary content update
+const LAST_CONTENT_UPDATE = '2025-01-15';
 
 export default function VocabularyPage() {
   const [queue, setQueue] = useState<StudyQueueItem[]>([]);
@@ -137,11 +140,14 @@ export default function VocabularyPage() {
               </Link>
               <h1 className="text-lg text-gray-600">تمرین لغات</h1>
             </div>
-            {queue.length > 0 && !sessionComplete && (
-              <div className="text-sm text-gray-600">
-                {currentIndex + 1} / {queue.length}
-              </div>
-            )}
+            <div className="flex items-center gap-4">
+              {queue.length > 0 && !sessionComplete && (
+                <div className="text-sm text-gray-600">
+                  {currentIndex + 1} / {queue.length}
+                </div>
+              )}
+              <LastUpdated contentDate={LAST_CONTENT_UPDATE} compact />
+            </div>
           </div>
 
           {/* TL;DR - Direct answer for AI crawlers */}

@@ -7,7 +7,7 @@ import { api, Question, Topic, Course, Field } from "@/lib/api";
 import { Header } from "@/components/common/Header";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
 import { QuestionCard } from "@/components/browse/QuestionCard";
-import { DynamicSEO } from "@/components/seo";
+import { DynamicSEO, LastUpdated } from "@/components/seo";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mdp.ir';
 
@@ -63,6 +63,7 @@ export default function TopicQuestionsPage() {
           description={`${questions.length} سوال کنکور ارشد ${field.name_fa} - ${course.name_fa} - ${topic.name_fa} با پاسخ تشریحی`}
           type="topic"
           itemCount={questions.length}
+          dateModified={questions.length > 0 ? Math.max(...questions.map(q => q.year)) : undefined}
           breadcrumbs={[
             { name: 'خانه', url: BASE_URL },
             { name: 'رشته‌ها', url: `${BASE_URL}/fields` },
@@ -83,9 +84,17 @@ export default function TopicQuestionsPage() {
           ]}
         />
 
-        <h1 className="text-2xl font-bold text-gray-800 mb-6">
-          {topic?.name_fa} ({questions.length} سوال)
-        </h1>
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+          <h1 className="text-2xl font-bold text-gray-800">
+            {topic?.name_fa} ({questions.length} سوال)
+          </h1>
+          {questions.length > 0 && (
+            <LastUpdated
+              contentDate={String(Math.max(...questions.map(q => q.year)))}
+              label="جدیدترین سوالات"
+            />
+          )}
+        </div>
 
         <div className="space-y-6">
           {questions.map((question, index) => (

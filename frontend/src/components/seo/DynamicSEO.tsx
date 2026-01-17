@@ -1,6 +1,7 @@
 'use client';
 
 import { useEffect } from 'react';
+import { toISODate } from './LastUpdated';
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mdp.ir';
 
@@ -10,9 +11,20 @@ interface DynamicSEOProps {
   type?: 'field' | 'course' | 'topic' | 'exam';
   breadcrumbs?: Array<{ name: string; url: string }>;
   itemCount?: number;
+  // For E-E-A-T: dateModified signals freshness to AI/search engines
+  dateModified?: string | number;
+  datePublished?: string | number;
 }
 
-export function DynamicSEO({ title, description, type, breadcrumbs, itemCount }: DynamicSEOProps) {
+export function DynamicSEO({
+  title,
+  description,
+  type,
+  breadcrumbs,
+  itemCount,
+  dateModified,
+  datePublished,
+}: DynamicSEOProps) {
   useEffect(() => {
     // Update document title
     document.title = `${title} | MDP`;
@@ -57,7 +69,7 @@ export function DynamicSEO({ title, description, type, breadcrumbs, itemCount }:
       });
     }
 
-    // Type-specific schema
+    // Type-specific schema with dateModified for E-E-A-T freshness signals
     if (type === 'field' || type === 'course') {
       schemas.push({
         "@context": "https://schema.org",
@@ -71,6 +83,8 @@ export function DynamicSEO({ title, description, type, breadcrumbs, itemCount }:
           "url": BASE_URL,
         },
         ...(itemCount && { "numberOfItems": itemCount }),
+        ...(dateModified && { "dateModified": toISODate(dateModified) }),
+        ...(datePublished && { "datePublished": toISODate(datePublished) }),
       });
     }
 
@@ -85,6 +99,8 @@ export function DynamicSEO({ title, description, type, breadcrumbs, itemCount }:
         "inLanguage": "fa-IR",
         "isAccessibleForFree": true,
         ...(itemCount && { "numberOfItems": itemCount }),
+        ...(dateModified && { "dateModified": toISODate(dateModified) }),
+        ...(datePublished && { "datePublished": toISODate(datePublished) }),
       });
     }
 
@@ -100,7 +116,7 @@ export function DynamicSEO({ title, description, type, breadcrumbs, itemCount }:
       const script = document.getElementById('dynamic-structured-data');
       if (script) script.remove();
     };
-  }, [title, description, type, breadcrumbs, itemCount]);
+  }, [title, description, type, breadcrumbs, itemCount, dateModified, datePublished]);
 
   return null;
 }

@@ -6,9 +6,11 @@ import Link from "next/link";
 import { api, Course, Field } from "@/lib/api";
 import { Header } from "@/components/common/Header";
 import { Breadcrumb } from "@/components/common/Breadcrumb";
-import { DynamicSEO } from "@/components/seo";
+import { DynamicSEO, LastUpdated } from "@/components/seo";
 
 const BASE_URL = process.env.NEXT_PUBLIC_SITE_URL || 'https://mdp.ir';
+// Last major content update (1404 konkur questions added)
+const LAST_CONTENT_UPDATE = '1404';
 
 export default function FieldCoursesPage() {
   const params = useParams();
@@ -46,6 +48,7 @@ export default function FieldCoursesPage() {
           description={`لیست دروس تخصصی رشته ${field.name_fa} برای کنکور کارشناسی ارشد - ${courses.length} درس`}
           type="field"
           itemCount={courses.length}
+          dateModified={LAST_CONTENT_UPDATE}
           breadcrumbs={[
             { name: 'خانه', url: BASE_URL },
             { name: 'رشته‌ها', url: `${BASE_URL}/fields` },
@@ -62,9 +65,12 @@ export default function FieldCoursesPage() {
           ]}
         />
 
-        <h1 className="text-2xl font-bold text-gray-800 mb-6">
-          دروس {field?.name_fa}
-        </h1>
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+          <h1 className="text-2xl font-bold text-gray-800">
+            دروس {field?.name_fa}
+          </h1>
+          <LastUpdated contentDate={LAST_CONTENT_UPDATE} label="آخرین بروزرسانی محتوا" />
+        </div>
 
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {courses.map((course) => (

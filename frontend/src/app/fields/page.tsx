@@ -4,7 +4,10 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { api, Field } from "@/lib/api";
 import { Header } from "@/components/common/Header";
-import { FAQSection, fieldsFAQs, HowToSchema, browseQuestionsHowTo } from "@/components/seo";
+import { FAQSection, fieldsFAQs, HowToSchema, browseQuestionsHowTo, LastUpdated } from "@/components/seo";
+
+// Last major content update (1404 konkur questions added)
+const LAST_CONTENT_UPDATE = '1404';
 
 export default function FieldsPage() {
   const [fields, setFields] = useState<Field[]>([]);
@@ -46,9 +49,12 @@ export default function FieldsPage() {
             </p>
           </div>
 
-        <h1 className="text-2xl font-bold text-gray-800 mb-6">
-          رشته‌های تحصیلی
-        </h1>
+        <div className="flex flex-wrap items-center justify-between gap-4 mb-6">
+          <h1 className="text-2xl font-bold text-gray-800">
+            رشته‌های تحصیلی
+          </h1>
+          <LastUpdated contentDate={LAST_CONTENT_UPDATE} label="آخرین بروزرسانی محتوا" />
+        </div>
         <div className="grid gap-4 md:grid-cols-2 lg:grid-cols-3">
           {fields.map((field) => (
             <Link

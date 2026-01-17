@@ -68,8 +68,8 @@
       "source_page": "page-21",
       "crop_coords": {
         "y_start": 720,
-        "y_end": 1010,
-        "height": 290,
+        "y_end": 1110,
+        "height": 390,
         "source_page": "page-21"
       }
     },
@@ -80,9 +80,9 @@
       "topic": "Cache hierarchy MRU policy",
       "source_page": "page-21",
       "crop_coords": {
-        "y_start": 1010,
-        "y_end": 1310,
-        "height": 300,
+        "y_start": 1115,
+        "y_end": 1480,
+        "height": 365,
         "source_page": "page-21"
       }
     },
@@ -107,8 +107,8 @@
       "source_page": "page-22",
       "crop_coords": {
         "y_start": 290,
-        "y_end": 735,
-        "height": 445,
+        "y_end": 820,
+        "height": 530,
         "source_page": "page-22"
       }
     },
@@ -119,9 +119,9 @@
       "topic": "CMOS power consumption",
       "source_page": "page-22",
       "crop_coords": {
-        "y_start": 735,
-        "y_end": 1000,
-        "height": 265,
+        "y_start": 830,
+        "y_end": 1185,
+        "height": 355,
         "source_page": "page-22"
       }
     },
@@ -132,9 +132,9 @@
       "topic": "Circuit VOH/VOL analysis",
       "source_page": "page-22",
       "crop_coords": {
-        "y_start": 1000,
+        "y_start": 1195,
         "y_end": 1560,
-        "height": 560,
+        "height": 365,
         "source_page": "page-22"
       }
     },
@@ -145,9 +145,9 @@
       "topic": "CMOS inverter power",
       "source_page": "page-23",
       "crop_coords": {
-        "y_start": 140,
-        "y_end": 435,
-        "height": 295,
+        "y_start": 160,
+        "y_end": 490,
+        "height": 330,
         "source_page": "page-23"
       }
     },
@@ -158,9 +158,9 @@
       "topic": "Transistor Vout calculation",
       "source_page": "page-23",
       "crop_coords": {
-        "y_start": 435,
-        "y_end": 800,
-        "height": 365,
+        "y_start": 500,
+        "y_end": 990,
+        "height": 490,
         "source_page": "page-23"
       }
     },
@@ -171,9 +171,9 @@
       "topic": "Charge sharing",
       "source_page": "page-23",
       "crop_coords": {
-        "y_start": 800,
-        "y_end": 1200,
-        "height": 400,
+        "y_start": 1000,
+        "y_end": 1350,
+        "height": 350,
         "source_page": "page-23"
       }
     },
@@ -184,9 +184,9 @@
       "topic": "Thread statements",
       "source_page": "page-24",
       "crop_coords": {
-        "y_start": 35,
+        "y_start": 210,
         "y_end": 520,
-        "height": 485,
+        "height": 310,
         "source_page": "page-24"
       }
     },
