@@ -6,6 +6,7 @@ import { FlashCard, RatingButtons, CardActions, Quality } from '@/components/voc
 import { CardAction } from '@/lib/api';
 import { VocabularyStats } from '@/components/vocabulary/VocabularyStats';
 import { Button } from '@/components/ui/button';
+import { FAQSection, vocabularyFAQs } from '@/components/seo';
 import Link from 'next/link';
 
 export default function VocabularyPage() {
@@ -134,6 +135,15 @@ export default function VocabularyPage() {
           )}
         </div>
 
+        {/* TL;DR - Direct answer for AI crawlers */}
+        {!queue.length && !isLoading && (
+          <div className="bg-green-50 border border-green-200 rounded-lg p-4">
+            <p className="text-green-800 font-medium">
+              سیستم فلش‌کارت MDP با الگوریتم SM-2 به شما کمک می‌کند لغات تخصصی کنکور ارشد را به صورت علمی یاد بگیرید.
+            </p>
+          </div>
+        )}
+
         {/* Stats */}
         <VocabularyStats stats={stats} />
 
@@ -235,6 +245,11 @@ export default function VocabularyPage() {
             </p>
             <Button onClick={loadStudyQueue}>بارگذاری مجدد</Button>
           </div>
+        )}
+
+        {/* FAQ Section for AEO - only show when not in study mode */}
+        {(sessionComplete || !currentWord) && (
+          <FAQSection faqs={vocabularyFAQs} title="سوالات متداول درباره تمرین لغات" />
         )}
       </div>
     </div>
