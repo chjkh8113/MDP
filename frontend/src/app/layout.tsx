@@ -78,24 +78,83 @@ export const viewport: Viewport = {
   initialScale: 1,
 };
 
-// JSON-LD Structured Data for SEO/AEO/GEO
+// JSON-LD Structured Data for SEO/AEO/GEO - Enhanced for E-E-A-T
 function JsonLdSchema() {
+  // Comprehensive Organization Schema with E-E-A-T signals
   const organizationSchema = {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "MDP",
+    "@type": "EducationalOrganization",
+    "@id": `${BASE_URL}/#organization`,
+    "name": "MDP - بانک سوالات کنکور ارشد",
+    "alternateName": ["MDP", "Master's Degree Preparation", "ام دی پی"],
     "url": BASE_URL,
-    "logo": `${BASE_URL}/logo.png`,
-    "description": "بانک جامع سوالات کنکور کارشناسی ارشد ایران",
-    "sameAs": [],
+    "logo": {
+      "@type": "ImageObject",
+      "url": `${BASE_URL}/icon-512.png`,
+      "width": 512,
+      "height": 512,
+    },
+    "image": `${BASE_URL}/og-image.png`,
+    "description": "MDP یک پلتفرم آموزشی رایگان برای آمادگی کنکور کارشناسی ارشد است. دسترسی به بانک سوالات ۵ سال اخیر، سیستم فلش‌کارت هوشمند با الگوریتم SM-2 و آزمون آنلاین.",
+    "foundingDate": "2024",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Iran",
+    },
+    "knowsAbout": [
+      "کنکور کارشناسی ارشد",
+      "مهندسی کامپیوتر",
+      "مهندسی برق",
+      "مهندسی مکانیک",
+      "مهندسی عمران",
+      "ساختمان داده",
+      "الگوریتم",
+      "لغات تخصصی انگلیسی"
+    ],
+    "slogan": "آمادگی هوشمند برای کنکور ارشد",
+    "hasOfferCatalog": {
+      "@type": "OfferCatalog",
+      "name": "خدمات آموزشی MDP",
+      "itemListElement": [
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "بانک سوالات کنکور ارشد",
+            "description": "دسترسی رایگان به سوالات ۵ سال اخیر کنکور کارشناسی ارشد با پاسخ تشریحی"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "فلش‌کارت هوشمند SM-2",
+            "description": "یادگیری لغات تخصصی با الگوریتم SM-2 تکرار فاصله‌دار"
+          }
+        },
+        {
+          "@type": "Offer",
+          "itemOffered": {
+            "@type": "Service",
+            "name": "آزمون آنلاین",
+            "description": "آزمون آنلاین با سوالات واقعی کنکور و بازخورد فوری"
+          }
+        }
+      ]
+    }
   };
 
+  // WebSite Schema with search action
   const websiteSchema = {
     "@context": "https://schema.org",
     "@type": "WebSite",
-    "name": "MDP - آرشیو سوالات کنکور ارشد",
+    "@id": `${BASE_URL}/#website`,
     "url": BASE_URL,
-    "description": "بانک جامع سوالات کنکور کارشناسی ارشد ایران",
+    "name": "MDP - بانک سوالات کنکور ارشد",
+    "description": "پلتفرم رایگان آمادگی کنکور کارشناسی ارشد با بانک سوالات، فلش‌کارت و آزمون آنلاین",
+    "publisher": {
+      "@id": `${BASE_URL}/#organization`
+    },
     "inLanguage": "fa-IR",
     "potentialAction": {
       "@type": "SearchAction",
@@ -107,13 +166,25 @@ function JsonLdSchema() {
     }
   };
 
-  const educationalSchema = {
+  // WebApplication Schema for the platform
+  const webAppSchema = {
     "@context": "https://schema.org",
-    "@type": "EducationalOrganization",
+    "@type": "WebApplication",
     "name": "MDP",
     "url": BASE_URL,
-    "description": "پلتفرم آموزشی آمادگی کنکور کارشناسی ارشد",
-    "educationalCredentialAwarded": "آمادگی کنکور کارشناسی ارشد",
+    "applicationCategory": "EducationalApplication",
+    "operatingSystem": "Any",
+    "offers": {
+      "@type": "Offer",
+      "price": "0",
+      "priceCurrency": "IRR"
+    },
+    "featureList": [
+      "بانک سوالات کنکور ارشد ۵ سال اخیر",
+      "فلش‌کارت هوشمند با الگوریتم SM-2",
+      "آزمون آنلاین با بازخورد فوری",
+      "دسته‌بندی بر اساس رشته، درس و مبحث"
+    ]
   };
 
   return (
@@ -128,7 +199,7 @@ function JsonLdSchema() {
       />
       <script
         type="application/ld+json"
-        dangerouslySetInnerHTML={{ __html: JSON.stringify(educationalSchema) }}
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(webAppSchema) }}
       />
     </>
   );

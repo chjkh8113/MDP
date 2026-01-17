@@ -15,6 +15,7 @@ export {
   quizHowTo,
   browseQuestionsHowTo
 } from './HowToSchema';
+export { OrganizationSchema } from './OrganizationSchema';
 
 // Page-specific FAQs for AEO optimization
 export const vocabularyFAQs = [
