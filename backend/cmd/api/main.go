@@ -72,7 +72,7 @@ func main() {
 	}))
 
 	// CORS - environment-aware configuration
-	allowedOrigins := getEnvOrDefault("CORS_ORIGINS", "http://localhost:4444,http://localhost:3000,http://127.0.0.1:4444")
+	allowedOrigins := getEnvOrDefault("CORS_ORIGINS", "http://localhost:4444,http://localhost:3000,http://127.0.0.1:4444,http://146.70.41.142:4444")
 	app.Use(cors.New(cors.Config{
 		AllowOrigins:     allowedOrigins,
 		AllowMethods:     "GET,POST,PUT,DELETE,OPTIONS",
