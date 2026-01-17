@@ -68,16 +68,21 @@ export default function VocabularyPage() {
         });
       }
 
-      // Move to next card
+      // Move to next card - reset showAnswer FIRST, then change index
       setTimeout(() => {
-        if (currentIndex < queue.length - 1) {
-          setCurrentIndex(currentIndex + 1);
-          setShowAnswer(false);
-          setLastReview(null);
-        } else {
-          setSessionComplete(true);
-        }
-        setIsReviewing(false);
+        // First: hide the answer (flip back to question side)
+        setShowAnswer(false);
+        setLastReview(null);
+
+        // Then: after a brief delay, change to next card
+        setTimeout(() => {
+          if (currentIndex < queue.length - 1) {
+            setCurrentIndex(currentIndex + 1);
+          } else {
+            setSessionComplete(true);
+          }
+          setIsReviewing(false);
+        }, 50); // Small delay ensures showAnswer=false renders first
       }, 800);
     } catch (error) {
       console.error('Failed to submit review:', error);
@@ -87,15 +92,18 @@ export default function VocabularyPage() {
 
   const handleCardAction = (action: CardAction, message: string) => {
     setCardActionMessage(message);
-    // Move to next card after action
+    // Move to next card after action - reset showAnswer FIRST
     setTimeout(() => {
-      if (currentIndex < queue.length - 1) {
-        setCurrentIndex(currentIndex + 1);
-        setShowAnswer(false);
-      } else {
-        setSessionComplete(true);
-      }
+      setShowAnswer(false);
       setCardActionMessage(null);
+
+      setTimeout(() => {
+        if (currentIndex < queue.length - 1) {
+          setCurrentIndex(currentIndex + 1);
+        } else {
+          setSessionComplete(true);
+        }
+      }, 50);
     }, 1500);
   };
 
