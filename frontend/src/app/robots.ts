@@ -10,6 +10,7 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
         disallow: ['/api/', '/_next/'],
       },
+      // OpenAI crawlers
       {
         userAgent: 'GPTBot',
         allow: '/',
@@ -19,18 +20,60 @@ export default function robots(): MetadataRoute.Robots {
         allow: '/',
       },
       {
+        userAgent: 'OAI-SearchBot',
+        allow: '/',
+      },
+      // Google AI crawlers
+      {
         userAgent: 'Google-Extended',
         allow: '/',
       },
       {
-        userAgent: 'PerplexityBot',
+        userAgent: 'Googlebot',
         allow: '/',
       },
+      // Anthropic (Claude) crawlers
       {
         userAgent: 'ClaudeBot',
         allow: '/',
       },
+      {
+        userAgent: 'Claude-Web',
+        allow: '/',
+      },
+      {
+        userAgent: 'anthropic-ai',
+        allow: '/',
+      },
+      // Perplexity AI
+      {
+        userAgent: 'PerplexityBot',
+        allow: '/',
+      },
+      // Microsoft Copilot / Bing
+      {
+        userAgent: 'Bingbot',
+        allow: '/',
+      },
+      // Other AI crawlers
+      {
+        userAgent: 'cohere-ai',
+        allow: '/',
+      },
+      {
+        userAgent: 'CCBot',
+        allow: '/',
+      },
+      {
+        userAgent: 'Meta-ExternalAgent',
+        allow: '/',
+      },
+      {
+        userAgent: 'Bytespider',
+        allow: '/',
+      },
     ],
     sitemap: `${BASE_URL}/sitemap.xml`,
+    host: BASE_URL,
   }
 }
