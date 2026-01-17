@@ -6,7 +6,7 @@ import { FlashCard, RatingButtons, CardActions, Quality } from '@/components/voc
 import { CardAction } from '@/lib/api';
 import { VocabularyStats } from '@/components/vocabulary/VocabularyStats';
 import { Button } from '@/components/ui/button';
-import { FAQSection, vocabularyFAQs } from '@/components/seo';
+import { FAQSection, vocabularyFAQs, HowToSchema, vocabularyHowTo } from '@/components/seo';
 import Link from 'next/link';
 
 export default function VocabularyPage() {
@@ -118,25 +118,34 @@ export default function VocabularyPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50 p-6" dir="rtl">
-      <div className="max-w-2xl mx-auto space-y-6">
-        {/* Header */}
-        <div className="flex items-center justify-between">
-          <div>
-            <Link href="/" className="text-2xl font-bold text-gray-900 hover:text-blue-600 transition mb-1 block">
-              MDP
-            </Link>
-            <h1 className="text-lg text-gray-600">تمرین لغات</h1>
-          </div>
-          {queue.length > 0 && !sessionComplete && (
-            <div className="text-sm text-gray-600">
-              {currentIndex + 1} / {queue.length}
-            </div>
-          )}
-        </div>
+    <>
+      {/* HowTo Schema for AI/Search engines */}
+      <HowToSchema
+        name={vocabularyHowTo.name}
+        description={vocabularyHowTo.description}
+        totalTime={vocabularyHowTo.totalTime}
+        steps={vocabularyHowTo.steps}
+      />
 
-        {/* TL;DR - Direct answer for AI crawlers */}
-        {!queue.length && !isLoading && (
+      <div className="min-h-screen bg-gray-50 p-6" dir="rtl">
+        <div className="max-w-2xl mx-auto space-y-6">
+          {/* Header */}
+          <div className="flex items-center justify-between">
+            <div>
+              <Link href="/" className="text-2xl font-bold text-gray-900 hover:text-blue-600 transition mb-1 block">
+                MDP
+              </Link>
+              <h1 className="text-lg text-gray-600">تمرین لغات</h1>
+            </div>
+            {queue.length > 0 && !sessionComplete && (
+              <div className="text-sm text-gray-600">
+                {currentIndex + 1} / {queue.length}
+              </div>
+            )}
+          </div>
+
+          {/* TL;DR - Direct answer for AI crawlers */}
+          {!queue.length && !isLoading && (
           <div className="bg-green-50 border border-green-200 rounded-lg p-4">
             <p className="text-green-800 font-medium">
               سیستم فلش‌کارت MDP با الگوریتم SM-2 به شما کمک می‌کند لغات تخصصی کنکور ارشد را به صورت علمی یاد بگیرید.
@@ -253,5 +262,6 @@ export default function VocabularyPage() {
         )}
       </div>
     </div>
+    </>
   );
 }

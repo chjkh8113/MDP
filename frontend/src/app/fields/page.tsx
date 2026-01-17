@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import Link from "next/link";
 import { api, Field } from "@/lib/api";
 import { Header } from "@/components/common/Header";
-import { FAQSection, fieldsFAQs } from "@/components/seo";
+import { FAQSection, fieldsFAQs, HowToSchema, browseQuestionsHowTo } from "@/components/seo";
 
 export default function FieldsPage() {
   const [fields, setFields] = useState<Field[]>([]);
@@ -26,16 +26,25 @@ export default function FieldsPage() {
   }
 
   return (
-    <div className="min-h-screen bg-gray-50" dir="rtl">
-      <Header />
-      <main className="container mx-auto px-4 py-8 pt-24">
-        {/* TL;DR Section - Direct answer for AI */}
-        <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
-          <p className="text-blue-800 font-medium">
-            در بانک سوالات MDP، سوالات کنکور ارشد {fields.length} رشته تحصیلی شامل
-            مهندسی کامپیوتر، برق، مکانیک و عمران موجود است.
-          </p>
-        </div>
+    <>
+      {/* HowTo Schema for AI/Search engines */}
+      <HowToSchema
+        name={browseQuestionsHowTo.name}
+        description={browseQuestionsHowTo.description}
+        totalTime={browseQuestionsHowTo.totalTime}
+        steps={browseQuestionsHowTo.steps}
+      />
+
+      <div className="min-h-screen bg-gray-50" dir="rtl">
+        <Header />
+        <main className="container mx-auto px-4 py-8 pt-24">
+          {/* TL;DR Section - Direct answer for AI */}
+          <div className="bg-blue-50 border border-blue-200 rounded-lg p-4 mb-6">
+            <p className="text-blue-800 font-medium">
+              در بانک سوالات MDP، سوالات کنکور ارشد {fields.length} رشته تحصیلی شامل
+              مهندسی کامپیوتر، برق، مکانیک و عمران موجود است.
+            </p>
+          </div>
 
         <h1 className="text-2xl font-bold text-gray-800 mb-6">
           رشته‌های تحصیلی
@@ -58,7 +67,8 @@ export default function FieldsPage() {
 
         {/* FAQ Section for AEO */}
         <FAQSection faqs={fieldsFAQs} title="سوالات متداول درباره بانک سوالات" />
-      </main>
-    </div>
+        </main>
+      </div>
+    </>
   );
 }

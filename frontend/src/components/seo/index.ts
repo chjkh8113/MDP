@@ -9,6 +9,12 @@ export {
 } from './EducationalSchema';
 export { QuestionSchema, ExamPageSchema } from './QuestionSchema';
 export { DynamicSEO } from './DynamicSEO';
+export {
+  HowToSchema,
+  vocabularyHowTo,
+  quizHowTo,
+  browseQuestionsHowTo
+} from './HowToSchema';
 
 // Page-specific FAQs for AEO optimization
 export const vocabularyFAQs = [
