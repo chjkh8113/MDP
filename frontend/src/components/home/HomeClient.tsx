@@ -5,7 +5,7 @@ import { Header } from "@/components/common/Header";
 import { Hero, Stats, FAQ } from "@/components/landing";
 import { QuizCard, ScoreCard } from "@/components/quiz";
 import { api, Question, Stats as StatsType } from "@/lib/api";
-import { platformFAQs } from "@/components/seo";
+import { platformFAQs, CredentialsSection } from "@/components/seo";
 
 export default function HomeClient() {
   const [stats, setStats] = useState<StatsType | null>(null);
@@ -92,6 +92,7 @@ export default function HomeClient() {
         <>
           <Hero onStartQuiz={startQuiz} loading={loading} />
           <Stats stats={stats} />
+          <CredentialsSection />
           <FAQ faqs={platformFAQs} />
         </>
       )}

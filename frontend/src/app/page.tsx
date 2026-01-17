@@ -1,5 +1,5 @@
 import HomeClient from '@/components/home/HomeClient';
-import { FAQSchema, platformFAQs, HowToSchema, quizHowTo } from '@/components/seo';
+import { FAQSchema, platformFAQs, HowToSchema, quizHowTo, AuthorSchema } from '@/components/seo';
 
 export default function Home() {
   return (
@@ -11,6 +11,7 @@ export default function Home() {
         totalTime={quizHowTo.totalTime}
         steps={quizHowTo.steps}
       />
+      <AuthorSchema />
       <HomeClient />
     </>
   );
