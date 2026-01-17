@@ -11,6 +11,21 @@ interface FlashCardProps {
 }
 
 export function FlashCard({ word, showAnswer, onFlip }: FlashCardProps) {
+  // Track if we've ever shown the answer for this card (to enable animation)
+  const [hasFlipped, setHasFlipped] = useState(false);
+
+  // When showAnswer becomes true, mark as flipped
+  if (showAnswer && !hasFlipped) {
+    setHasFlipped(true);
+  }
+
+  // Reset hasFlipped when word changes
+  const [prevWordId, setPrevWordId] = useState(word.id);
+  if (word.id !== prevWordId) {
+    setPrevWordId(word.id);
+    setHasFlipped(false);
+  }
+
   return (
     <div
       className="relative w-full max-w-md mx-auto h-64 cursor-pointer perspective-1000"
@@ -45,25 +60,27 @@ export function FlashCard({ word, showAnswer, onFlip }: FlashCardProps) {
           </div>
         </div>
 
-        {/* Back - Persian meaning */}
-        <div className="absolute w-full h-full backface-hidden rotate-y-180">
-          <div className="w-full h-full bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl shadow-xl p-6 flex flex-col items-center justify-center text-white">
-            <span className="text-sm opacity-80 mb-2">فارسی</span>
-            <h2 className="text-2xl font-bold mb-4 text-center" dir="rtl">
-              {word.meaning_fa}
-            </h2>
-            {word.example_en && (
-              <div className="mt-2 text-center">
-                <p className="text-sm opacity-90 italic">"{word.example_en}"</p>
-                {word.example_fa && (
-                  <p className="text-sm opacity-80 mt-1" dir="rtl">
-                    {word.example_fa}
-                  </p>
-                )}
-              </div>
-            )}
+        {/* Back - Persian meaning - ONLY render after first flip to prevent flash */}
+        {hasFlipped && (
+          <div className="absolute w-full h-full backface-hidden rotate-y-180">
+            <div className="w-full h-full bg-gradient-to-br from-emerald-500 to-emerald-600 rounded-2xl shadow-xl p-6 flex flex-col items-center justify-center text-white">
+              <span className="text-sm opacity-80 mb-2">فارسی</span>
+              <h2 className="text-2xl font-bold mb-4 text-center" dir="rtl">
+                {word.meaning_fa}
+              </h2>
+              {word.example_en && (
+                <div className="mt-2 text-center">
+                  <p className="text-sm opacity-90 italic">"{word.example_en}"</p>
+                  {word.example_fa && (
+                    <p className="text-sm opacity-80 mt-1" dir="rtl">
+                      {word.example_fa}
+                    </p>
+                  )}
+                </div>
+              )}
+            </div>
           </div>
-        </div>
+        )}
       </div>
     </div>
   );
